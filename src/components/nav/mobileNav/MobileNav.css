@@ -1,0 +1,18 @@
+.navMobileContainer {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: pink !important;
+}
+.navMobileContainer .mobileNavIcon {
+  position: fixed;
+  font-size: 20px;
+  right: 0;
+  z-index: 3;
+}
+.navMobileContainer .MobileGroup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}/*# sourceMappingURL=MobileNav.css.map */

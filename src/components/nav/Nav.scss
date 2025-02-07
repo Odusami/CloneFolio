@@ -1,0 +1,42 @@
+@import "/src/styles/abstract/variables";
+
+.logoSize {
+  width: 100px;
+}
+.linkStyle {
+  position: relative;
+  color: $color-primary-300;
+  &:hover {
+    &::after {
+      content: "";
+      padding: 0;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 2px;
+      background-color: $color-primary;
+    }
+  }
+}
+
+.galleryBox {
+  width: 220px;
+  left: 10px;
+}
+.crmBox {
+  width: 470px;
+  left: 10px;
+}
+.signUp {
+  background-color: black;
+  color: $color-secondary;
+  font-weight: 500;
+  font-size: 15px;
+  &:hover {
+    background-color: $color-tertiary;
+    color: $color-primary-100;
+  }
+}
+
+

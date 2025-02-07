@@ -1,0 +1,16 @@
+.icon {
+  line-height: 0;
+  font-size: 20px;
+}
+
+.textGroup {
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: 700;
+  max-width: 200px;
+  word-wrap: break-word;
+}
+.textGroup p {
+  font-size: 10px;
+  font-weight: 400;
+}/*# sourceMappingURL=SubNavInfo.css.map */
