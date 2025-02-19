@@ -1,0 +1,35 @@
+@import '/src/styles/abstract/variables';
+.textCardGroup{
+   
+    .textCardNumber{
+        font-family: $font-secondary;
+        @media (max-width: 1200px) {
+            display: flex;
+            justify-content: center;
+            // align-items: center;
+            background-color: $color-secondary-200;
+            max-width: 3.7rem;
+            max-height: 3.7rem;
+           border-radius: 50%;
+
+        }
+        @media (max-width: 1000px) {
+         
+           
+            max-width: 3rem;
+            max-height: 3rem;
+           border-radius: 50%;
+
+        }
+    }
+   .textCardBody{
+   
+    .textCardLink{
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
+       
+    }
+   }
+}

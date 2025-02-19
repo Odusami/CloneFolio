@@ -1,0 +1,14 @@
+@import './variables';
+@mixin buttonStyle($background-color: $color-primary ,$color: $color-secondary, $padding: 15px 30px, $hover-bg: $color-tertiary){
+    text-decoration: none;
+        border: none;
+        letter-spacing: 1px;
+        padding: $padding;
+        background-color: $background-color;
+        color: $color;
+        transition: all 0.3s ease-out;
+        &:hover {
+            background-color: $hover-bg;
+           
+          }
+}

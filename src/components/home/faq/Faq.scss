@@ -1,0 +1,19 @@
+@import "/src/styles/abstract/variables";
+.accordion-button:not(.collapsed) {
+  background-color: $color-tertiary !important;
+  color: #fff !important;
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapse):focus {
+  box-shadow: 0px 0px 1px 3px rgba($color: $color-tertiary, $alpha: 0.3) !important;
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+.accordion-button:not(.collapsed):focus {
+  box-shadow: none !important; 
+}
+
+.accordion-button:not(.collapsed) {
+  box-shadow: none !important; 
+}

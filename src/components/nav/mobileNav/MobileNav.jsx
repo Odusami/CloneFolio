@@ -9,7 +9,7 @@ import { FaInstagram, FaTwitter } from "react-icons/fa";
 const MobileNav = () => {
   const [isClicked, setIsClicked] = useState(false);
 
-  console.log(isClicked);
+ 
   const handleClick = () => {
     setIsClicked(!isClicked);
   };

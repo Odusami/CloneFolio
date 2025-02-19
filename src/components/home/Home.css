@@ -1,0 +1,12 @@
+.textAnimateGroup {
+  position: relative;
+  display: inline-block;
+  padding-right: 50px;
+}
+.textAnimateGroup .textAnimate {
+  position: absolute;
+  left: 105px;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+}/*# sourceMappingURL=Home.css.map */

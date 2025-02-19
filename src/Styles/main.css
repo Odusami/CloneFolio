@@ -1,6 +1,8 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 /*Fonts*/
 /*Colors*/
+/*Fonts*/
+/*Colors*/
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap");
 /*Fonts*/
@@ -10,8 +12,185 @@ body {
   font-weight: 400;
   font-size: 12px;
 }
+@media (max-width: 1100px) {
+  body {
+    font-size: 12px;
+  }
+}
+@media (max-width: 992px) {
+  body {
+    font-size: 11px;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    font-size: 10px;
+  }
+}
+@media (max-width: 567px) {
+  body {
+    font-size: 8px;
+  }
+}
+body p {
+  margin-bottom: 2px;
+}
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Playfair Display", serif;
   color: #202529;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 55px;
+}
+@media (max-width: 1100px) {
+  h1 {
+    font-size: 45px;
+  }
+}
+@media (max-width: 992px) {
+  h1 {
+    font-size: 42px;
+  }
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 35px;
+  }
+}
+@media (max-width: 567px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+
+h2 {
+  font-size: 48px;
+}
+@media (max-width: 1100px) {
+  h2 {
+    font-size: 46px;
+  }
+}
+@media (max-width: 992px) {
+  h2 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 768px) {
+  h2 {
+    font-size: 38px;
+  }
+}
+@media (max-width: 567px) {
+  h2 {
+    font-size: 30px;
+  }
+}
+
+h3 {
+  font-size: 16px;
+  color: #888888;
+  line-height: 20px;
+  word-spacing: 1px;
+}
+@media (max-width: 1100px) {
+  h3 {
+    font-size: 14px;
+  }
+}
+
+h4 {
+  font-family: "Geist", serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #444444;
+}
+@media (max-width: 1100px) {
+  h4 {
+    font-size: 16px;
+  }
+}
+
+h5 {
+  font-size: 14px;
+  color: #888888;
+  line-height: 20px;
+  word-spacing: 1px;
+}
+@media (max-width: 1100px) {
+  h5 {
+    font-size: 11px;
+  }
+}
+
+h6 {
+  font-family: "Geist", serif;
+  font-size: 16px;
+  color: #888888;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+@media (max-width: 1100px) {
+  h6 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 992px) {
+  h6 {
+    font-size: 13px;
+  }
+}
+@media (max-width: 768px) {
+  h6 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 567px) {
+  h6 {
+    font-size: 12px;
+  }
+}
+
+.colorBlack {
+  color: #000000;
+}
+
+.colorBlack-100 {
+  color: #202529;
+}
+
+.colorBlack-200 {
+  color: #222222;
+}
+
+.colorBlack-300 {
+  color: #101010;
+}
+
+.colorBlack-400 {
+  color: #444444;
+}
+
+.colorBlack-500 {
+  color: #888888;
+}
+
+.colorBlack-600 {
+  color: #bbbbbb;
+}
+
+.colorWhite {
+  color: #ffffff;
+}
+
+.colorWhite-100 {
+  color: #dddddd;
 }/*# sourceMappingURL=main.css.map */
