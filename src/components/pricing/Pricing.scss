@@ -1,0 +1,21 @@
+@import '/src/styles/abstract/variables';
+
+.pricingMainHeadBody{
+    background-color: $color-primary-300;
+    padding: 100px 0;
+}
+.pricingLink{
+    color: $color-primary-500;
+    font-weight: 700;
+    text-decoration: none;
+   
+    &:hover{
+        color: $color-primary;
+    }
+    &:active{
+        color: $color-secondary;
+        padding: 10px 20px;
+        background: $color-primary-300;
+        border-radius: 20px;
+    }
+}

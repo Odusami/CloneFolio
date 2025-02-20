@@ -1,18 +1,21 @@
 
 
+import { Route, Link, Routes } from "react-router-dom"
 import Nav from "./components/Nav/Nav"
 import Home from "./components/home/Home"
 import SubNavInfo from "./components/nav/subnavinfo/SubNavInfo"
-
+import Pricing from "./components/pricing/Pricing"
 function App() {
 
   return (
     <>
      
      {/* <Nav/> */}
-     <Home/>
-     {/* <h1>Welcome to my project</h1>
-     <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, voluptate.</div> */}
+     {/* <Home/> */}
+    <Routes>
+      <Route path="/" element={ <Home/>}/>
+      <Route path='/pricing' element={<Pricing/>}/>
+    </Routes>
     </>
   )
 }
