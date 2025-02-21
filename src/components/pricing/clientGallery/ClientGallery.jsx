@@ -252,6 +252,7 @@ const ClientGallery = () => {
       <div className="container">
             <h4 className="text-center py-4 colorBlack-300 fst-italic">{clientGallery.title}</h4>
         <div className="row justify-content-center">
+             {/* Payment1 plan */}
           <div className="col-lg col-8 col-sm-6 col-md-4 colBorder p-0 pb-4">
             <div className="py-3 mb-2 text-center headerBorder">
               <h4 className="fw-bold fs-4 m-0 colorBlack-300">
@@ -302,7 +303,7 @@ const ClientGallery = () => {
           </div>
 
         
-              {/*  */}
+              {/* Payment2 plan */}
 
               <div className="col-lg col-8 col-sm-6 col-md-4 colBorder colMdBorderRight p-0 pb-4">
             <div className="py-3 mb-2 text-center headerBorder">
@@ -354,7 +355,7 @@ const ClientGallery = () => {
           </div>
 
 
-              {/*  */}
+              {/* Payment3 plan */}
 
               <div className="col-lg col-8 col-sm-6 col-md-4 colBorder colLgBorderRight removeMdBt p-0 pb-4">
             <div className="py-3 mb-2 text-center headerBorder">
@@ -405,7 +406,7 @@ const ClientGallery = () => {
             </div>
           </div>
 
-              {/*  */}
+              {/* Payment4 plan */}
 
 
               <div className="col-lg col-8 col-sm-6 col-md-4 colBorder colMdBorderRight removelgBt p-0 pb-4">
@@ -457,7 +458,7 @@ const ClientGallery = () => {
             </div>
           </div>
 
-                {/*  */}
+                {/* Payment5 plan */}
 
                 <div className="col-lg col-8 col-sm-6 col-md-4 colBorder p-0 pb-4 colBorderRight removelgBt">
             <div className="py-3 mb-2 text-center headerBorder">
