@@ -2,6 +2,7 @@ import ClientGallery from "./clientGallery/ClientGallery";
 import "./Pricing.scss";
 import { Link } from "react-router-dom";
 import StudioManager from "./studioManager/StudioManager";
+import Websites from "./website/Websites";
 const Pricing = () => {
   return (
     <>
@@ -51,7 +52,8 @@ const Pricing = () => {
         </ul>
       </div>
       {/* <ClientGallery/> */}
-      <StudioManager/>
+      {/* <StudioManager/> */}
+      <Websites/>
     </>
   );
 };
