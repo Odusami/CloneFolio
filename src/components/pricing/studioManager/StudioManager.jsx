@@ -261,7 +261,7 @@ const StudioManager = () => {
 
           {/* Payment3 plan */}
 
-          <div className="col-lg-3 col-8 col-sm-6 col-md-4 colBorder colBorderRight colLgBorderRight removeMdBt p-0 pb-4">
+          <div className="col-lg-3 col-8 col-sm-6 col-md-4 colBorder colBorderRight colLgBorderRight colMdBorderRight removeMdBt p-0 pb-4">
             <div className="py-3 mb-2 text-center headerBorder">
               <h4 className="fw-bold fs-4 m-0 colorBlack-300">
                 {studioManager.gallery3.header}

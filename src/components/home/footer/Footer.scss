@@ -1,11 +1,12 @@
 @import '/src/styles/abstract/mixins';
 @import '/src/styles/abstract/variables';
+.line{
+    width: 70px;
+    border: 2px solid $color-secondary-100;
+}
 .footerBg{
     background-color: $color-primary-300;
-    .line{
-        width: 70px;
-        border: 2px solid $color-secondary-100;
-    }
+   
     .footerBtn{
         @include buttonStyle($hover-bg: $color-tertiary-200, $background-color: $color-tertiary-100)
     }
