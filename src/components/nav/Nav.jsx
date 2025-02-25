@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./Nav.scss";
 import { useState, useEffect } from "react";
 import { LiaDownloadSolid } from "react-icons/lia";
@@ -28,20 +28,27 @@ const Nav = () => {
 
       {/* Desktop Nav */}
       <nav className="navbar navbar-expand-lg">
-        <div className="container-fluid">
+        <div className="container py-2 pt-3">
           <Link to="/" className="navbar-brand d-none d-lg-inline-block">
             <img
               src="../folio images/logo-dark.png"
-              className="logoSize pb-1"
+              className="logoSize pb-1 me-2"
               alt="logo"
             />
           </Link>
 
           <div className="navbar-nav d-flex w-100 align-items-center d-none d-lg-flex">
             <div className="d-flex flex-row gap-4">
-              <Link to="/pricing" className="nav-link linkStyle px-0">
+              <NavLink
+                to="/pricing"
+                className={({ isActive }) =>
+                  isActive
+                    ? "activeLinkStyle nav-link linkStyle px-0"
+                    : "nav-link linkStyle px-0"
+                }
+              >
                 PRICING
-              </Link>
+              </NavLink>
 
               {/* Gallery dropdown */}
               <div
@@ -49,10 +56,17 @@ const Nav = () => {
                 onMouseEnter={() => handleActiveDropdown("gallery")}
                 onMouseLeave={handleInactiveDropdown}
               >
-                <Link to="/gallery" className="nav-link linkStyle px-0">
+                <NavLink
+                  to="/gallery"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "activeLinkStyle nav-link linkStyle px-0"
+                      : "nav-link linkStyle px-0"
+                  }
+                >
                   GALLERIES
                   <span className="dropdown-toggle ms-1"></span>
-                </Link>
+                </NavLink>
 
                 {isDropdownOpen === "gallery" && (
                   <div className="dropdown-menu show galleryBox">
@@ -131,10 +145,17 @@ const Nav = () => {
                 onMouseEnter={() => handleActiveDropdown("CRM")}
                 onMouseLeave={handleInactiveDropdown}
               >
-                <Link to="/crm" className="nav-link linkStyle px-0">
+                <NavLink
+                  to="/crm"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "activeLinkStyle nav-link linkStyle px-0"
+                      : "nav-link linkStyle px-0"
+                  }
+                >
                   CRM
                   <span className="dropdown-toggle ms-1"></span>
-                </Link>
+                </NavLink>
                 {isDropdownOpen === "CRM" && (
                   <div className="dropdown-menu show crmBox">
                     <div className="container">
@@ -224,15 +245,29 @@ const Nav = () => {
                 )}
               </div>
 
-              <Link to="/website" className="nav-link linkStyle px-0">
+              <NavLink
+                to="/website"
+                className={({ isActive }) =>
+                  isActive
+                    ? "activeLinkStyle nav-link linkStyle px-0"
+                    : "nav-link linkStyle px-0"
+                }
+              >
                 WEBSITES
-              </Link>
+              </NavLink>
             </div>
             {/* login and sign-up group */}
             <div className=" d-flex ms-auto gap-3 text-center align-items-center">
-              <Link to="/login" className="nav-link linkStyle px-0">
+              <NavLink
+                to="/login"
+                className={({ isActive }) =>
+                  isActive
+                    ? "activeLinkStyle nav-link linkStyle px-0"
+                    : "nav-link linkStyle px-0"
+                }
+              >
                 LOGIN
-              </Link>
+              </NavLink>
               <Link to="/website" className="signUp nav-link px-3">
                 Sign Up
               </Link>

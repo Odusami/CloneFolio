@@ -19,7 +19,19 @@
     }
   }
 }
-
+.activeLinkStyle{
+  color: $color-primary-300;
+  &::after {
+    content: "";
+    padding: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: $color-primary;
+  }
+}
 .galleryBox {
   width: 220px;
   left: 10px;

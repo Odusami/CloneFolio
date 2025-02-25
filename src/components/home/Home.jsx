@@ -22,6 +22,7 @@ const Home = () => {
   }, []);
   return (
     <>
+    <section>
       <div className="coupleBg">
         <section className="homeFirstSection">
           <div className="container ">
@@ -476,6 +477,7 @@ const Home = () => {
               
             {/* Footer */}
             <Footer/>
+      </section>
       </section>
     </>
   );

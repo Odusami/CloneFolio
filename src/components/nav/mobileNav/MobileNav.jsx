@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useRef, useEffect } from "react";
+import { Link, NavLink } from "react-router-dom";
 import { motion, AnimatePresence, easeInOut, easeIn } from "framer-motion";
 import "./MobileNav.scss";
 import { FiMenu } from "react-icons/fi";
@@ -8,11 +8,28 @@ import { FaInstagram, FaTwitter } from "react-icons/fa";
 
 const MobileNav = () => {
   const [isClicked, setIsClicked] = useState(false);
+  const navRef = useRef(null);
 
- 
   const handleClick = () => {
     setIsClicked(!isClicked);
   };
+  // Close nav when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (navRef.current && !navRef.current.contains(event.target)) {
+        setIsClicked(false);
+      }
+    };
+
+    if (isClicked) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isClicked]);
+
   return (
     <>
       <div className="navMobileContainer pb-5 d-lg-none">
@@ -22,6 +39,7 @@ const MobileNav = () => {
         <AnimatePresence>
           {isClicked && (
             <motion.div
+              ref={navRef}
               className="w-100 MobileGroup"
               initial={{ y: -700 }}
               animate={{ y: 0 }}
@@ -29,62 +47,178 @@ const MobileNav = () => {
               transition={{ duration: 0.5, ease: easeInOut }}
             >
               {/* Brand link */}
-              <Link to="/" className="nav-link linkBrand">
+              <Link
+                to="/"
+                onClick={() => setIsClicked(false)}
+                className="nav-link linkBrand"
+              >
                 LIGHTFOLIO
               </Link>
 
               {/* Mobile links */}
               <div className=" d-flex flex-column">
-                <Link to="/" className="nav-link mobileLink">
+                <NavLink
+                  onClick={() => setIsClicked(false)}
+                  to="/"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "activeMobileLink nav-link mobileLink"
+                      : "nav-link mobileLink"
+                  }
+                >
                   HOME
-                </Link>
-                <Link to="/pricing" className="nav-link mobileLink">
+                </NavLink>
+                <NavLink
+                  onClick={() => setIsClicked(false)}
+                  to="/pricing"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "activeMobileLink nav-link mobileLink"
+                      : "nav-link mobileLink"
+                  }
+                >
                   PRICING
-                </Link>
-                <Link to="/theme" className="nav-link mobileLink">
+                </NavLink>
+                <NavLink
+                  onClick={() => setIsClicked(false)}
+                  to="/theme"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "activeMobileLink nav-link mobileLink"
+                      : "nav-link mobileLink"
+                  }
+                >
                   THEMES
-                </Link>
-                <Link to="/feature" className="nav-link mobileLink">
+                </NavLink>
+                <NavLink
+                  onClick={() => setIsClicked(false)}
+                  to="/feature"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "activeMobileLink nav-link mobileLink"
+                      : "nav-link mobileLink"
+                  }
+                >
                   FEATURES
-                </Link>
-                <Link to="/proofing" className="nav-link mobileLink">
+                </NavLink>
+                <NavLink
+                  onClick={() => setIsClicked(false)}
+                  to="/proofing"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "activeMobileLink nav-link mobileLink"
+                      : "nav-link mobileLink"
+                  }
+                >
                   PROOFING
-                </Link>
-                <Link to="/crm" className="nav-link mobileLink">
+                </NavLink>
+                <NavLink
+                  onClick={() => setIsClicked(false)}
+                  to="/crm"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "activeMobileLink nav-link mobileLink"
+                      : "nav-link mobileLink"
+                  }
+                >
                   CRM
-                </Link>
-                <Link to="/contract" className="nav-link mobileLink">
+                </NavLink>
+                <NavLink
+                  onClick={() => setIsClicked(false)}
+                  to="/contract"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "activeMobileLink nav-link mobileLink"
+                      : "nav-link mobileLink"
+                  }
+                >
                   CONTRACTS
-                </Link>
-                <Link to="/invoice" className="nav-link mobileLink">
+                </NavLink>
+                <NavLink
+                  onClick={() => setIsClicked(false)}
+                  to="/invoice"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "activeMobileLink nav-link mobileLink"
+                      : "nav-link mobileLink"
+                  }
+                >
                   INVOICES
-                </Link>
-                <Link to="/session" className="nav-link mobileLink">
+                </NavLink>
+                <NavLink
+                  onClick={() => setIsClicked(false)}
+                  to="/session"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "activeMobileLink nav-link mobileLink"
+                      : "nav-link mobileLink"
+                  }
+                >
                   MINI SESSIONS
-                </Link>
-                <Link to="/booking" className="nav-link mobileLink">
+                </NavLink>
+                <NavLink
+                  onClick={() => setIsClicked(false)}
+                  to="/booking"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "activeMobileLink nav-link mobileLink"
+                      : "nav-link mobileLink"
+                  }
+                >
                   BOOKING SITE
-                </Link>
-                <Link to="/form" className="nav-link mobileLink">
+                </NavLink>
+                <NavLink
+                  onClick={() => setIsClicked(false)}
+                  to="/form"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "activeMobileLink nav-link mobileLink"
+                      : "nav-link mobileLink"
+                  }
+                >
                   FORMS
-                </Link>
-                <Link to="/website" className="nav-link mobileLink">
+                </NavLink>
+                <NavLink
+                  onClick={() => setIsClicked(false)}
+                  to="/website"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "activeMobileLink nav-link mobileLink"
+                      : "nav-link mobileLink"
+                  }
+                >
                   WEBSITES
-                </Link>
-                <Link to="/sign-up" className="nav-link mobileLink">
+                </NavLink>
+                <NavLink
+                  onClick={() => setIsClicked(false)}
+                  to="/sign-up"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "activeMobileLink nav-link mobileLink"
+                      : "nav-link mobileLink"
+                  }
+                >
                   Sign Up
-                </Link>
+                </NavLink>
                 <div className="d-flex align-items-center">
-                  <Link to="/login" className="nav-link mobileLink loginBorder">
+                  <NavLink
+                    onClick={() => setIsClicked(false)}
+                    to="/login"
+                    className={({ isActive }) =>
+                      isActive
+                        ? "activeMobileLink nav-link mobileLink loginBorder"
+                        : "nav-link mobileLink loginBorder"
+                    }
+                  >
                     LOGIN
-                  </Link>
+                  </NavLink>
                   <div className="mobileIcon">
-                    <BsFacebook  />
+                    <BsFacebook />
                   </div>
                   <div className="mobileIcon">
                     <FaInstagram />
                   </div>
-                  <div className="mobileIcon"> 
+                  <div className="mobileIcon">
                     <FaTwitter />
                   </div>
                 </div>
