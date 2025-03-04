@@ -1,0 +1,10 @@
+@import '/src/styles/abstract/variables';
+
+.galleryCardIcon{
+    font-size: 30px;
+    background-color: $color-primary-100;
+    color: $color-tertiary;
+    line-height: 0;
+    padding: 25px;
+    border-radius: 50%;
+}
