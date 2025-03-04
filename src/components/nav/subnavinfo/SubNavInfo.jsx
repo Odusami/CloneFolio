@@ -10,7 +10,7 @@ const SubNavInfo = ({icon, header, title}) => {
           {icon}
         </div>
         <div className="textGroup ms-2">
-          {header} <br /> <p className="mt-2 ">{title}</p>
+          {header} <br /> <p className="mt-1">{title}</p>
         </div>
       </div>
     </>

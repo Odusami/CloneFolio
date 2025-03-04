@@ -10,6 +10,7 @@ import Websites from "./components/pricing/website/Websites";
 import Bundles from "./components/pricing/bundles/Bundles";
 import { AnimatePresence } from "framer-motion";
 import Footer from "./components/home/footer/Footer";
+import Galleries from "./components/galleries/Galleries";
 function App() {
   const location = useLocation();
   return (
@@ -25,6 +26,9 @@ function App() {
             <Route path="studio-manager" element={<StudioManager />} />
             <Route path="website" element={<Websites />} />
             <Route path="bundle" element={<Bundles />} />
+          </Route>
+          <Route path="/gallery" element={<Galleries />}>
+
           </Route>
         </Routes>
 

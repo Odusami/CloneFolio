@@ -69,10 +69,13 @@ const Nav = () => {
                 </NavLink>
 
                 {isDropdownOpen === "gallery" && (
-                  <div className="dropdown-menu show galleryBox">
+                  <div className="dropdown-menu show galleryBox py-lg-3">
+                    <div className="vstack gap-3">
+
+                  
                     <Link
                       to="/gallery/proofing"
-                      className="nav-link px-3 py-0 pt-3"
+                      className="nav-link px-3 py-0"
                     >
                       <SubNavInfo
                         icon={<LuGalleryHorizontalEnd />}
@@ -135,6 +138,7 @@ const Nav = () => {
                         title={"Customize your galleries"}
                       />
                     </Link>
+                    </div>
                   </div>
                 )}
               </div>
@@ -159,8 +163,8 @@ const Nav = () => {
                 {isDropdownOpen === "CRM" && (
                   <div className="dropdown-menu show crmBox">
                     <div className="container">
-                      <div className="row p-2">
-                        <div className="col-6">
+                      <div className="row py-lg-3 px-lg-2">
+                        <div className="col-6 mb-lg-3">
                           <Link
                             to="/crm/studio-manager"
                             className="nav-link p-0 m-0"
@@ -175,7 +179,7 @@ const Nav = () => {
                           </Link>
                         </div>
 
-                        <div className="col-6">
+                        <div className="col-6 mb-lg-3">
                           <Link
                             to="/crs/contract"
                             className="nav-link p-0 m-0 ps-1"
@@ -188,7 +192,7 @@ const Nav = () => {
                           </Link>
                         </div>
 
-                        <div className="col-6">
+                        <div className="col-6 mb-lg-3">
                           <Link to="/crs/invioce" className="nav-link p-0 m-0">
                             <SubNavInfo
                               icon={<LuGalleryHorizontalEnd />}
@@ -198,7 +202,7 @@ const Nav = () => {
                           </Link>
                         </div>
 
-                        <div className="col-6">
+                        <div className="col-6 mb-lg-3">
                           <Link
                             to="/crs/booking"
                             className="nav-link p-0 m-0 ps-1"
