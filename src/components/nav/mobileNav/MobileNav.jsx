@@ -13,6 +13,7 @@ const MobileNav = () => {
   const handleClick = () => {
     setIsClicked(!isClicked);
   };
+
   // Close nav when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -32,14 +33,13 @@ const MobileNav = () => {
 
   return (
     <>
-      <div className="navMobileContainer pb-5 d-lg-none">
+      <div ref={navRef} className="navMobileContainer d-lg-none">
         <div onClick={handleClick} className="mobileNavIcon ms-auto p-1 me-2">
           <FiMenu className="bg-dark text-light fs-1 px-2 rounded" />
         </div>
         <AnimatePresence>
           {isClicked && (
             <motion.div
-              ref={navRef}
               className="w-100 MobileGroup"
               initial={{ y: -700 }}
               animate={{ y: 0 }}

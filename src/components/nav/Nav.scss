@@ -1,5 +1,10 @@
 @import "/src/styles/abstract/variables";
-
+.mainNav{
+  @media (max-width:992px) {
+    display: none;
+  }
+  
+}
 .logoSize {
   width: 100px;
 }

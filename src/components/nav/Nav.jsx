@@ -27,7 +27,7 @@ const Nav = () => {
       <MobileNav />
 
       {/* Desktop Nav */}
-      <nav className="navbar navbar-expand-lg">
+      <nav className="navbar navbar-expand-lg mainNav">
         <div className="container py-2 pt-3">
           <Link to="/" className="navbar-brand d-none d-lg-inline-block">
             <img
