@@ -1,0 +1,30 @@
+@import '/src/styles/abstract/variables';
+.galleryBg{
+    padding: 50px 0;
+    background-color: $color-secondary-200;
+}
+.cardHeaderLink{
+    color: $color-primary-100;
+    &:hover{
+        text-decoration: none;
+        color: $color-tertiary;
+    }
+}
+.cardPadding{
+    @media (max-width: 576px) {
+        padding-left: 60px;
+        padding-right: 60px;
+        background: $color-secondary;
+        
+    }
+    @media (max-width: 377px) {
+        padding-left: 40px;
+        padding-right: 40px;
+        
+    }
+    @media (max-width: 280px) {
+        padding-left: 20px;
+        padding-right: 20px;
+        
+    }
+}

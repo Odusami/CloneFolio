@@ -10,30 +10,35 @@ import Websites from "./components/pricing/website/Websites";
 import Bundles from "./components/pricing/bundles/Bundles";
 import { AnimatePresence } from "framer-motion";
 import Footer from "./components/home/footer/Footer";
-import Galleries from "./components/galleries/Galleries";
+import Galleries from "./components/galleryRoute/galleries/Galleries";
+import DigitalDownloads from "./components/galleryRoute/galleries/digitalDownloads/DigitalDownloads";
+import GalleryRoute from "./components/galleryRoute/GalleryRoute";
 function App() {
   const location = useLocation();
   return (
     <>
-        {location.pathname !== '/' && <Nav/>}
-        
-        {/* <Home/> */}
-        <Routes location={location} key={location.pathname}>
-          <Route path="/" element={<Home />} />
-          <Route path="/pricing" element={<Pricing />}>
-            <Route index element={<Navigate to="client-gallery" replace />} />
-            <Route path="client-gallery" element={<ClientGallery />} />
-            <Route path="studio-manager" element={<StudioManager />} />
-            <Route path="website" element={<Websites />} />
-            <Route path="bundle" element={<Bundles />} />
-          </Route>
-          <Route path="/gallery" element={<Galleries />}>
+      {location.pathname !== "/" && <Nav />}
 
+      {/* <Home/> */}
+      <Routes location={location} key={location.pathname}>
+        <Route path="/" element={<Home />} />
+        <Route path="/pricing" element={<Pricing />}>
+          <Route index element={<Navigate to="client-gallery" replace />} />
+          <Route path="client-gallery" element={<ClientGallery />} />
+          <Route path="studio-manager" element={<StudioManager />} />
+          <Route path="website" element={<Websites />} />
+          <Route path="bundle" element={<Bundles />} />
+        </Route>
+      
+          <Route path="/gallery" element={<GalleryRoute />}>
+            <Route index element={<Galleries />} />
+            <Route path="digital-download" element={<DigitalDownloads />} />
           </Route>
-        </Routes>
-
-        {location.pathname !== '/' &&  <Footer/>}
        
+        
+      </Routes>
+
+      {location.pathname !== "/" && <Footer />}
     </>
   );
 }

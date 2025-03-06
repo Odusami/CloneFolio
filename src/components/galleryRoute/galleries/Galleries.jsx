@@ -21,14 +21,14 @@ const Galleries = () => {
             </h4>
             <img
               src="/public/folio images/devices-models.png"
-              className="w-50 mt-3"
+              className="w-50 mt-4 mb-md-5"
               alt="Laptop Gallery"
             />
           </div>
         </div>
 
         <div className="container">
-          <div className="row row-cols-3">
+          <div className="row row-cols-lg-3 row-cols-md-2 row-cols-sm-2 row-cols-1 justify-content-center">
             {[
               {
                 icon: <FaCalendarDays />,
@@ -155,7 +155,7 @@ const Galleries = () => {
                 path: "/lightroom",
               },
             ].map((content, index) => (
-              <div key={content.header + index} className="col px-md-5 py-5 mb-5">
+              <div key={content.header + index} className="col px-md-5 py-5 mb-5 cardPadding">
                 <GalleryCard icon={content.icon} title={content.title}>
                   {content.path ? (
                     <Link className="cardHeaderLink" to={content.path}>{content.header}</Link>
