@@ -14,6 +14,7 @@ import Galleries from "./components/galleryRoute/galleries/Galleries";
 import DigitalDownloads from "./components/galleryRoute/galleries/digitalDownloads/DigitalDownloads";
 import GalleryRoute from "./components/galleryRoute/GalleryRoute";
 import GalleryVisitors from "./components/galleryRoute/galleries/galleryVisitors/GalleryVisitors";
+import GalleryStore from "./components/galleryRoute/galleries/galleryStore/GalleryStore";
 function App() {
   const location = useLocation();
   return (
@@ -35,6 +36,7 @@ function App() {
             <Route index element={<Galleries />} />
             <Route path="digital-download" element={<DigitalDownloads />} />
             <Route path="visitor-analysis" element={<GalleryVisitors />}/>
+            <Route path="online-store" element={<GalleryStore />}/>
           </Route>
        
         
