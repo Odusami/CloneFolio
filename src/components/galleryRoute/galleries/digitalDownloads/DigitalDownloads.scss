@@ -1,12 +1,12 @@
 @import "/src/styles/abstract/variables";
 .clientDownloadImgSection{
     overflow: hidden;
-    padding-top: 100px;
-    margin-bottom: 100px;
+    padding-top: 60px;
+    margin-bottom: 60px;
     background-color: $color-secondary-300;
     @media (max-width:992px) {
        margin: 0;
-       padding-bottom: 100px;
+       padding-bottom: 60px;
       }
     .clientDownloadImg {
       height: 700px;

@@ -5,16 +5,16 @@ import GalleryCard from "../galleryCard/GalleryCard";
 const GalleryVisitors = () => {
   return (
     <>
-      <section className="clientDownloadImgSection">
+      <section className="clientDownloadImgSection pb-lg-5">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-12 col-sm-5 mb-5 mb-sm-0">
+            <div className="col-12 col-sm-6 col-md-6 col-lg-5 mb-5 mb-sm-0">
               <div className="vstack gap-3 pe-lg-5">
-                <h2 className="mb-3">Client Downloads</h2>
+                <h2 className="mb-3">Gallery Visitors</h2>
                 <h4>
-                  Conveniently allow your clients to download their pictures.
-                  Restrict access and control file sizes at the click of a
-                  button.
+                  Want to know when your clients have viewed your gallery, how
+                  many times and on which devices? Lightfolio analytics gives
+                  you insight into all your gallery visitors.
                 </h4>
                 <div>
                   <button className="mainBtn py-2">GET STARTED</button>
@@ -23,10 +23,10 @@ const GalleryVisitors = () => {
             </div>
 
             {/* Picture col */}
-            <div className="col-12 col-sm-7 ps-md-3 ps-lg-5">
+            <div className="col-12 col-sm-6 col-md-6 col-lg-7  text-center">
               <img
-                src="/public/folio images/client-downloads.jpg"
-                className="clientDownloadImg"
+                src="/public/folio images/gallery-visitor-list.jpg"
+                className="galleryVisitorImg"
                 alt="Client Download"
               />
             </div>
@@ -69,7 +69,6 @@ const GalleryVisitors = () => {
                   content.header
                 )}
               </GalleryCard>
-              
             </div>
           ))}
         </div>
