@@ -27,6 +27,7 @@ const Lightroom = () => {
           </div>
         </div>
       </section>
+
       {/* Text group */}
       <div className="container pb-5 pt-5 pt-lg-0">
         <div className="vstack align-items-center text-center gap-4 pb-5">

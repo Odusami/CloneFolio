@@ -19,6 +19,7 @@ import GalleryDirectories from "./components/galleryRoute/galleries/galleryDirec
 import Themes from "./components/galleryRoute/galleries/themes/Themes";
 import Fonts from "./components/fonts/Fonts";
 import Lightroom from "./components/lightroom/Lightroom";
+import FileTypes from "./components/fileTypes/FileTypes";
 function App() {
   const location = useLocation();
   return (
@@ -46,6 +47,7 @@ function App() {
           </Route>
           <Route path="/fonts" element={<Fonts />}/>
           <Route path="/lightroom" element={<Lightroom />}/>
+          <Route path="/supported-file-types" element={<FileTypes />}/>
         
       </Routes>
 
