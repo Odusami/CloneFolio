@@ -19,17 +19,27 @@ const Lightroom = () => {
             {/* Picture col */}
             <div className="col-12 col-sm-7 ps-md-3 ps-lg-5">
               <img
-                src="/public/folio images/client-downloads.jpg"
+                src="/public/folio images/lr-computer.jpg"
                 className="clientDownloadImg"
-                alt="Client Download"
+                alt="Lightroom"
               />
             </div>
           </div>
         </div>
       </section>
-
-      <div>
-        <button className="mainBtn py-2">GET STARTED</button>
+      {/* Text group */}
+      <div className="container pb-5 pt-5 pt-lg-0">
+        <div className="vstack align-items-center text-center gap-4 pb-5">
+          <h2 className="fw-medium">Plug-in Download</h2>
+          <h4 className="w-75 colorBlack-500 lh-base">
+            Click the button below to download the official Lightfolio Lightroom
+            plug-in. Our plug-in allows you to directly upload images from
+            Lightroom Classic to your Lightfolio account in the cloud.
+          </h4>
+          <div>
+            <button className="mainBtn py-2">GET STARTED</button>
+          </div>
+        </div>
       </div>
     </>
   );
