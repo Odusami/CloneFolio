@@ -1,40 +1,46 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
-@import './abstract/variables';
-@import './abstract/mixins';
-@import './base/typography';
+@import "./abstract/variables";
+@import "./abstract/mixins";
+@import "./base/typography";
 
-body{
-    overflow: hidden;
+body {
+  overflow: hidden;
 }
-.colorBlack{
-    color: $color-primary;
+.colorBlack {
+  color: $color-primary;
 }
-.colorBlack-100{
-    color: $color-primary-100;
+.colorBlack-100 {
+  color: $color-primary-100;
 }
-.colorBlack-200{
-    color: $color-primary-200;
+.colorBlack-200 {
+  color: $color-primary-200;
 }
-.colorBlack-300{
-    color: $color-primary-300;
+.colorBlack-300 {
+  color: $color-primary-300;
 }
-.colorBlack-400{
-    color: $color-primary-400;
+.colorBlack-400 {
+  color: $color-primary-400;
 }
-.colorBlack-500{
-    color: $color-primary-500;
+.colorBlack-500 {
+  color: $color-primary-500;
 }
-.colorBlack-600{
-    color: $color-primary-600;
+.colorBlack-600 {
+  color: $color-primary-600;
 }
-.colorWhite{
-    color: $color-secondary;
+.colorWhite {
+  color: $color-secondary;
 }
-.colorWhite-100{
-    color: $color-secondary-100;
+.colorWhite-100 {
+  color: $color-secondary-100;
 }
 
+.colorTertiary {
+  color: $color-tertiary;
+}
+.colorTertiary-100 {
+  color: $color-tertiary-100;
+}
 
-.font1{
-    font-family: $font-primary;
+.font1 {
+  font-family: $font-primary;
 }

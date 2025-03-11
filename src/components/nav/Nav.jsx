@@ -129,7 +129,7 @@ const Nav = () => {
                     </Link>
 
                     <Link
-                      to="/gallery/directories"
+                      to="/gallery/themes"
                       className="nav-link px-3 py-0"
                     >
                       <SubNavInfo

@@ -41,7 +41,7 @@ const GalleryStore = () => {
       <div className="vstack align-items-center py-5 text-center">
           <h2 className="">How It Works</h2>
           <p className="line my-4"></p>
-          <h4 className='w-75 storeTitle colorBlack-400 lh-base'> Selling with Lightfolio is easy. Use the sales setup wizard to painlessly enable your online store. Set your own prices, shipping, and sales taxes. Choose to fulfill your own orders or use one of our professional lab partners. Lastly, connect to Stripe or PayPal to process online payments. Now you're ready to go!</h4>
+          <h4 className='w-75 storeTitle colorBlack-500 lh-base'> Selling with Lightfolio is easy. Use the sales setup wizard to painlessly enable your online store. Set your own prices, shipping, and sales taxes. Choose to fulfill your own orders or use one of our professional lab partners. Lastly, connect to Stripe or PayPal to process online payments. Now you're ready to go!</h4>
         </div>
         <div className="row row-cols-lg-3 row-cols-md-2 row-cols-sm-2 row-cols-1 justify-content-center">
           {[

@@ -16,6 +16,7 @@ import GalleryRoute from "./components/galleryRoute/GalleryRoute";
 import GalleryVisitors from "./components/galleryRoute/galleries/galleryVisitors/GalleryVisitors";
 import GalleryStore from "./components/galleryRoute/galleries/galleryStore/GalleryStore";
 import GalleryDirectories from "./components/galleryRoute/galleries/galleryDirectories/GalleryDirectories";
+import Themes from "./components/galleryRoute/galleries/themes/Themes";
 function App() {
   const location = useLocation();
   return (
@@ -39,6 +40,7 @@ function App() {
             <Route path="visitor-analysis" element={<GalleryVisitors />}/>
             <Route path="online-store" element={<GalleryStore />}/>
             <Route path="directories" element={<GalleryDirectories />}/>
+            <Route path="themes" element={<Themes />}/>
           </Route>
        
         
