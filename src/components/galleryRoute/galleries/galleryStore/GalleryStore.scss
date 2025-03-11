@@ -1,0 +1,10 @@
+.storeTitle{
+    @media (max-width: 565px) {
+        // width: 100% !important;
+        text-align: justify;
+    }
+    @media (max-width: 278px) {
+        width: 90% !important;
+        
+    }
+}
