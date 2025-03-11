@@ -1,8 +1,13 @@
 import './ImageTextGroup.scss';
 
-const ImageTextGroup = () => {
+const ImageTextGroup = ({image, text}) => {
   return (
-    <div>ImageTextGroup</div>
+    <>
+      <div className='text-center'>
+        <img src={image} className='img-fluid imgShadow' alt={text} />
+        <h4 className='text-uppercase fw-medium mt-3'>{text}</h4>
+      </div>
+    </>
   )
 }
 

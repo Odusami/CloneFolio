@@ -14,13 +14,13 @@ const PhotoMockup = ({laptop, mobile, text}) => {
         <img
           src={laptop}
           className="laptopMockup img-fluid"
-          alt="London"
+          alt={text}
         />
 
         <img
           src={mobile}
           className={hovered ? "mobileMockup" : "noMobileMockup"}
-          alt="London Mobile"
+          alt={text}
         />
 
         <h4

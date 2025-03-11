@@ -4,7 +4,7 @@ import ImageTextGroup from "./imageTextGroup/ImageTextGroup";
 const Fonts = () => {
   return (
     <>
-      <section>
+      <section className="greySection">
         <div className="container">
           <div className="vstack align-items-center text-center gap-4">
             <h2 className="fw-medium">Fonts</h2>
@@ -19,7 +19,43 @@ const Fonts = () => {
           </div>
         </div>
 
-        <ImageTextGroup />
+        {/* Font sytle display */}
+        <div className="container">
+          <div className="row row-cols-lg-3 row-cols-md-2 row-cols-sm-2 row-cols-1 mt-5">
+            {[
+              {
+                image: "/public/folio images/fonts-merriweather.jpg",
+                text: "Marriweather",
+              },
+              {
+                image: "/public/folio images/fonts-raleway.jpg",
+                text: "Raleway",
+              },
+              {
+                image: "/public/folio images/fonts-so-lovely.jpg",
+                text: "So Lovely",
+              },
+              {
+                image: "/public/folio images/fonts-fashionista-black.jpg",
+                text: "Fashionista Black",
+              },
+              {
+                image: "/public/folio images/fonts-amatic-sc.jpg",
+                text: "Amatic Sc",
+              },
+              {
+                image: "/public/folio images/fonts-droid-serif.jpg",
+                text: "Droid Serif",
+              },
+            ].map((content, index) => (
+              <div key={`${content.text}+${index}`} className="col mb-5 px-4">
+                <ImageTextGroup image={content.image} text={content.text} />
+              </div>
+            ))}
+          </div>
+        </div>
+
+      
       </section>
     </>
   );

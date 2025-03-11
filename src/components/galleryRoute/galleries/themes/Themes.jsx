@@ -4,7 +4,7 @@ import "./Themes.scss";
 const Themes = () => {
   return (
     <>
-      <section className="themesSection">
+      <section className="greySection">
         <div className="container">
           <div className="vstack align-items-center text-center gap-4">
             <h2 className="fw-medium">Cover Themes</h2>
