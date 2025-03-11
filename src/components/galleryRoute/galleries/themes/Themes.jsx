@@ -4,10 +4,10 @@ import "./Themes.scss";
 const Themes = () => {
   return (
     <>
-      <section>
+      <section className="themesSection">
         <div className="container">
           <div className="vstack align-items-center text-center gap-4">
-            <h2>Cover Themes</h2>
+            <h2 className="fw-medium">Cover Themes</h2>
             <h4 className="w-75 colorBlack-500 lh-base">
               You have full control of each of your client galleries, starting
               with the cover page. Choose a layout and then customize the text,

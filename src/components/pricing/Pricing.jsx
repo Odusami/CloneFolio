@@ -43,7 +43,7 @@ const Pricing = () => {
     <>
       <div className="pricingMainHeadBody">
         <div className="container text-center">
-          <h2 className="colorWhite">
+          <h2 className="colorWhite fw-medium">
             Modern software solutions for photography studios
           </h2>
           <h4 className="colorBlack-500 mt-3">

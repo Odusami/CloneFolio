@@ -10,7 +10,7 @@ const Galleries = () => {
       <div className="galleryBg">
         <div className="container">
           <div className="text-center vstack lh-base align-items-center gap-4">
-            <h2>Client Galleries - Feature List</h2>
+            <h2 className="fw-medium">Client Galleries - Feature List</h2>
             <h4 className="w-75 colorBlack-500">
               Lightfolio is a fully featured,{" "}
               <Link to={"/"} className="colorBlack-100">
