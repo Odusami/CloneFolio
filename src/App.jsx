@@ -20,6 +20,7 @@ import Themes from "./components/galleryRoute/galleries/themes/Themes";
 import Fonts from "./components/fonts/Fonts";
 import Lightroom from "./components/lightroom/Lightroom";
 import FileTypes from "./components/fileTypes/FileTypes";
+import Proofing from "./components/proofing/Proofing";
 function App() {
   const location = useLocation();
   return (
@@ -39,6 +40,7 @@ function App() {
       
           <Route path="/gallery" element={<GalleryRoute />}>
             <Route index element={<Galleries />} />
+            <Route path="proofing" element={<Proofing />}/>
             <Route path="digital-download" element={<DigitalDownloads />} />
             <Route path="visitor-analysis" element={<GalleryVisitors />}/>
             <Route path="online-store" element={<GalleryStore />}/>
@@ -48,6 +50,7 @@ function App() {
           <Route path="/fonts" element={<Fonts />}/>
           <Route path="/lightroom" element={<Lightroom />}/>
           <Route path="/supported-file-types" element={<FileTypes />}/>
+         
         
       </Routes>
 
