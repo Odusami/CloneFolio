@@ -1,0 +1,10 @@
+@media (max-width: 565px) {
+  .storeTitle {
+    text-align: justify;
+  }
+}
+@media (max-width: 278px) {
+  .storeTitle {
+    width: 90% !important;
+  }
+}/*# sourceMappingURL=GalleryStore.css.map */

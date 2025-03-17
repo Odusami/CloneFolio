@@ -3,9 +3,7 @@
 @import "./abstract/mixins";
 @import "./base/typography";
 
-body {
-  overflow: hidden;
-}
+
 .colorBlack {
   color: $color-primary;
 }

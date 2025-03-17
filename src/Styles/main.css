@@ -195,6 +195,14 @@ h6 {
   color: #dddddd;
 }
 
+.colorTertiary {
+  color: #ddad59;
+}
+
+.colorTertiary-100 {
+  color: #ad7d2b;
+}
+
 .font1 {
   font-family: "Geist", serif;
 }/*# sourceMappingURL=main.css.map */

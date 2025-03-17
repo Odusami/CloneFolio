@@ -1,8 +1,19 @@
 import { Link } from "react-router-dom";
 import "./Galleries.scss";
-import GalleryCard from "./galleryCard/GalleryCard";
-import { FaCalendarDays } from "react-icons/fa6";
 import { div } from "framer-motion/client";
+import GalleryCard from "./galleryCard/GalleryCard";
+import { FaCalendarDays, FaLock } from "react-icons/fa6";
+import { FaStamp, FaTwitter, FaPhotoVideo } from "react-icons/fa";
+import { CiSquareAlert } from "react-icons/ci";
+import { MdOutlinePhoneAndroid, MdAddCircle, MdCrop, MdMailOutline, MdLightMode } from "react-icons/md";
+import { BiSolidDollarCircle } from "react-icons/bi";
+import { TfiMenuAlt } from "react-icons/tfi";
+import { ImDownload } from "react-icons/im";
+import { AiFillFileAdd } from "react-icons/ai";
+import { TbWorld } from "react-icons/tb";
+import { VscColorMode } from "react-icons/vsc";
+import { ImFontSize } from "react-icons/im";
+import { GrGallery } from "react-icons/gr";
 
 const Galleries = () => {
   return (
@@ -38,117 +49,117 @@ const Galleries = () => {
                 path: "/gallery/proofing",
               },
               {
-                icon: <FaCalendarDays />,
+                icon: <FaStamp />,
                 header: "Watermarks",
                 title:
                   "Protect your work with text or image watermarks. Control placement and opacity.",
               },
               {
-                icon: <FaCalendarDays />,
+                icon: <CiSquareAlert />,
                 header: "Visitor Analytics",
                 title:
                   "Not only can you track how many visitors you have, but you can also monitor geolocation, web browser and device type.",
                 path: "/gallery/visitor-analytics",
               },
               {
-                icon: <FaCalendarDays />,
+                icon: <MdOutlinePhoneAndroid />,
                 header: "Responsive Design",
                 title:
                   "Over 50% of web traffic today is on mobile devices. Our galleries are designed to look great on desktop computer, tablet or phone.",
               },
               {
-                icon: <FaCalendarDays />,
+                icon: <MdAddCircle />,
                 header: "Favorites",
                 title:
                   "Allow your clients to create and save collections of their favorite images. You can easily view their selections and then export filenames for use in Lightroom.",
               },
               {
-                icon: <FaCalendarDays />,
+                icon: <BiSolidDollarCircle />,
                 header: "Online Sales",
                 title:
                   "Configure your galleries so you can sell prints, albums, digital downloads and more. Zero commissions.",
                 path: "/gallery/online-store",
               },
               {
-                icon: <FaCalendarDays />,
+                icon: <TfiMenuAlt />,
                 header: "Gallery Directories",
                 title:
                   "Create a custom portal so your users can see a list of your publicly shared galleries.",
                 path: "/gallery/directories",
               },
               {
-                icon: <FaCalendarDays />,
+                icon: <FaTwitter />,
                 header: "Social Media Sharing",
                 title:
                   "Enable this option to allow gallery visitors to easily share through Facebook, Twitter and email",
               },
               {
-                icon: <FaCalendarDays />,
+                icon: <ImDownload />,
                 header: "Downloads",
                 title:
                   "Enable downloading for the entire gallery or just for individual images. You set the download file resolution.",
                 path: "/gallery/client-download",
               },
               {
-                icon: <FaCalendarDays />,
+                icon: <FaLock />,
                 header: "Password Protection",
                 title:
                   "Each individual gallery can be set to require a password to view and/or download images.",
               },
               {
-                icon: <FaCalendarDays />,
+                icon: <MdCrop />,
                 header: "Cover Themes",
                 title:
                   "Every gallery has a cover page. Choose from 7 templates and customize images, text, font face, alignment and more.",
                 path: "/gallery/cover-theme",
               },
               {
-                icon: <FaCalendarDays />,
+                icon: <FaPhotoVideo />,
                 header: "Thumbnail Styles",
                 title:
                   "Further customize your gallery by choosing a thumbnail style. Set the margin between images and select the menu orientation.",
                 path: "/gallery/cover-theme/thumbnail-style",
               },
               {
-                icon: <FaCalendarDays />,
+                icon: <AiFillFileAdd />,
                 header: "Supported File Types",
                 title:
                   "Lightfolio supports jpg, gif, png and tif. Max file size is 70MB. (Support for max file sizes up to 1GB+ is available upon request)",
                 path: "/supported-file-types",
               },
               {
-                icon: <FaCalendarDays />,
+                icon: <TbWorld />,
                 header: "Custom Domains",
                 title:
                   "You can use your own domain, www.mycompany.com, to transparently connect to Lightfolio galleries.",
               },
               {
-                icon: <FaCalendarDays />,
+                icon: <VscColorMode />,
                 header: "Color Schemes",
                 title: "Choose between a light and dark color scheme.",
               },
               {
-                icon: <FaCalendarDays />,
+                icon: <MdMailOutline />,
                 header: "Email Invitations",
                 title:
                   "Create and send customized HTML emails, inviting your clients to view their galleries.",
               },
               {
-                icon: <FaCalendarDays />,
+                icon: <ImFontSize />,
                 header: "Fonts",
                 title:
                   "Typography is important. Choose from over 20 font options when customizing your gallery cover.",
                 path: "/fonts",
               },
               {
-                icon: <FaCalendarDays />,
+                icon: <GrGallery />,
                 header: "Pro Lab Partners",
                 title:
                   "Offer professional prints, canvas wraps and more with our lab partners: Bay Photo Lab and Loxley Colour.",
                 path: "/gallery/lab-partners",
               },
               {
-                icon: <FaCalendarDays />,
+                icon: <MdLightMode />,
                 header: "Lightroom",
                 title:
                   "Easily upload and sync your galleries by using our Lightroom plug-in.",
