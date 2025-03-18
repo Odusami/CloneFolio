@@ -21,6 +21,8 @@ import Fonts from "./components/fonts/Fonts";
 import Lightroom from "./components/lightroom/Lightroom";
 import FileTypes from "./components/fileTypes/FileTypes";
 import Proofing from "./components/proofing/Proofing";
+import CrmRoute from "./components/crmRoute/CrmRoute";
+import Crm from "./components/crmRoute/crm/Crm";
 function App() {
   const location = useLocation();
   return (
@@ -51,6 +53,10 @@ function App() {
           <Route path="/lightroom" element={<Lightroom />}/>
           <Route path="/supported-file-types" element={<FileTypes />}/>
          
+         <Route path="/crm" element={<CrmRoute />}>
+          <Route index element={<Crm />}/>
+
+         </Route>
         
       </Routes>
 

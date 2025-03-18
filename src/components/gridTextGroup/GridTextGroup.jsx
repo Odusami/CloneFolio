@@ -7,7 +7,7 @@ const GridTextGroup = ({headerColor, btnColor, subHeader, header, title, btnText
 
     const headerStyle = headerColor === 'grey' 
     ? 'colorBlack-600 textLabel text-uppercase'
-    : 'colorTertiary textLabel';
+    : 'colorTertiary textLabel fw-semibold';
 
     const btnStyle = btnColor === 'grey'
     ? 'textBtn'

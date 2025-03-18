@@ -197,7 +197,7 @@ const Proofing = () => {
       {/* 2*2 */}
       <section className="proofing3Section">
         <div className="container">
-          <div className="row  py-5 align-items-center">
+          <div className="row  py-5 ">
             <div className="col-12 col-md-6 px-lg-5">
               <div className="proofingImgPosition">
                 <div className="d-flex justify-content-center align-items-center">
