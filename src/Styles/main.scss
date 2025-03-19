@@ -42,3 +42,20 @@
 .font1 {
   font-family: $font-primary;
 }
+
+.font3 {
+  font-family: $font-tertiary;
+}
+.linkH{
+  text-decoration: none;
+  color: inherit;
+  &:hover{
+    color: $color-tertiary;
+  }
+}
+.paddingS{
+  padding: 100px 0;
+  @media (max-width:575px) {
+    padding: 50px 0;
+  }
+}

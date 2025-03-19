@@ -5,6 +5,7 @@
 /*Colors*/
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 /*Fonts*/
 /*Colors*/
 body {
@@ -205,4 +206,25 @@ h6 {
 
 .font1 {
   font-family: "Geist", serif;
+}
+
+.font3 {
+  font-family: "Permanent Marker", serif;
+}
+
+.linkH {
+  text-decoration: none;
+  color: inherit;
+}
+.linkH:hover {
+  color: #ddad59;
+}
+
+.paddingS {
+  padding: 100px 0;
+}
+@media (max-width: 575px) {
+  .paddingS {
+    padding: 50px 0;
+  }
 }/*# sourceMappingURL=main.css.map */
