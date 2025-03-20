@@ -166,7 +166,7 @@ const Nav = () => {
                       <div className="row py-lg-3 px-lg-2">
                         <div className="col-6 mb-lg-3">
                           <Link
-                            to="/crm/studio-manager"
+                            to="/crm"
                             className="nav-link p-0 m-0"
                           >
                             <SubNavInfo
@@ -181,7 +181,7 @@ const Nav = () => {
 
                         <div className="col-6 mb-lg-3">
                           <Link
-                            to="/crs/contract"
+                            to="/crm/contract"
                             className="nav-link p-0 m-0 ps-1"
                           >
                             <SubNavInfo
@@ -193,7 +193,7 @@ const Nav = () => {
                         </div>
 
                         <div className="col-6 mb-lg-3">
-                          <Link to="/crs/invioce" className="nav-link p-0 m-0">
+                          <Link to="/crm/invioce" className="nav-link p-0 m-0">
                             <SubNavInfo
                               icon={<LuGalleryHorizontalEnd />}
                               header={"Invoices"}
@@ -204,7 +204,7 @@ const Nav = () => {
 
                         <div className="col-6 mb-lg-3">
                           <Link
-                            to="/crs/booking"
+                            to="/crm/booking"
                             className="nav-link p-0 m-0 ps-1"
                           >
                             <SubNavInfo
@@ -218,7 +218,7 @@ const Nav = () => {
                         </div>
 
                         <div className="col-6">
-                          <Link to="/crs/session" className="nav-link p-0 m-0">
+                          <Link to="/crm/session" className="nav-link p-0 m-0">
                             <SubNavInfo
                               icon={<LuGalleryHorizontalEnd />}
                               header={"Mini Sessions"}
@@ -231,7 +231,7 @@ const Nav = () => {
 
                         <div className="col-6">
                           <Link
-                            to="/crs/form"
+                            to="/crm/form"
                             className="nav-link p-0 m-0 ps-1"
                           >
                             <SubNavInfo
