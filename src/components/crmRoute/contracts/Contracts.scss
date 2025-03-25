@@ -1,1 +1,101 @@
-@import '/src/styles/abstract/variables';
+@import "/src/styles/abstract/variables";
+.contractOneSection {
+  background: linear-gradient(
+    180deg,
+    rgba(245, 245, 245, 1) 0%,
+    rgba(254, 254, 254, 1) 5%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  padding-top: 30px;
+  //
+  .coverGroup {
+    position: relative;
+
+    padding-top: 100px;
+    @media (max-width: 1200px) {
+      padding-top: 5vw;
+    }
+    .img1 {
+      position: absolute;
+      left: 0;
+      top: 0;
+      @media (max-width: 1200px) {
+        width: 20vw;
+      }
+    }
+    .img2 {
+      position: absolute;
+      top: 0;
+      right: 15%;
+      @media (max-width: 1200px) {
+        width: 20vw;
+      }
+    }
+    .img3 {
+      position: absolute;
+      top: 0;
+      right: 0;
+      @media (max-width: 1200px) {
+        width: 20vw;
+      }
+    }
+  }
+}
+.contractTwoSection {
+  padding: 50px 0;
+  background-color: $color-secondary-200;
+  .contractGrid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    div {
+      max-width: 300px;
+      img {
+        transition: all 0.3s ease-out;
+        &:hover {
+          transform: translateY(-10px);
+        }
+      }
+    }
+  }
+}
+.contractThreeSection {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  background-color: $color-secondary-300;
+  .gridGroup {
+    background-color: $color-secondary;
+    width: 210px;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+    margin: 0 auto;
+    border-radius: 10px;
+    @media (max-width:483px) {
+        text-align: center;
+        align-items: center;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+    @media (max-width:236px) {
+        width: 100%;
+        height: 200px;
+    }
+
+    .iconP {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 65px;
+      height: 65px;
+      border-radius: 50%;
+      background-color: $color-secondary-300;
+      font-size: 40px;
+      color: $color-tertiary;
+   
+    }
+  }
+  
+}
