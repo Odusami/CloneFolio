@@ -6,9 +6,83 @@ import { RiQuillPenLine } from "react-icons/ri";
 import { PiCurrencyCircleDollarLight } from "react-icons/pi";
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
 import { PiSignatureLight } from "react-icons/pi";
+
 import { div } from "framer-motion/client";
+import Faq from "../../home/faq/Faq";
+import CrmAlbumGroup from "./crmAlbumGroup/CrmAlbumGroup";
 
 const Contracts = () => {
+  const faqData = {
+    id: "contractsFaq",
+    content: [
+      {
+        id: "contractsFaq1",
+        header: "What is a photography contract?",
+        title:
+          "A photography contract is a legally binding agreement between a photographer and their client(s). It defines the rights and obligations of the parties, to include payments, deliverables, schedules, etc. A good contract will also cover copyright, usage rights, limits of liability and more.",
+      },
+      {
+        id: "contractsFaq2",
+        header: "Do I need a photography contract?",
+        title:
+          "Absolutely. A contract is necessary to protect your rights and minimize your risks when entering into an agreement with your client(s).",
+      },
+      {
+        id: "contractsFaq3",
+        header: "What should my contract include?",
+        title: (
+          <>
+            At a minimum, your contract should include the following details:
+            <ul>
+              <li>
+                Identify the relevant parties with full contact information
+              </li>
+              <li>
+                Cost of services, payment schedule and terms of any deposit (is
+                it refundable)
+              </li>
+              <li>Schedule identifying locations and start and end times</li>
+              <li>
+                Spell out the deliverables — what the client should expect to
+                receive
+              </li>
+              <li>
+                Delivery schedule that informs the client when they should
+                expect to receive any finished goods or downloads
+              </li>
+              <li>
+                Intellectual property rights, such as copyright, client usage
+                rights and model releases
+              </li>
+              <li>Cancellation policy</li>
+              <li>
+                Signatures for all relevant parties (the photographer and each
+                client)
+              </li>
+            </ul>
+          </>
+        ),
+      },
+      {
+        id: "contractsFaq4",
+        header: "What makes a contract legally binding?",
+        title:
+          "A legally valid contract should include terms that specify what services and goods are being offered in exchange for specific consideration/compensation. The contract must document the acceptance of this offer.",
+      },
+      {
+        id: "contractsFaq5",
+        header: "How do I use the free templates?",
+        title:
+          "Lightfolio has over a dozen free contract templates covering wedding photography, second shooters, print releases and more. Simply select your template, identify your clients, customize the terms and then send it out for signing. It's convenient and all done easily online.",
+      },
+      {
+        id: "contractsFaq6",
+        header: "How do I get my contract signed?",
+        title:
+          "With Lightfolio, after you have completed drafting your contract, the document is sent to your client(s) by email where they can view your contract and legally sign online. Once the contract is signed by all parties, a PDF is created that you and your clients can save for your permanent record.",
+      },
+    ],
+  };
   return (
     <>
       <section className="contractOneSection">
@@ -129,21 +203,8 @@ const Contracts = () => {
                 title: "Sample contract for photo booth services",
               },
             ].map((content, index) => (
-              <div key={content.header + index} className="col mb-5">
-                <div className="contractGrid">
-                  <div>
-                    <img
-                      src={content.image}
-                      alt={content.title}
-                      className="img-fluid imgShadow rounded"
-                    />
-                    <h4 className="fw-semibold m-0 mb-1 mt-3">
-                      {content.header}
-                    </h4>
-                    <p className="colorBlack-500">{content.title}</p>
-                  </div>
-                </div>
-              </div>
+                <CrmAlbumGroup content={content} index={index}/>
+         
             ))}
           </div>
         </div>
@@ -222,8 +283,8 @@ const Contracts = () => {
         </div>
 
         {/* Online Payments */}
-        <div className="row row-cols-1 row-cols-md-2 gap-3 gap-md-0 ">
-          <div className="col">
+        <div className="row row-cols-1 row-cols-md-2 gap-4 gap-md-0 ">
+          <div className="col order-last order-md-first">
             <GridTextGroup
               subHeader={"Online Payments"}
               headerColor={"grey"}
@@ -234,7 +295,7 @@ const Contracts = () => {
               btnText={"Get Started"}
             />
           </div>
-          <div className="col text-center">
+          <div className="col text-center order-first order-md-last">
             <img
               src="/public/folio images/invoice-2.gif"
               className="img-fluid w-75"
@@ -244,25 +305,72 @@ const Contracts = () => {
         </div>
 
         {/* Legally Binding */}
-        <div className="row row-cols-1 row-cols-md-2 gap-3 gap-md-0 paddingS">
-              <div className="col text-center">
-                <img
-                  src="/public/folio images/signature.gif"
-                  className="img-fluid w-75 imgShadow rounded"
-                  alt="Cover Page"
-                />
-              </div>
-              <div className="col">
-                <GridTextGroup
-                  subHeader={"Legally Binding"}
-                  headerColor={"grey"}
-                  header={"Confidently use online, legally binding documents"}
-                  title={"The use of online contracts and e-signatures is now quite commonplace. Lightfolio Documents fully adheres to national and international standards as outlined in laws such as the ESIGN and UETA Acts."}
-                  btnText={'Get Started'}
-                />
-              </div>
+        <div className="row row-cols-1 row-cols-md-2 gap-4 gap-md-0 paddingS">
+          <div className="col text-center">
+            <img
+              src="/public/folio images/signature.gif"
+              className="img-fluid w-75 imgShadow rounded"
+              alt="Cover Page"
+            />
+          </div>
+          <div className="col">
+            <GridTextGroup
+              subHeader={"Legally Binding"}
+              headerColor={"grey"}
+              header={"Confidently use online, legally binding documents"}
+              title={
+                "The use of online contracts and e-signatures is now quite commonplace. Lightfolio Documents fully adheres to national and international standards as outlined in laws such as the ESIGN and UETA Acts."
+              }
+              btnText={"Get Started"}
+            />
+          </div>
+        </div>
+        <div className="row justify-content-center paddingS">
+          <div className="col-12 col-md-6 mb-3">
+            <div className="vstack gap-2">
+              <h6 className="colorBlack-600 textLabel">FAQ</h6>
+              <h2>Questions about photography contracts?</h2>
+              <img
+                src="/public/folio images/faq.jpg"
+                className="img-fluid w-25 rounded"
+                alt="Faq"
+              />
             </div>
+          </div>
+          <div className="col-12 col-md-6">
+            <Faq faqData={faqData} />
+          </div>
+        </div>
       </div>
+
+      {/* Additional Features */}
+      <section>
+        <div className="container">
+            <div className="featuresBg rounded py-4">
+
+           
+            <h4 className="fs-3 text-center mb-4">Additional Features</h4>
+            <div className="row row-cols-1 row-cols-sm-3 row-cols-md-4 justify-content-center align-items-center gap-3">
+                {[
+                    {icon: <IoIosCheckmarkCircleOutline />, title: "Mobile friendly"},
+                    {icon: <IoIosCheckmarkCircleOutline />, title: "Building blocks"},
+                    {icon: <IoIosCheckmarkCircleOutline />, title: " Audit trail"},
+                    {icon: <IoIosCheckmarkCircleOutline />, title: "Client data"},
+                    {icon: <IoIosCheckmarkCircleOutline />, title: "Unlimited signers"},
+                    {icon: <IoIosCheckmarkCircleOutline />, title: "Templates"},
+                    {icon: <IoIosCheckmarkCircleOutline />, title: "More"},
+                ].map((content, index)=>(
+                    <div key={content.title + index} className="col">
+                        <div className="hstack gap-1 align-items-center justify-content-center">
+                            <h4 className="mb-1 fs-5">{content.icon}</h4>
+                            <h4 className="mb-0">{content.title}</h4>
+                        </div>
+                    </div>
+                ))}
+            </div>
+            </div>
+        </div>
+      </section>
     </>
   );
 };
