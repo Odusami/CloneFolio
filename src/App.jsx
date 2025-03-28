@@ -25,6 +25,7 @@ import CrmRoute from "./components/crmRoute/CrmRoute";
 import Crm from "./components/crmRoute/crm/Crm";
 import Contracts from "./components/crmRoute/contracts/Contracts";
 import Invoice from "./components/crmRoute/invoices/invoice";
+import BookingSite from "./components/crmRoute/bookingSite/BookingSite";
 function App() {
   const location = useLocation();
   return (
@@ -59,6 +60,7 @@ function App() {
           <Route index element={<Crm />}/>
           <Route path="contract" element={<Contracts />}/>
           <Route path="invioce" element = {<Invoice />} />
+          <Route path="booking" element ={<BookingSite />}/>
 
          </Route>
         

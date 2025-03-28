@@ -2,17 +2,10 @@
 .invoiceFirstSection {
   overflow: hidden;
   // overflow-x: hidden;
-  background: linear-gradient(
-    180deg,
-    rgba(248, 245, 224, 1) 0%,
-    rgba(248, 245, 224, 1) 95%,
-    rgba(248, 245, 224, 1) 95%,
-    rgba(255, 255, 255, 1) 95%,
-    rgba(255, 255, 255, 1) 100%
-  );
+  background: linear-gradient(180deg, rgba(251,247,240,1) 0%, rgba(251,247,240,1) 95%, rgba(248,245,224,1) 95%, rgba(255,255,255,1) 95%, rgba(255,255,255,1) 100%);
   @media (max-width: 767px) {
     padding: 50px 0;
-    background: $color-secondary-300;
+    background: $color-secondary-400;
   }
 
   .imgPosition {
