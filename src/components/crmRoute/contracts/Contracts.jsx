@@ -361,7 +361,7 @@ const Contracts = () => {
                     {icon: <IoIosCheckmarkCircleOutline />, title: "More"},
                 ].map((content, index)=>(
                     <div key={content.title + index} className="col">
-                        <div className="hstack gap-1 align-items-center justify-content-center">
+                        <div className="hstack gap-1 ">
                             <h4 className="mb-1 fs-5">{content.icon}</h4>
                             <h4 className="mb-0">{content.title}</h4>
                         </div>
