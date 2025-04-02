@@ -3,7 +3,9 @@
 @import "./abstract/mixins";
 @import "./base/typography";
 
-
+body{
+  scroll-behavior: smooth;
+}
 .colorBlack {
   color: $color-primary;
 }

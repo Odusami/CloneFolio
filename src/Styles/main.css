@@ -160,6 +160,10 @@ h6 {
   }
 }
 
+body {
+  scroll-behavior: smooth;
+}
+
 .colorBlack {
   color: #000000;
 }
