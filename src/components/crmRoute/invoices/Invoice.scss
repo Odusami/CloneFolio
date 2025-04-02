@@ -1,5 +1,6 @@
 @import "/src/styles/abstract/variables";
-.invoiceFirstSection {
+.invoiceFirstSection,
+.formsFirstSection {
   overflow: hidden;
   // overflow-x: hidden;
   background: linear-gradient(180deg, rgba(251,247,240,1) 0%, rgba(251,247,240,1) 95%, rgba(248,245,224,1) 95%, rgba(255,255,255,1) 95%, rgba(255,255,255,1) 100%);

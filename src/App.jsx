@@ -27,6 +27,7 @@ import Contracts from "./components/crmRoute/contracts/Contracts";
 import Invoice from "./components/crmRoute/invoices/invoice";
 import BookingSite from "./components/crmRoute/bookingSite/BookingSite";
 import MiniSession from "./components/crmRoute/miniSession/MiniSession";
+import Forms from "./components/crmRoute/forms/Forms";
 function App() {
   const location = useLocation();
   return (
@@ -63,6 +64,7 @@ function App() {
           <Route path="invioce" element = {<Invoice />} />
           <Route path="booking" element ={<BookingSite />}/>
           <Route path="session" element={<MiniSession />}/>
+          <Route path="form" element={<Forms />}/>
          </Route>
         
       </Routes>
