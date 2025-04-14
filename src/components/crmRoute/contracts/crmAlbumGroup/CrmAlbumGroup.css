@@ -1,15 +1,33 @@
-.contractGrid {
+.crmAlbumGrid {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.crmAlbumGrid .contractGrid {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: -moz-fit-content;
+  width: fit-content;
 }
-.contractGrid div {
+.crmAlbumGrid .contractGrid div {
   max-width: 300px;
 }
-.contractGrid div img {
+.crmAlbumGrid .contractGrid div h4 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.crmAlbumGrid .contractGrid div p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.crmAlbumGrid .contractGrid div img {
   transition: all 0.3s ease-out;
 }
-.contractGrid div img:hover {
+.crmAlbumGrid .contractGrid div img:hover {
   transform: translateY(-10px);
 }/*# sourceMappingURL=CrmAlbumGroup.css.map */

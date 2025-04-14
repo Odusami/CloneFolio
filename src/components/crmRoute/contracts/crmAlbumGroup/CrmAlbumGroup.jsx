@@ -3,7 +3,7 @@ import './CrmAlbumGroup.scss';
 const CrmAlbumGroup = ({content, index}) => {
   return (
     <>
-              <div key={content.header + index} className="col mb-5">
+              <div key={content.header + index} className="col mb-5 crmAlbumGrid">
                 <div className="contractGrid">
                   <div>
                     <img

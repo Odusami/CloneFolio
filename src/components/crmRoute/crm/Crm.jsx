@@ -52,7 +52,7 @@ const Crm = () => {
           <h3 className="text-center fs-4 colorBlack my-5 fw-medium">
             Lightfolio Studio Manager helps you:
           </h3>
-          <div className="row row-cols-1 row-cols-sm-3 row-cols-md-4 justify-content-center gap-md-2 gap-lg-5">
+          <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 justify-content-center gap-md-2 gap-lg-5">
             <div className="col">
               <div className="hstack align-items-start">
                 <div className="d-inline-block me-3">

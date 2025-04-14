@@ -1,11 +1,25 @@
-
-.contractGrid {
+.crmAlbumGrid{
+width: fit-content;
+  .contractGrid {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: fit-content;
     div {
       max-width: 300px;
+      h4 {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      p {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
       img {
         transition: all 0.3s ease-out;
         &:hover {
@@ -14,3 +28,4 @@
       }
     }
   }
+}

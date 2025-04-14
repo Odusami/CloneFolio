@@ -79,7 +79,7 @@ const Invoice = () => {
               it to your client and allow them to pay online.
             </h4>
           </div>
-          <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center">
+          <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 gap-3 justify-content-center">
             {[
               {
                 image: "/public/folio images/Invoice1.jpg",
