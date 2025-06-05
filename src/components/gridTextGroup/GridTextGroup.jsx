@@ -1,4 +1,5 @@
 import "./GridTextGroup.scss";
+import { useNavigate } from "react-router-dom";
 
 const GridTextGroup = ({
   headerColor,
@@ -9,8 +10,12 @@ const GridTextGroup = ({
   btnText,
   center,
   mainHeaderColor,
-  titleColor
+  titleColor,
+  refLink,
+  navClick
 }) => {
+    const navigate = useNavigate();
+  
   const align = center === "center" ? "text-center" : "";
 
   const headerStyle =
@@ -34,7 +39,11 @@ const GridTextGroup = ({
         <h6 className={headerStyle}>{subHeader}</h6>
         <h2 className={mainHeaderStyle}>{header}</h2>
         <h4 className={titleStyle}>{title}</h4>
-        <button className={emptyBtn}>{btnText}</button>
+        <button  
+        onClick={(e)=> {navigate(refLink);
+          navClick && navClick (e, refLink)
+        }} 
+        className={emptyBtn}>{btnText}</button>
       </div>
     </>
   );

@@ -1,9 +1,20 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import GridTextGroup from '../../gridTextGroup/GridTextGroup';
 import './MiniSession.scss';
 import Faq from '../../home/faq/Faq';
 
-const MiniSession = () => {
+const MiniSession = ({handleNavigation}) => {
+  const location = useLocation();
+
+  // Helper function to handle navigation clicks
+  const handleNavClick = (e, path) => {
+    // Prevent ripple if already on the target page
+    if (location.pathname === path) {
+      e.preventDefault();
+      return;
+    }
+    handleNavigation(e, path);
+  };
     const faqData = {
         id: "miniSessionFaq",
         content: [
@@ -59,9 +70,9 @@ const MiniSession = () => {
     <>
         <section className='miniSessionFirst'>
             <div className="container">
-                <div className="row">
+                <div className="row gap-4 gap-md-0">
                     {/* Text col */}
-                    <div className="col">
+                    <div className="col order-last order-md-first">
                         <GridTextGroup 
                         subHeader={'Lightfolio Studio Manager'} 
                         header={'Mini Session Photography'}
@@ -72,7 +83,7 @@ const MiniSession = () => {
                     </div>
 
                     {/* Img Col */}
-                    <div className="col-7 ps-5">
+                    <div className="col-md-7 ps-md-5 order-first order-md-last">
                         <img src="/public/folio images/mini Session.jpg" className='img-fluid rounded imgShadow' alt="Mini Section" />
                     </div>
                 </div>
@@ -292,7 +303,7 @@ const MiniSession = () => {
                             <h4 className='fs-4 mt-4'>{content.header}</h4>
                             <h4 className='colorBlack-500 lh-base mt-4'>{content.title}</h4>
                             <div className='mt-5'>
-                            <Link to={content.path} onClick={() => window.scrollTo(0, 0)} className='mainBtn'>Get Started</Link>
+                            <Link to={content.path} onClick={(e) => handleNavClick(e, content.path)} className='mainBtn'>Get Started</Link>
                             </div>
                         </div>
                     ))}

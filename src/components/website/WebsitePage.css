@@ -1,0 +1,8 @@
+import .websiteSectionOne {
+  padding: 80px 0;
+}
+@media (max-width: 576px) {
+  import .websiteSectionOne {
+    padding: 50px 0;
+  }
+}/*# sourceMappingURL=WebsitePage.css.map */

@@ -1,8 +1,8 @@
 import "./Home.scss";
-import { Link } from "react-router-dom";
+import { Link, Navigate, useLocation, useNavigate } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import Nav from "../Nav/Nav";
+import Nav from "../nav/Nav";
 import TextCard from "./textCard/TextCard.jsx";
 import { span } from "framer-motion/client";
 import { FaRegHeart } from "react-icons/fa";
@@ -13,7 +13,20 @@ import Faq from "./faq/Faq.jsx";
 import GridTextGroup from "../gridTextGroup/GridTextGroup.jsx";
 
 const words = ["beautiful", "unique", "modern"];
-const Home = () => {
+const Home = ({handleNavigation}) => {
+  const location = useLocation();
+
+  // Helper function to handle navigation clicks
+  const handleNavClick = (e, path) => {
+    // Prevent ripple if already on the target page
+    if (location.pathname === path) {
+      e.preventDefault();
+      return;
+    }
+    handleNavigation(e, path);
+  };
+
+  const navigate = useNavigate();
   const [index, setIndex] = useState(0);
   useEffect(() => {
     const interval = setInterval(() => {
@@ -254,7 +267,7 @@ const Home = () => {
                       "Fullscreen + single image, split screen + dual image, centered circle image and other options."
                     }
                   >
-                    8
+                   <span className="mt-1"> 8</span>
                   </TextCard>
                 </div>
                 <div className="col-md-4 col-lg-4 col-sm-12 px-lg-5">
@@ -274,7 +287,7 @@ const Home = () => {
                       "Control thumbnail shape (rectangles, squares and circles) and size (thumbnails vs fullscreen photos)."
                     }
                   >
-                    8
+                      <span className="mt-1"> 8</span>
                   </TextCard>
                 </div>
               </div>
@@ -343,9 +356,15 @@ const Home = () => {
                       View, select and communicate all online. Enable
                       watermarks, downloads, favorites and password protection.
                     </h6>
-                    <button className="mainBtn mb-5">
+                    <button              
+                    onClick={(e) => {
+                      navigate('/gallery/proofing');
+                      handleNavClick(e, '/gallery/proofing');
+                    }}
+                    className="mainBtn mb-5">
                       &rarr; PROOF PHOTOS
                     </button>
+                
                   </div>
                   <div className="d-flex stackedModel mb-5">
                     <div className="me-2 stackedImg model3">
@@ -411,6 +430,8 @@ const Home = () => {
                     "Conveniently deliver photos to your clients online. With everyphoto gallery, control file size and restrict access with apersonalized password--all at the click of a button."
                   }
                   btnText={"→ CLIENT DOWNLOADS"}
+                  refLink={'/gallery/digital-download'}
+                  navClick={handleNavClick}
                   btnColor={'grey'}
                 />
               </div>
@@ -425,6 +446,8 @@ const Home = () => {
                 header={'A mini website for your photo galleriess'}
                 title={' Organize your client photo galleries into a centralrepository. This gives your clients an easy way to find all ofyour published online galleries. Customize your directory by from several themes and use the SEO settings to improve your search engine rankings.'}
                 btnText={'→ GALLERY DIRECTORIES'}
+                refLink={'/gallery/directories'}
+                navClick={handleNavClick}
                 btnColor={'grey'}
                 />
               </div>
@@ -476,6 +499,8 @@ const Home = () => {
                 header={'Photo gallery activity reports'}
                 title={' Quickly identify which images have been viewed, how many times, and which images have been downloaded and/or favorited. Lightfolio analytics gives you insight into all your online gallery traffic.'}
                 btnText={'→ VISITOR ANALYTICS'}
+                refLink={'/gallery/visitor-analytics'}
+                navClick={handleNavClick}
                 btnColor={'grey'}
                 />
               </div>
@@ -492,6 +517,8 @@ const Home = () => {
                 header={'Sell Online'}
                 title={'Allow your clients to purchase prints, digital downloads and more. Process your own orders or integrate with our photo lab partners. Set your own pricing, minimum orders, shipping rates and create coupons.'}
                 btnText={'→ ONLINE SALES'}
+                refLink={'/gallery/online-store'}
+                navClick={handleNavClick}
                 btnColor={'grey'}
                 />
               </div>

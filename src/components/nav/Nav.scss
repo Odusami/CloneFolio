@@ -21,6 +21,7 @@
       bottom: 0;
       height: 2px;
       background-color: $color-primary;
+      opacity: 0.2;
     }
   }
 }
@@ -36,12 +37,17 @@
     height: 2px;
     background-color: $color-primary;
   }
+  &:hover::after {
+    opacity: 1;
+  }
 }
 .galleryBox {
+  margin-top: 18px;
   width: 220px;
   left: 10px;
 }
 .crmBox {
+  margin-top: 18px;
   width: 470px;
   left: 10px;
 }

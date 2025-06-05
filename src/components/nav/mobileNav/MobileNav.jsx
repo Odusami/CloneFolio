@@ -81,7 +81,7 @@ const MobileNav = () => {
                 </NavLink>
                 <NavLink
                   onClick={() => setIsClicked(false)}
-                  to="/theme"
+                  to="/gallery/themes"
                   className={({ isActive }) =>
                     isActive
                       ? "activeMobileLink nav-link mobileLink"
@@ -92,7 +92,7 @@ const MobileNav = () => {
                 </NavLink>
                 <NavLink
                   onClick={() => setIsClicked(false)}
-                  to="/feature"
+                  to="/gallery"
                   className={({ isActive }) =>
                     isActive
                       ? "activeMobileLink nav-link mobileLink"
@@ -103,7 +103,7 @@ const MobileNav = () => {
                 </NavLink>
                 <NavLink
                   onClick={() => setIsClicked(false)}
-                  to="/proofing"
+                  to="/gallery/proofing"
                   className={({ isActive }) =>
                     isActive
                       ? "activeMobileLink nav-link mobileLink"
@@ -125,7 +125,7 @@ const MobileNav = () => {
                 </NavLink>
                 <NavLink
                   onClick={() => setIsClicked(false)}
-                  to="/contract"
+                  to="/crm/contract"
                   className={({ isActive }) =>
                     isActive
                       ? "activeMobileLink nav-link mobileLink"
@@ -136,7 +136,7 @@ const MobileNav = () => {
                 </NavLink>
                 <NavLink
                   onClick={() => setIsClicked(false)}
-                  to="/invoice"
+                  to="/crm/invioce"
                   className={({ isActive }) =>
                     isActive
                       ? "activeMobileLink nav-link mobileLink"
@@ -147,7 +147,7 @@ const MobileNav = () => {
                 </NavLink>
                 <NavLink
                   onClick={() => setIsClicked(false)}
-                  to="/session"
+                  to="/crm/session"
                   className={({ isActive }) =>
                     isActive
                       ? "activeMobileLink nav-link mobileLink"
@@ -158,7 +158,7 @@ const MobileNav = () => {
                 </NavLink>
                 <NavLink
                   onClick={() => setIsClicked(false)}
-                  to="/booking"
+                  to="/crm/booking"
                   className={({ isActive }) =>
                     isActive
                       ? "activeMobileLink nav-link mobileLink"
@@ -169,7 +169,7 @@ const MobileNav = () => {
                 </NavLink>
                 <NavLink
                   onClick={() => setIsClicked(false)}
-                  to="/form"
+                  to="/crm/form"
                   className={({ isActive }) =>
                     isActive
                       ? "activeMobileLink nav-link mobileLink"
@@ -180,7 +180,7 @@ const MobileNav = () => {
                 </NavLink>
                 <NavLink
                   onClick={() => setIsClicked(false)}
-                  to="/website"
+                  to="/websites"
                   className={({ isActive }) =>
                     isActive
                       ? "activeMobileLink nav-link mobileLink"

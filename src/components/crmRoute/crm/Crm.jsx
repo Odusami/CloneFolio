@@ -1,11 +1,23 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import GridTextGroup from "../../gridTextGroup/GridTextGroup";
 import "./Crm.scss";
 import { CiCircleCheck, CiMail } from "react-icons/ci";
 
 import CarouselMovingImg from "../../animation/CarouselMovingImg";
 
-const Crm = () => {
+const Crm = ({handleNavigation}) => {
+  const location = useLocation();
+
+   // Helper function to handle navigation clicks
+   const handleNavClick = (e, path) => {
+    // Prevent ripple if already on the target page
+    if (location.pathname === path) {
+      e.preventDefault();
+      return;
+    }
+    handleNavigation(e, path);
+  };
+
   const rightCarousel = [
     "/public/folio images/docs-boudoir-contract.jpg",
     "/public/folio images/docs-commercial-photo-contract.jpg",
@@ -127,7 +139,9 @@ const Crm = () => {
 
                   <h4 className="m-0 colorBlack-600 ms-1">
                     {" "}
-                    <Link to={""} className="linkHover">
+                    <Link to={"/crm/contract"}
+                     onClick={(e) => handleNavClick(e, "/crm/contract")}
+                    className="linkHover">
                       Contracts
                     </Link>
                   </h4>
@@ -137,7 +151,9 @@ const Crm = () => {
 
                   <h4 className="m-0 colorBlack-600 ms-1">
                     {" "}
-                    <Link to={""} className="linkHover">
+                    <Link to={"/crm/invioce"} 
+                    onClick={(e) => handleNavClick(e, "/crm/invioce")}
+                    className="linkHover">
                       Invoices
                     </Link>
                   </h4>
@@ -147,7 +163,9 @@ const Crm = () => {
 
                   <h4 className="m-0 colorBlack-600 ms-1">
                     {" "}
-                    <Link to={""} className="linkHover">
+                    <Link to={"/crm/form"} 
+                    onClick={(e) => handleNavClick(e, "/crm/form")}
+                    className="linkHover">
                       Questionnaires
                     </Link>
                   </h4>
@@ -157,7 +175,9 @@ const Crm = () => {
 
                   <h4 className="m-0 colorBlack-600 ms-1">
                     {" "}
-                    <Link to={""} className="linkHover">
+                    <Link to={"/websites"} 
+                    onClick={(e) => handleNavClick(e, "/crm/websites")}
+                    className="linkHover">
                       Booking Site
                     </Link>
                   </h4>
@@ -305,6 +325,8 @@ const Crm = () => {
                     "Everyone is offering mini sessions and you should be too if you aren't already. Our photography CRM makes setting up and booking your next mini a breeze."
                   }
                   btnText={"Explore mini-sessions"}
+                  refLink={'/crm/session'}
+                  navClick={handleNavigation}
                 />
               </div>
             </div>
@@ -324,6 +346,8 @@ const Crm = () => {
                   "Let's be honest, your time is better spent shooting or selling, not performing tedious, repetitive tasks. We can help you by sending out automated payment and booking reminders."
                 }
                 btnText={"Get Started"}
+                refLink={'/crm/invioce'}
+                navClick={handleNavigation}
               />
             </div>
 
@@ -378,6 +402,8 @@ const Crm = () => {
               header={"CRM Integration"}
               title={'Studio Manager is one of several products offered by Lightfolio. You can integrate with Lightfolio Websites (to collect new leads) and deliver your final product with Lightfolio Client Galleries. One platform for everything--it just makes life easier.'}
               btnText={'Get Started'}
+              refLink={'/websites'}
+              navClick={handleNavigation}
             />
             </div>
           </div>

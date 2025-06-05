@@ -49,9 +49,13 @@ body{
   font-family: $font-tertiary;
 }
 .linkH{
-  text-decoration: none;
+  // text-decoration: none;
+  // text-decoration-thickness: 1px;
+  text-decoration-color: $color-primary-500;
   color: inherit;
+  transition: all 0.2s ease-out;
   &:hover{
+    text-decoration: none;
     color: $color-tertiary;
   }
 }

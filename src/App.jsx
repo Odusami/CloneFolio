@@ -1,5 +1,11 @@
-import { Route, Link, Routes, useLocation } from "react-router-dom";
-import Nav from "./components/Nav/Nav";
+import {
+  Route,
+  Link,
+  Routes,
+  useLocation,
+  ScrollRestoration,
+} from "react-router-dom";
+import Nav from "./components/nav/Nav";
 import Home from "./components/home/Home";
 import SubNavInfo from "./components/nav/subnavinfo/SubNavInfo";
 import Pricing from "./components/pricing/Pricing";
@@ -28,15 +34,22 @@ import Invoice from "./components/crmRoute/invoices/invoice";
 import BookingSite from "./components/crmRoute/bookingSite/BookingSite";
 import MiniSession from "./components/crmRoute/miniSession/MiniSession";
 import Forms from "./components/crmRoute/forms/Forms";
+import WebsitePage from "./components/website/WebsitePage";
+import ScrollToTop from "./components/ScrollToTop";
+import PageTransition from "./components/animation/PageTransition";
 function App() {
   const location = useLocation();
   return (
     <>
-      {location.pathname !== "/" && <Nav />}
-
+      <ScrollToTop />
+      <PageTransition >
+      {(handleNavigation) => (
+        <>
+      {location.pathname !== "/" && <Nav handleNavigation={handleNavigation} />}
+      <AnimatePresence mode="wait">
       {/* <Home/> */}
       <Routes location={location} key={location.pathname}>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home handleNavigation={handleNavigation}/>} />
         <Route path="/pricing" element={<Pricing />}>
           <Route index element={<Navigate to="client-gallery" replace />} />
           <Route path="client-gallery" element={<ClientGallery />} />
@@ -44,33 +57,39 @@ function App() {
           <Route path="website" element={<Websites />} />
           <Route path="bundle" element={<Bundles />} />
         </Route>
-      
-          <Route path="/gallery" element={<GalleryRoute />}>
-            <Route index element={<Galleries />} />
-            <Route path="proofing" element={<Proofing />}/>
-            <Route path="digital-download" element={<DigitalDownloads />} />
-            <Route path="visitor-analysis" element={<GalleryVisitors />}/>
-            <Route path="online-store" element={<GalleryStore />}/>
-            <Route path="directories" element={<GalleryDirectories />}/>
-            <Route path="themes" element={<Themes />}/>
-          </Route>
-          <Route path="/fonts" element={<Fonts />}/>
-          <Route path="/lightroom" element={<Lightroom />}/>
-          <Route path="/supported-file-types" element={<FileTypes />}/>
-         
-         <Route path="/crm" element={<CrmRoute />}>
-          <Route index element={<Crm />}/>
-          <Route path="contract" element={<Contracts />}/>
-          <Route path="invioce" element = {<Invoice />} />
-          <Route path="booking" element ={<BookingSite />}/>
-          <Route path="session" element={<MiniSession />}/>
-          <Route path="form" element={<Forms />}/>
-         </Route>
-        
-      </Routes>
 
-      {location.pathname !== "/" && <Footer />}
+        <Route path="/gallery" element={<GalleryRoute />}>
+          <Route index element={<Galleries handleNavigation={handleNavigation}/>} />
+          <Route path="proofing" element={<Proofing />} />
+          <Route path="digital-download" element={<DigitalDownloads />} />
+          <Route path="visitor-analytics" element={<GalleryVisitors />} />
+          <Route path="online-store" element={<GalleryStore />} />
+          <Route path="directories" element={<GalleryDirectories />} />
+          <Route path="themes" element={<Themes />} />
+        </Route>
+        <Route path="/fonts" element={<Fonts />} />
+        <Route path="/lightroom" element={<Lightroom />} />
+        <Route path="/supported-file-types" element={<FileTypes />} />
+
+        <Route path="/crm" element={<CrmRoute />}>
+          <Route index element={<Crm handleNavigation = {handleNavigation}/>} />
+          <Route path="contract" element={<Contracts />} />
+          <Route path="invioce" element={<Invoice />} />
+          <Route path="booking" element={<BookingSite />} />
+          <Route path="session" element={<MiniSession handleNavigation={handleNavigation}/>} />
+          <Route path="form" element={<Forms />} />
+        </Route>
+
+        <Route path="websites" element={<WebsitePage handleNavigation={handleNavigation}/>} />
+      </Routes>
+      </AnimatePresence>
+
+      {location.pathname !== "/" && <Footer handleNavigation={handleNavigation}/>}
+      </>
+      )}
+      </PageTransition>
     </>
+
   );
 }
 

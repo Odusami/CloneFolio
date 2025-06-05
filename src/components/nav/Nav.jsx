@@ -1,6 +1,6 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import "./Nav.scss";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { LiaDownloadSolid } from "react-icons/lia";
 import { LuChartNoAxesCombined, LuGalleryHorizontalEnd } from "react-icons/lu";
 import { BsShopWindow } from "react-icons/bs";
@@ -10,26 +10,71 @@ import SubNavInfo from "../nav/subnavinfo/SubNavInfo";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import MobileNav from "./mobileNav/MobileNav";
 
-const Nav = () => {
+const Nav = ({ handleNavigation }) => {
+  const location = useLocation();
   const [isDropdownOpen, setIsDropdownOpen] = useState(null);
+  const closeTimeout = useRef(null);
+  const hoverTimeout = useRef(null);
 
+  // Helper function to handle navigation clicks
+  const handleNavClick = (e, path) => {
+    // Prevent ripple if already on the target page
+    if (location.pathname === path) {
+      e.preventDefault();
+      return;
+    }
+    handleNavigation(e, path);
+  };
+
+  // Handle different close types
+  const handleDelayedClose = () => {
+    // For click-triggered closes
+    closeTimeout.current = setTimeout(() => {
+      setIsDropdownOpen(null);
+    }, 2000);
+  };
+
+  const handleImmediateClose = () => {
+    // For hover-triggered closes
+    clearTimeout(closeTimeout.current);
+    clearTimeout(hoverTimeout.current);
+    setIsDropdownOpen(null);
+  };
+
+  // Handle dropdown interactions
   const handleActiveDropdown = (drop) => {
+    clearTimeout(hoverTimeout.current);
     setIsDropdownOpen(drop);
   };
 
-  const handleInactiveDropdown = () => {
-    setIsDropdownOpen(null);
+  const handleDropdownHoverOut = () => {
+    // Start hover-out timeout
+    hoverTimeout.current = setTimeout(() => {
+      handleImmediateClose();
+    }, 1000); // 1 second hover grace period
   };
+
+  // Cleanup timeouts
+  useEffect(() => {
+    return () => {
+      clearTimeout(closeTimeout.current);
+      clearTimeout(hoverTimeout.current);
+    };
+  }, []);
 
   return (
     <>
       {/* Mobile Nav */}
-      <MobileNav />
+      <MobileNav handleNavigation={handleNavigation} />
 
       {/* Desktop Nav */}
       <nav className="navbar navbar-expand-lg mainNav">
         <div className="container py-2 pt-3">
-          <Link to="/" className="navbar-brand d-none d-lg-inline-block">
+          <Link
+            to="/"
+            className="navbar-brand d-none d-lg-inline-block"
+            onClick={(e) => handleNavClick(e, "/")}
+          >
             <img
               src="../folio images/logo-dark.png"
               className="logoSize pb-1 me-2"
@@ -46,6 +91,7 @@ const Nav = () => {
                     ? "activeLinkStyle nav-link linkStyle px-0"
                     : "nav-link linkStyle px-0"
                 }
+                onClick={(e) => handleNavClick(e, "/pricing")}
               >
                 PRICING
               </NavLink>
@@ -53,8 +99,10 @@ const Nav = () => {
               {/* Gallery dropdown */}
               <div
                 className="dropdown"
-                onMouseEnter={() => handleActiveDropdown("gallery")}
-                onMouseLeave={handleInactiveDropdown}
+                onMouseEnter={() => {
+                  handleActiveDropdown("gallery");
+                }}
+                onMouseLeave={handleDropdownHoverOut}
               >
                 <NavLink
                   to="/gallery"
@@ -63,6 +111,7 @@ const Nav = () => {
                       ? "activeLinkStyle nav-link linkStyle px-0"
                       : "nav-link linkStyle px-0"
                   }
+                  onClick={(e) => handleNavClick(e, "/gallery")}
                 >
                   GALLERIES
                   <span className="dropdown-toggle ms-1"></span>
@@ -71,73 +120,95 @@ const Nav = () => {
                 {isDropdownOpen === "gallery" && (
                   <div className="dropdown-menu show galleryBox py-lg-3">
                     <div className="vstack gap-3">
+                      <Link
+                        to="/gallery/proofing"
+                        className="nav-link px-3 py-0"
+                        onClick={(e) => {
+                          handleNavClick(e, "/gallery/proofing");
+                          handleDelayedClose();
+                        }}
+                      >
+                        <SubNavInfo
+                          icon={<LuGalleryHorizontalEnd />}
+                          header={"Proofing"}
+                          title={"Easy online photo proofing"}
+                        />
+                      </Link>
 
-                  
-                    <Link
-                      to="/gallery/proofing"
-                      className="nav-link px-3 py-0"
-                    >
-                      <SubNavInfo
-                        icon={<LuGalleryHorizontalEnd />}
-                        header={"Proofing"}
-                        title={"Easy online photo proofing"}
-                      />
-                    </Link>
+                      <Link
+                        to="/gallery/digital-download"
+                        className="nav-link px-3 py-0"
+                        onClick={(e) => {
+                          handleNavClick(e, "/gallery/digital-download");
+                          handleDelayedClose();
+                        }}
+                      >
+                        <SubNavInfo
+                          icon={<LiaDownloadSolid />}
+                          header={"Digital Downloads"}
+                          title={"Allow client photo downloads"}
+                        />
+                      </Link>
 
-                    <Link
-                      to="/gallery/digital-download"
-                      className="nav-link px-3 py-0"
-                    >
-                      <SubNavInfo
-                        icon={<LiaDownloadSolid />}
-                        header={"Digital Downloads"}
-                        title={"Allow client photo downloads"}
-                      />
-                    </Link>
+                      <Link
+                        to="/gallery/visitor-analytics"
+                        className="nav-link px-3 py-0"
+                        onClick={(e) => {
+                          handleNavClick(e, "/gallery/visitor-analytics");
+                          handleDelayedClose();
+                        }}
+                      >
+                        <SubNavInfo
+                          icon={<LuChartNoAxesCombined />}
+                          header={"Visitor Analystics"}
+                          title={"Gallery visitor stats"}
+                        />
+                      </Link>
 
-                    <Link
-                      to="/gallery/visitor-analysis"
-                      className="nav-link px-3 py-0"
-                    >
-                      <SubNavInfo
-                        icon={<LuChartNoAxesCombined />}
-                        header={"Visitor Analystics"}
-                        title={"Gallery visitor stats"}
-                      />
-                    </Link>
+                      <Link
+                        to="/gallery/online-store"
+                        className="nav-link px-3 py-0"
+                        onClick={(e) => {
+                          handleNavClick(e, "/gallery/online-store");
+                          handleDelayedClose();
+                        }}
+                      >
+                        <SubNavInfo
+                          icon={<BsShopWindow />}
+                          header={"Online Store"}
+                          title={"Set up shop"}
+                        />
+                      </Link>
 
-                    <Link
-                      to="/gallery/online-store"
-                      className="nav-link px-3 py-0"
-                    >
-                      <SubNavInfo
-                        icon={<BsShopWindow />}
-                        header={"Online Store"}
-                        title={"Set up shop"}
-                      />
-                    </Link>
+                      <Link
+                        to="/gallery/directories"
+                        className="nav-link px-3 py-0"
+                        onClick={(e) => {
+                          handleNavClick(e, "/gallery/directories");
+                          handleDelayedClose();
+                        }}
+                      >
+                        <SubNavInfo
+                          icon={<MdOutlinePhotoLibrary />}
+                          header={"Gallery Directories"}
+                          title={"Gallery websites"}
+                        />
+                      </Link>
 
-                    <Link
-                      to="/gallery/directories"
-                      className="nav-link px-3 py-0"
-                    >
-                      <SubNavInfo
-                        icon={<MdOutlinePhotoLibrary />}
-                        header={"Gallery Directories"}
-                        title={"Gallery websites"}
-                      />
-                    </Link>
-
-                    <Link
-                      to="/gallery/themes"
-                      className="nav-link px-3 py-0"
-                    >
-                      <SubNavInfo
-                        icon={<IoShapesOutline />}
-                        header={"Themes"}
-                        title={"Customize your galleries"}
-                      />
-                    </Link>
+                      <Link
+                        to="/gallery/themes"
+                        className="nav-link px-3 py-0"
+                        onClick={(e) => {
+                          handleNavClick(e, "/gallery/themes");
+                          handleDelayedClose();
+                        }}
+                      >
+                        <SubNavInfo
+                          icon={<IoShapesOutline />}
+                          header={"Themes"}
+                          title={"Customize your galleries"}
+                        />
+                      </Link>
                     </div>
                   </div>
                 )}
@@ -146,8 +217,10 @@ const Nav = () => {
               {/* CRM dropdown */}
               <div
                 className="dropdown"
-                onMouseEnter={() => handleActiveDropdown("CRM")}
-                onMouseLeave={handleInactiveDropdown}
+                onMouseEnter={() => {
+                  handleActiveDropdown("CRM");
+                }}
+                onMouseLeave={handleDropdownHoverOut}
               >
                 <NavLink
                   to="/crm"
@@ -156,6 +229,9 @@ const Nav = () => {
                       ? "activeLinkStyle nav-link linkStyle px-0"
                       : "nav-link linkStyle px-0"
                   }
+                  onClick={(e) => {
+                    handleNavClick(e, "/crm");
+                  }}
                 >
                   CRM
                   <span className="dropdown-toggle ms-1"></span>
@@ -168,6 +244,10 @@ const Nav = () => {
                           <Link
                             to="/crm"
                             className="nav-link p-0 m-0"
+                            onClick={(e) => {
+                              handleNavClick(e, "/crm");
+                              handleDelayedClose();
+                            }}
                           >
                             <SubNavInfo
                               icon={<LuGalleryHorizontalEnd />}
@@ -183,6 +263,10 @@ const Nav = () => {
                           <Link
                             to="/crm/contract"
                             className="nav-link p-0 m-0 ps-1"
+                            onClick={(e) => {
+                              handleNavClick(e, "/crm/contract");
+                              handleDelayedClose();
+                            }}
                           >
                             <SubNavInfo
                               icon={<LuGalleryHorizontalEnd />}
@@ -193,7 +277,14 @@ const Nav = () => {
                         </div>
 
                         <div className="col-6 mb-lg-3">
-                          <Link to="/crm/invioce" className="nav-link p-0 m-0">
+                          <Link
+                            to="/crm/invioce"
+                            className="nav-link p-0 m-0"
+                            onClick={(e) => {
+                              handleNavClick(e, "/crm/invioce");
+                              handleDelayedClose();
+                            }}
+                          >
                             <SubNavInfo
                               icon={<LuGalleryHorizontalEnd />}
                               header={"Invoices"}
@@ -206,6 +297,10 @@ const Nav = () => {
                           <Link
                             to="/crm/booking"
                             className="nav-link p-0 m-0 ps-1"
+                            onClick={(e) => {
+                              handleNavClick(e, "/crm/booking");
+                              handleDelayedClose();
+                            }}
                           >
                             <SubNavInfo
                               icon={<LuGalleryHorizontalEnd />}
@@ -218,7 +313,14 @@ const Nav = () => {
                         </div>
 
                         <div className="col-6">
-                          <Link to="/crm/session" className="nav-link p-0 m-0">
+                          <Link
+                            to="/crm/session"
+                            className="nav-link p-0 m-0"
+                            onClick={(e) => {
+                              handleNavClick(e, "/crm/session");
+                              handleDelayedClose();
+                            }}
+                          >
                             <SubNavInfo
                               icon={<LuGalleryHorizontalEnd />}
                               header={"Mini Sessions"}
@@ -233,6 +335,10 @@ const Nav = () => {
                           <Link
                             to="/crm/form"
                             className="nav-link p-0 m-0 ps-1"
+                            onClick={(e) => {
+                              handleNavClick(e, "/crm/form");
+                              handleDelayedClose();
+                            }}
                           >
                             <SubNavInfo
                               icon={<LuGalleryHorizontalEnd />}
@@ -250,29 +356,25 @@ const Nav = () => {
               </div>
 
               <NavLink
-                to="/website"
+                to="/websites"
                 className={({ isActive }) =>
                   isActive
                     ? "activeLinkStyle nav-link linkStyle px-0"
                     : "nav-link linkStyle px-0"
                 }
+                onClick={(e) => {
+                  handleNavClick(e, "/websites");
+                }}
               >
                 WEBSITES
               </NavLink>
             </div>
             {/* login and sign-up group */}
             <div className=" d-flex ms-auto gap-3 text-center align-items-center">
-              <NavLink
-                to="/login"
-                className={({ isActive }) =>
-                  isActive
-                    ? "activeLinkStyle nav-link linkStyle px-0"
-                    : "nav-link linkStyle px-0"
-                }
-              >
+              <NavLink to="" className="nav-link linkStyle px-0">
                 LOGIN
               </NavLink>
-              <Link to="/website" className="signUp nav-link px-3">
+              <Link to="" className="signUp nav-link px-3">
                 Sign Up
               </Link>
             </div>

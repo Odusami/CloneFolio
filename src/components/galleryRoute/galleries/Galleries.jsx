@@ -1,10 +1,10 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./Galleries.scss";
 import { div } from "framer-motion/client";
 import GalleryCard from "./galleryCard/GalleryCard";
 import { FaCalendarDays, FaLock } from "react-icons/fa6";
 import { FaStamp, FaTwitter, FaPhotoVideo } from "react-icons/fa";
-import { CiSquareAlert } from "react-icons/ci";
+import { IoMdAnalytics } from "react-icons/io";
 import { MdOutlinePhoneAndroid, MdAddCircle, MdCrop, MdMailOutline, MdLightMode } from "react-icons/md";
 import { BiSolidDollarCircle } from "react-icons/bi";
 import { TfiMenuAlt } from "react-icons/tfi";
@@ -15,7 +15,18 @@ import { VscColorMode } from "react-icons/vsc";
 import { ImFontSize } from "react-icons/im";
 import { GrGallery } from "react-icons/gr";
 
-const Galleries = () => {
+const Galleries = ({handleNavigation}) => {
+  const location = useLocation();
+
+   // Helper function to handle navigation clicks
+   const handleNavClick = (e, path) => {
+    // Prevent ripple if already on the target page
+    if (location.pathname === path) {
+      e.preventDefault();
+      return;
+    }
+    handleNavigation(e, path);
+  };
   return (
     <>
       <div className="galleryBg">
@@ -24,7 +35,9 @@ const Galleries = () => {
             <h2 className="fw-medium">Client Galleries - Feature List</h2>
             <h4 className="w-75 colorBlack-500">
               Lightfolio is a fully featured,{" "}
-              <Link to={"/"} className="colorBlack-100">
+              <Link to={"/"} 
+              onClick={(e) => handleNavClick(e, "/")}
+              className="colorBlack-100">
                 online photo gallery
               </Link>{" "}
               online photo gallery platform that provides multiple configuration
@@ -55,7 +68,7 @@ const Galleries = () => {
                   "Protect your work with text or image watermarks. Control placement and opacity.",
               },
               {
-                icon: <CiSquareAlert />,
+                icon: <IoMdAnalytics />,
                 header: "Visitor Analytics",
                 title:
                   "Not only can you track how many visitors you have, but you can also monitor geolocation, web browser and device type.",
@@ -98,7 +111,7 @@ const Galleries = () => {
                 header: "Downloads",
                 title:
                   "Enable downloading for the entire gallery or just for individual images. You set the download file resolution.",
-                path: "/gallery/client-download",
+                path: "/gallery/digital-download",
               },
               {
                 icon: <FaLock />,
@@ -111,14 +124,14 @@ const Galleries = () => {
                 header: "Cover Themes",
                 title:
                   "Every gallery has a cover page. Choose from 7 templates and customize images, text, font face, alignment and more.",
-                path: "/gallery/cover-theme",
+                path: "/gallery/themes",
               },
               {
                 icon: <FaPhotoVideo />,
                 header: "Thumbnail Styles",
                 title:
                   "Further customize your gallery by choosing a thumbnail style. Set the margin between images and select the menu orientation.",
-                path: "/gallery/cover-theme/thumbnail-style",
+                path: "/gallery/themes",
               },
               {
                 icon: <AiFillFileAdd />,
@@ -156,7 +169,7 @@ const Galleries = () => {
                 header: "Pro Lab Partners",
                 title:
                   "Offer professional prints, canvas wraps and more with our lab partners: Bay Photo Lab and Loxley Colour.",
-                path: "/gallery/lab-partners",
+               
               },
               {
                 icon: <MdLightMode />,
@@ -169,7 +182,7 @@ const Galleries = () => {
               <div key={content.header + index} className="col px-md-5 py-5 mb-5 cardPadding">
                 <GalleryCard icon={content.icon} title={content.title}>
                   {content.path ? (
-                    <Link className="cardHeaderLink" to={content.path}>{content.header}</Link>
+                    <Link className="cardHeaderLink" onClick={(e) => handleNavClick(e, content.path)} to={content.path}>{content.header}</Link>
                   ) : (
                     content.header
                   )}

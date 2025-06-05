@@ -217,10 +217,12 @@ body {
 }
 
 .linkH {
-  text-decoration: none;
+  text-decoration-color: #888888;
   color: inherit;
+  transition: all 0.2s ease-out;
 }
 .linkH:hover {
+  text-decoration: none;
   color: #ddad59;
 }
 
