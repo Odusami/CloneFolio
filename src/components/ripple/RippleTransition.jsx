@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 const RippleTransition = ({ 
   isActive, 
   position, 
-  color = '#0275d8', // Bootstrap primary blue by default
+  color = '#f8f5e0', // Bootstrap primary blue by default
   onAnimationComplete,
   zIndex = 1030 // Bootstrap's modal z-index
 }) => {

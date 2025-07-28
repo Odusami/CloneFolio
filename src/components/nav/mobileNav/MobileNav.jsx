@@ -1,14 +1,27 @@
 import React, { useState, useRef, useEffect } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { motion, AnimatePresence, easeInOut, easeIn } from "framer-motion";
 import "./MobileNav.scss";
 import { FiMenu } from "react-icons/fi";
 import { BsFacebook } from "react-icons/bs";
 import { FaInstagram, FaTwitter } from "react-icons/fa";
 
-const MobileNav = () => {
+const MobileNav = ({handleNavigation}) => {
   const [isClicked, setIsClicked] = useState(false);
   const navRef = useRef(null);
+  const location = useLocation();
+  
+  // Helper function to handle navigation clicks
+  const handleNavClick = (e, path) => {
+    // Prevent ripple if already on the target page
+    if (location.pathname === path) {
+      e.preventDefault();
+      setIsClicked(false);
+      return;
+    }
+    handleNavigation(e, path);
+    setIsClicked(false);
+  };
 
   const handleClick = () => {
     setIsClicked(!isClicked);
@@ -58,7 +71,8 @@ const MobileNav = () => {
               {/* Mobile links */}
               <div className=" d-flex flex-column">
                 <NavLink
-                  onClick={() => setIsClicked(false)}
+                  // onClick={() => setIsClicked(false)}
+                  onClick={(e) => handleNavClick(e, "/")}
                   to="/"
                   className={({ isActive }) =>
                     isActive
@@ -69,7 +83,7 @@ const MobileNav = () => {
                   HOME
                 </NavLink>
                 <NavLink
-                  onClick={() => setIsClicked(false)}
+                  onClick={(e) => handleNavClick(e, "/pricing/client-gallery")}
                   to="/pricing"
                   className={({ isActive }) =>
                     isActive
@@ -80,7 +94,7 @@ const MobileNav = () => {
                   PRICING
                 </NavLink>
                 <NavLink
-                  onClick={() => setIsClicked(false)}
+                   onClick={(e) => handleNavClick(e, "/gallery/themes")}
                   to="/gallery/themes"
                   className={({ isActive }) =>
                     isActive
@@ -91,8 +105,9 @@ const MobileNav = () => {
                   THEMES
                 </NavLink>
                 <NavLink
-                  onClick={() => setIsClicked(false)}
+                   onClick={(e) => handleNavClick(e, "/gallery")}
                   to="/gallery"
+                  end
                   className={({ isActive }) =>
                     isActive
                       ? "activeMobileLink nav-link mobileLink"
@@ -102,7 +117,7 @@ const MobileNav = () => {
                   FEATURES
                 </NavLink>
                 <NavLink
-                  onClick={() => setIsClicked(false)}
+                  onClick={(e) => handleNavClick(e, "/gallery/proofing")}
                   to="/gallery/proofing"
                   className={({ isActive }) =>
                     isActive
@@ -113,8 +128,9 @@ const MobileNav = () => {
                   PROOFING
                 </NavLink>
                 <NavLink
-                  onClick={() => setIsClicked(false)}
+                 onClick={(e) => handleNavClick(e, "/crm")}
                   to="/crm"
+                  end
                   className={({ isActive }) =>
                     isActive
                       ? "activeMobileLink nav-link mobileLink"
@@ -124,8 +140,8 @@ const MobileNav = () => {
                   CRM
                 </NavLink>
                 <NavLink
-                  onClick={() => setIsClicked(false)}
-                  to="/crm/contract"
+                  onClick={(e) => handleNavClick(e, "/crm/contract")}
+                  to="/crm/contract"   
                   className={({ isActive }) =>
                     isActive
                       ? "activeMobileLink nav-link mobileLink"
@@ -135,7 +151,7 @@ const MobileNav = () => {
                   CONTRACTS
                 </NavLink>
                 <NavLink
-                  onClick={() => setIsClicked(false)}
+                  onClick={(e) => handleNavClick(e, "/crm/invioce")}
                   to="/crm/invioce"
                   className={({ isActive }) =>
                     isActive
@@ -146,7 +162,7 @@ const MobileNav = () => {
                   INVOICES
                 </NavLink>
                 <NavLink
-                  onClick={() => setIsClicked(false)}
+                  onClick={(e) => handleNavClick(e, "/crm/session")}
                   to="/crm/session"
                   className={({ isActive }) =>
                     isActive
@@ -157,7 +173,7 @@ const MobileNav = () => {
                   MINI SESSIONS
                 </NavLink>
                 <NavLink
-                  onClick={() => setIsClicked(false)}
+                  onClick={(e) => handleNavClick(e, "/crm/booking")}
                   to="/crm/booking"
                   className={({ isActive }) =>
                     isActive
@@ -168,7 +184,7 @@ const MobileNav = () => {
                   BOOKING SITE
                 </NavLink>
                 <NavLink
-                  onClick={() => setIsClicked(false)}
+                  onClick={(e) => handleNavClick(e, "/crm/form")}
                   to="/crm/form"
                   className={({ isActive }) =>
                     isActive
@@ -179,7 +195,7 @@ const MobileNav = () => {
                   FORMS
                 </NavLink>
                 <NavLink
-                  onClick={() => setIsClicked(false)}
+                  onClick={(e) => handleNavClick(e, "websites")}
                   to="/websites"
                   className={({ isActive }) =>
                     isActive
@@ -191,25 +207,17 @@ const MobileNav = () => {
                 </NavLink>
                 <NavLink
                   onClick={() => setIsClicked(false)}
-                  to="/sign-up"
-                  className={({ isActive }) =>
-                    isActive
-                      ? "activeMobileLink nav-link mobileLink"
-                      : "nav-link mobileLink"
-                  }
+                  to=""
+                  className= "nav-link mobileLink"
                 >
                   Sign Up
                 </NavLink>
                 <div className="d-flex align-items-center">
                   <NavLink
                     onClick={() => setIsClicked(false)}
-                    to="/login"
-                    className={({ isActive }) =>
-                      isActive
-                        ? "activeMobileLink nav-link mobileLink loginBorder"
-                        : "nav-link mobileLink loginBorder"
-                    }
-                  >
+                    to=""
+                    className= "nav-link mobileLink loginBorder"
+                    >
                     LOGIN
                   </NavLink>
                   <div className="mobileIcon">

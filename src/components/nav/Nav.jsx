@@ -31,7 +31,7 @@ const Nav = ({ handleNavigation }) => {
     // For click-triggered closes
     closeTimeout.current = setTimeout(() => {
       setIsDropdownOpen(null);
-    }, 2000);
+    }, 1000);
   };
 
   const handleImmediateClose = () => {

@@ -20,7 +20,7 @@ const PageTransition = ({ children }) => {
       setTimeout(() => {
         navigate(path);
         setTimeout(() => setIsTransitioning(false), 800);
-      }, 700);
+      }, 500);
     };
   
     return (
@@ -41,7 +41,7 @@ const PageTransition = ({ children }) => {
             style={{
               left: ripplePosition.x,
               top: ripplePosition.y,
-              border: 'solid #0d6efd',
+              border: 'solid #ddad59',
               transform: 'translate(-50%, -50%)',
             }}
             initial={{ 
@@ -52,7 +52,7 @@ const PageTransition = ({ children }) => {
             animate={{ 
               width: isTransitioning ? 4000 : 0,
               height: isTransitioning ? 4000 : 0,
-              borderWidth: isTransitioning ? 1500 : 0,
+              borderWidth: isTransitioning ? 1600 : 0,
             }}
             transition={{ 
               duration: 1.5,
