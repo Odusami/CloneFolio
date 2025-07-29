@@ -31,12 +31,12 @@ const footer = {
   header2: {
     header: "Pricing",
     id: "header2",
-    route: "/pricing"
+    route: "/pricing",
   },
   header3: {
     header: "Websites",
     id: "header3",
-    route: "/websites"
+    route: "/websites",
   },
   header4: {
     header: "Studio Manager",
@@ -174,17 +174,15 @@ const Footer = ({ handleNavigation }) => {
               {/* First col */}
               <div className="col-4 col-lg-2 px-2">
                 <div className="vstack colorBlack-600 gap-2">
-                  <Link to={'/'}
-                   onClick={(e) => handleNavClick(e, "/")}
-                  >
-                  <img
-                    src="/public/folio images/logo (1).png"
-                    className="img-fluid w-50"
-                    alt="Logo"
-                  />
+                  <Link to={"/"} onClick={(e) => handleNavClick(e, "/")}>
+                    <img
+                      src="./folio images/logo (1).png"
+                      className="img-fluid w-50"
+                      alt="Logo"
+                    />
                   </Link>
                   {/* <img
-                    src="/public/folio images/logo (1).png"
+                    src="./folio images/logo (1).png"
                     className="img-fluid w-50"
                     alt="Logo"
                   /> */}
@@ -227,10 +225,14 @@ const Footer = ({ handleNavigation }) => {
                     className="fontPrimary mt-1 text-uppercase"
                     key={footer.header2.id}
                   >
-                   <Link 
-                   to={footer.header2.route}
-                   onClick={(e) => handleNavClick(e, footer.header2.route)}
-                   className="text-decoration-none fontPrimary"> {footer.header2.header}</Link> 
+                    <Link
+                      to={footer.header2.route}
+                      onClick={(e) => handleNavClick(e, footer.header2.route)}
+                      className="text-decoration-none fontPrimary"
+                    >
+                      {" "}
+                      {footer.header2.header}
+                    </Link>
                   </h5>
 
                   {/* Website */}
@@ -238,11 +240,14 @@ const Footer = ({ handleNavigation }) => {
                     className="fontPrimary mt-4 text-uppercase"
                     key={footer.header3.id}
                   >
-                   <Link
-                   to={footer.header3.route}
-                   onClick={(e) => handleNavClick(e, footer.header3.route)}
-                   className="text-decoration-none fontPrimary"
-                   > {footer.header3.header}</Link> 
+                    <Link
+                      to={footer.header3.route}
+                      onClick={(e) => handleNavClick(e, footer.header3.route)}
+                      className="text-decoration-none fontPrimary"
+                    >
+                      {" "}
+                      {footer.header3.header}
+                    </Link>
                   </h5>
 
                   {/* Studio Manager */}

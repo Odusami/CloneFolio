@@ -20,43 +20,43 @@ const Themes = () => {
           <div className="row row-cols-lg-3 row-cols-md-2 row-cols-sm-2 row-cols-1 mt-5">
             {[
               {
-                laptop: "/public/folio images/themes-london.png",
-                mobile: "/public/folio images/themes-london-mobile.png",
+                laptop: "./folio images/themes-london.png",
+                mobile: "./folio images/themes-london-mobile.png",
                 text: "London",
               },
               {
-                laptop: "/public/folio images/themes-auckland.png",
-                mobile: "/public/folio images/themes-auckland-mobile.png",
+                laptop: "./folio images/themes-auckland.png",
+                mobile: "./folio images/themes-auckland-mobile.png",
                 text: "Auckland",
               },
               {
-                laptop: "/public/folio images/themes-berlin.png",
-                mobile: "/public/folio images/themes-berlin-mobile.png",
+                laptop: "./folio images/themes-berlin.png",
+                mobile: "./folio images/themes-berlin-mobile.png",
                 text: "Berlin",
               },
               {
-                laptop: "/public/folio images/themes-monaco.png",
-                mobile: "/public/folio images/themes-monaco-mobile.png",
+                laptop: "./folio images/themes-monaco.png",
+                mobile: "./folio images/themes-monaco-mobile.png",
                 text: "Monaco",
               },
               {
-                laptop: "/public/folio images/themes-milan.png",
-                mobile: "/public/folio images/themes-milan-mobile.png",
+                laptop: "./folio images/themes-milan.png",
+                mobile: "./folio images/themes-milan-mobile.png",
                 text: "Milan",
               },
               {
-                laptop: "/public/folio images/themes-geneva.png",
-                mobile: "/public/folio images/themes-geneva-mobile.png",
+                laptop: "./folio images/themes-geneva.png",
+                mobile: "./folio images/themes-geneva-mobile.png",
                 text: "Geneva",
               },
               {
-                laptop: "/public/folio images/themes-halifax.png",
-                mobile: "/public/folio images/themes-halifax-mobile.png",
+                laptop: "./folio images/themes-halifax.png",
+                mobile: "./folio images/themes-halifax-mobile.png",
                 text: "Halifax",
               },
               {
-                laptop: "/public/folio images/themes-santafe.png",
-                mobile: "/public/folio images/themes-santafe-mobile.png",
+                laptop: "./folio images/themes-santafe.png",
+                mobile: "./folio images/themes-santafe-mobile.png",
                 text: "Santa Fe",
               },
             ].map((content, index) => (
@@ -89,52 +89,52 @@ const Themes = () => {
           <div className="row row-cols-lg-3 row-cols-md-2 row-cols-sm-2 row-cols-1 mt-5">
             {[
               {
-                laptop: "/public/folio images/styles-masonry.png",
-                mobile: "/public/folio images/styles-masonry-mobile.png",
+                laptop: "./folio images/styles-masonry.png",
+                mobile: "./folio images/styles-masonry-mobile.png",
                 text: "Mansory",
               },
               {
-                laptop: "/public/folio images/styles-masonry-wide.png",
-                mobile: "/public/folio images/styles-masonry-wide-mobile.png",
+                laptop: "./folio images/styles-masonry-wide.png",
+                mobile: "./folio images/styles-masonry-wide-mobile.png",
                 text: "Mansory Wide",
               },
               {
-                laptop: "/public/folio images/styles-justified.png",
-                mobile: "/public/folio images/styles-justified-mobile.png",
+                laptop: "./folio images/styles-justified.png",
+                mobile: "./folio images/styles-justified-mobile.png",
                 text: "Justified",
               },
               {
-                laptop: "/public/folio images/styles-squares.png",
-                mobile: "/public/folio images/styles-squares-mobile.png",
+                laptop: "./folio images/styles-squares.png",
+                mobile: "./folio images/styles-squares-mobile.png",
                 text: "Squares",
               },
               {
-                laptop: "/public/folio images/styles-fullblocks.png",
-                mobile: "/public/folio images/styles-fullblocks-mobile.png",
+                laptop: "./folio images/styles-fullblocks.png",
+                mobile: "./folio images/styles-fullblocks-mobile.png",
                 text: "Block",
               },
               {
-                laptop: "/public/folio images/styles-slideshow.png",
-                mobile: "/public/folio images/styles-slideshow-mobile.png",
+                laptop: "./folio images/styles-slideshow.png",
+                mobile: "./folio images/styles-slideshow-mobile.png",
                 text: "Slideshow",
               },
               {
-                laptop: "/public/folio images/styles-circles.png",
-                mobile: "/public/folio images/styles-circles-mobile.png",
+                laptop: "./folio images/styles-circles.png",
+                mobile: "./folio images/styles-circles-mobile.png",
                 text: "Circles",
               },
               {
-                laptop: "/public/folio images/styles-pins.png",
-                mobile: "/public/folio images/styles-pins-mobile.png",
+                laptop: "./folio images/styles-pins.png",
+                mobile: "./folio images/styles-pins-mobile.png",
                 text: "Pins",
               },
               {
-                laptop: "/public/folio images/styles-tiles.png",
-                mobile: "/public/folio images/styles-tiles-mobile.png",
+                laptop: "./folio images/styles-tiles.png",
+                mobile: "./folio images/styles-tiles-mobile.png",
                 text: "Tiles",
               },
-            ].map((content, index)=>(
-                <div key={`${content.laptop}+${index}`} className="col mb-5 px-4">
+            ].map((content, index) => (
+              <div key={`${content.laptop}+${index}`} className="col mb-5 px-4">
                 <PhotoMockup
                   laptop={content.laptop}
                   mobile={content.mobile}

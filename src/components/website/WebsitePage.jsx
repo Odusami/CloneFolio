@@ -11,7 +11,7 @@ import { SiAdobefonts } from "react-icons/si";
 import { AiFillInstagram } from "react-icons/ai";
 import Faq from "../home/faq/Faq";
 
-const WebsitePage = ({handleNavigation}) => {
+const WebsitePage = ({ handleNavigation }) => {
   const location = useLocation();
 
   // Helper function to handle navigation clicks
@@ -77,14 +77,14 @@ const WebsitePage = ({handleNavigation}) => {
     ],
   };
   const images = [
-    "/public/folio images/web-template-1.jpg",
-    "/public/folio images/web-template-2.jpg",
-    "/public/folio images/web-template-3.jpg",
-    "/public/folio images/web-template-4.jpg",
-    "/public/folio images/web-template-5.jpg",
-    "/public/folio images/web-template-6.jpg",
-    "/public/folio images/web-template-7.jpg",
-    "/public/folio images/web-template-8.jpg",
+    "./folio images/web-template-1.jpg",
+    "./folio images/web-template-2.jpg",
+    "./folio images/web-template-3.jpg",
+    "./folio images/web-template-4.jpg",
+    "./folio images/web-template-5.jpg",
+    "./folio images/web-template-6.jpg",
+    "./folio images/web-template-7.jpg",
+    "./folio images/web-template-8.jpg",
   ];
 
   return (
@@ -146,10 +146,7 @@ const WebsitePage = ({handleNavigation}) => {
                   loop
                   muted
                 >
-                  <source
-                    src="/public/folio videos/builder.mp4"
-                    type="video/mp4"
-                  />
+                  <source src="/folio videos/builder.mp4" type="video/mp4" />
                 </video>
               </div>
             </div>
@@ -207,7 +204,7 @@ const WebsitePage = ({handleNavigation}) => {
             {/* PICTURE COL */}
             <div className="col text-center text-md-end order-first order-md-last">
               <img
-                src="/public/folio images/palette.jpg"
+                src="./folio images/palette.jpg"
                 className="img-fluid rounded imgShadow"
                 alt="Palette"
               />
@@ -218,7 +215,7 @@ const WebsitePage = ({handleNavigation}) => {
             {/* Picture col */}
             <div className="col">
               <img
-                src="/public/folio images/proofing.jpg"
+                src="./folio images/proofing.jpg"
                 className="img-fluid rounded responsiveWidth"
                 alt="Proofing"
               />
@@ -235,18 +232,22 @@ const WebsitePage = ({handleNavigation}) => {
                     You've built your website to market your business and
                     solicit new leads. Make it easier to book more leads by
                     integrating with Lightfolio{" "}
-                    <Link to={"/crm"}  
-                     onClick={(e) => handleNavClick(e, "/crm")}
-                    className="linkH">
+                    <Link
+                      to={"/crm"}
+                      onClick={(e) => handleNavClick(e, "/crm")}
+                      className="linkH"
+                    >
                       Studio Manager
                     </Link>{" "}
                     Studio Manager — a CRM built for photographers.
                     <br /> <br />
                     Have galleries you want to share with your clients? You can
                     also sync your website with your Lightfolio{" "}
-                    <Link to={"/gallery"} 
-                    onClick={(e) => handleNavClick(e, "/gallery")}
-                    className="linkH">
+                    <Link
+                      to={"/gallery"}
+                      onClick={(e) => handleNavClick(e, "/gallery")}
+                      className="linkH"
+                    >
                       Client Galleries
                     </Link>
                     Client Galleries
@@ -271,7 +272,7 @@ const WebsitePage = ({handleNavigation}) => {
             {/* PICTURE COL */}
             <div className="col text-center text-md-end order-first order-md-last">
               <img
-                src="/public/folio images/blog.jpg"
+                src="./folio images/blog.jpg"
                 className="img-fluid rounded "
                 alt="Blog"
               />
@@ -282,7 +283,7 @@ const WebsitePage = ({handleNavigation}) => {
             {/* Picture col */}
             <div className="col">
               <img
-                src="/public/folio images/seo.jpg"
+                src="./folio images/seo.jpg"
                 className="img-fluid rounded responsiveWidth"
                 alt="Seo"
               />
@@ -316,7 +317,7 @@ const WebsitePage = ({handleNavigation}) => {
             {/* PICTURE COL */}
             <div className="col text-center text-md-end order-first order-md-last">
               <img
-                src="/public/folio images/ecommerce.jpg"
+                src="./folio images/ecommerce.jpg"
                 className="img-fluid rounded "
                 alt="Ecommerce"
               />
@@ -455,7 +456,7 @@ const WebsitePage = ({handleNavigation}) => {
                 <h6 className="colorBlack-600 textLabel">FAQ</h6>
                 <h2>Questions about our website builder?</h2>
                 <img
-                  src="/public/folio images/faq.jpg"
+                  src="./folio images/faq.jpg"
                   className="img-fluid w-25 rounded"
                   alt="Faq"
                 />

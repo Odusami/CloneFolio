@@ -6,14 +6,13 @@
 .textBtn {
   @include buttonStyle($color-primary-600, $color-secondary, 10px 27px);
 }
-.reverseDirection{
-  @media (max-width:768px) {
-    
+.reverseDirection {
+  @media (max-width: 768px) {
     flex-direction: column-reverse;
   }
 }
 .coupleBg {
-  background-image: url("/public/folio\ images/cover-banner-10.jpg");
+  background-image: url("/folio\ images/cover-banner-10.jpg");
   // height: 100vh;
   background-size: cover;
   background-attachment: fixed;
@@ -37,7 +36,7 @@
     }
 
     //    .homeFirstSectionImg{
-    //         background-image: url('/public/folio\ images/cover-banner-10.jpg');
+    //         background-image: url('/folio\ images/cover-banner-10.jpg');
     //         height: 100vh;
     //         background-size: cover;
     //         position: sticky;
@@ -57,14 +56,12 @@
       min-height: 80vh;
 
       @media (max-width: 900px) {
-        
         min-height: 0;
         text-align: center;
         padding: 0;
         // margin-top: 6rem;
       }
       @media (max-width: 576px) {
-        
         min-height: 0;
         text-align: center;
         padding: 0;
@@ -93,7 +90,7 @@
           .textAnimate {
             position: relative;
             padding-left: 0.5rem;
-        
+
             overflow: hidden;
             white-space: nowrap;
             display: inline-block;
@@ -106,21 +103,21 @@
         }
         .nonAnimationText {
           line-height: 4rem;
-          @media (max-width:576px) {
+          @media (max-width: 576px) {
             line-height: 3rem;
           }
         }
       }
     }
     .homeMobileFirstSectionImg {
-        @media (max-width: 900px) {
-            background-image: url("/public/folio\ images/cover-banner-9.jpg");
-            height: 55vh;
-            background-size: cover;
-            background-repeat: no-repeat;
-          }
+      @media (max-width: 900px) {
+        background-image: url("/folio\ images/cover-banner-9.jpg");
+        height: 55vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
       @media (max-width: 576px) {
-        background-image: url("/public/folio\ images/cover-banner-9.jpg");
+        background-image: url("/folio\ images/cover-banner-9.jpg");
         height: 40vh;
         background-size: cover;
         background-repeat: no-repeat;
@@ -192,9 +189,8 @@
 
         .imageHover {
           transition: all 0.5s ease-out 0s;
-          @media (max-width:576px) {
+          @media (max-width: 576px) {
             height: 250px;
-           
           }
           &:hover {
             transform: translateY(-10px);
@@ -214,16 +210,16 @@
 }
 .homeThirdSection {
   height: 80vh;
-  background-image: url("/public/folio\ images/photo-proofing-model.jpg");
+  background-image: url("/folio\ images/photo-proofing-model.jpg");
 
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 
-  .thirdTextSize{
+  .thirdTextSize {
     width: 50%;
     height: 85vh;
-    @media (max-width:576px) {
+    @media (max-width: 576px) {
       width: 100%;
       text-align: center;
     }
@@ -239,7 +235,7 @@
     }
     .stackedModel {
       transform: translateY(10%);
-  
+
       .stackedImg {
         position: relative;
         border: 13px solid $color-secondary;
@@ -250,7 +246,7 @@
           border: 5px solid $color-secondary;
           font-size: 5px;
         }
-  
+
         &.model3 {
           transform: rotate(-2deg);
         }
@@ -260,7 +256,7 @@
         &.model1 {
           transform: rotate(2deg);
         }
-  
+
         .proofImgBorder {
         }
         .stackedIcon {
@@ -284,10 +280,8 @@
     box-shadow: -5px -5px 25px rgba(0, 0, 0, 0.1);
   }
   .scaleBeach {
-
     &.scaleBeachPosition1 {
       transform: translateX(3%);
-   
 
       &::after {
         content: "";
@@ -301,8 +295,7 @@
     }
     &.scaleBeachPosition3 {
       transform: translateX(-3%);
-    
-    
+
       &::after {
         content: "";
         position: absolute;

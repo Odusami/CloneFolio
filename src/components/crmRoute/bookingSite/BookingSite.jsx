@@ -23,7 +23,7 @@ const BookingSite = () => {
             {/* pic col */}
             <div className="col">
               <img
-                src="/public/folio images/booking.jpg"
+                src="./folio images/booking.jpg"
                 className="img-fluid imgShadow rounded"
                 alt="Booking"
               />
@@ -52,12 +52,12 @@ const BookingSite = () => {
             <div className="col order-first order-md-last">
               <div className="hstack beachImgGroup">
                 <img
-                  src="/public/folio images/booking-beach-session.jpg"
+                  src="./folio images/booking-beach-session.jpg"
                   className="img-fluid w-25"
                   alt="Beach"
                 />
                 <img
-                  src="/public/folio images/beach-shoot.jpg"
+                  src="./folio images/beach-shoot.jpg"
                   className="img-fluid rounded"
                   alt="Beach Shoot"
                 />
@@ -89,17 +89,17 @@ const BookingSite = () => {
             <div className="col order-first order-md-last">
               <div className="hstack bioLinkImgGroup ">
                 <img
-                  src="/public/folio images/biolink-minis-1.jpg"
+                  src="./folio images/biolink-minis-1.jpg"
                   className="img-fluid"
                   alt="Biolink 1"
                 />
                 <img
-                  src="/public/folio images/biolink-minis-2.jpg"
+                  src="./folio images/biolink-minis-2.jpg"
                   className="img-fluid"
                   alt="Biolink 2"
                 />
                 <img
-                  src="/public/folio images/biolink-minis-3.jpg"
+                  src="./folio images/biolink-minis-3.jpg"
                   className="img-fluid"
                   alt="Biolink 3"
                 />
@@ -116,12 +116,12 @@ const BookingSite = () => {
             <div className="col">
               <div className="hstack calenderImgGroup">
                 <img
-                  src="/public/folio images/calendar.jpg"
+                  src="./folio images/calendar.jpg"
                   className="img-fluid"
                   alt="Calender"
                 />
                 <img
-                  src="/public/folio images/photographer-phone.jpg"
+                  src="./folio images/photographer-phone.jpg"
                   className="img-fluid"
                   alt="Photographer"
                 />
@@ -165,7 +165,7 @@ const BookingSite = () => {
               <div className="hstack text-center bookingPowerupGroup">
                 <div>
                   <img
-                    src="/public/folio images/booking-versatility-form.jpg"
+                    src="./folio images/booking-versatility-form.jpg"
                     className="img-fluid"
                     alt="Booking Form"
                   />
@@ -173,7 +173,7 @@ const BookingSite = () => {
                 </div>
                 <div>
                   <img
-                    src="/public/folio images/booking-versatility-cover.jpg"
+                    src="./folio images/booking-versatility-cover.jpg"
                     className="img-fluid"
                     alt="Booking Cover"
                   />
@@ -181,7 +181,7 @@ const BookingSite = () => {
                 </div>
                 <div>
                   <img
-                    src="/public/folio images/booking-versatility-invoice.jpg"
+                    src="./folio images/booking-versatility-invoice.jpg"
                     className="img-fluid"
                     alt="Booking Invoice"
                   />
@@ -211,13 +211,22 @@ const BookingSite = () => {
                   icon: <IoIosCheckmarkCircleOutline />,
                   title: "Time buffers",
                 },
-                { icon: <IoIosCheckmarkCircleOutline />, title: "Blackout dates" },
+                {
+                  icon: <IoIosCheckmarkCircleOutline />,
+                  title: "Blackout dates",
+                },
                 {
                   icon: <IoIosCheckmarkCircleOutline />,
                   title: "Scheduling by job type",
                 },
-                { icon: <IoIosCheckmarkCircleOutline />, title: "Online payments" },
-                { icon: <IoIosCheckmarkCircleOutline />, title: "Gallery integration" },
+                {
+                  icon: <IoIosCheckmarkCircleOutline />,
+                  title: "Online payments",
+                },
+                {
+                  icon: <IoIosCheckmarkCircleOutline />,
+                  title: "Gallery integration",
+                },
               ].map((content, index) => (
                 <div key={content.title + index} className="col">
                   <div className="hstack gap-1 ">

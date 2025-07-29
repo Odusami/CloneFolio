@@ -27,7 +27,7 @@ const DigitalDownloads = () => {
             {/* Picture col */}
             <div className="col-12 col-sm-7 ps-md-3 ps-lg-5">
               <img
-                src="/public/folio images/client-downloads.jpg"
+                src="./folio images/client-downloads.jpg"
                 className="clientDownloadImg"
                 alt="Client Download"
               />
@@ -42,30 +42,37 @@ const DigitalDownloads = () => {
             {
               icon: <IoMdCloudDownload />,
               header: "Download Sizes",
-              title:'Enable full resolution downloads or select from one of several lower resolution options.',
+              title:
+                "Enable full resolution downloads or select from one of several lower resolution options.",
             },
             {
               icon: <IoMdDownload />,
               header: "Download Types",
-              title:'You choose whether clients can download single images, the entire gallery, or both.',
+              title:
+                "You choose whether clients can download single images, the entire gallery, or both.",
             },
             {
               icon: <IoChatbubbleEllipses />,
               header: "Download Notification",
-              title:'Receive in-app notifications to confirm your clients successful gallery downloads..',
+              title:
+                "Receive in-app notifications to confirm your clients successful gallery downloads..",
             },
-          ].map((content, index)=>(
-            <div key={content.header + index} className="col px-md-5 py-5 mb-5 cardPadding">
-                <GalleryCard icon={content.icon} title={content.title}>
-                  {content.path ? (
-                    <Link className="cardHeaderLink" to={content.path}>{content.header}</Link>
-                  ) : (
-                    content.header
-                  )}
-                </GalleryCard>
+          ].map((content, index) => (
+            <div
+              key={content.header + index}
+              className="col px-md-5 py-5 mb-5 cardPadding"
+            >
+              <GalleryCard icon={content.icon} title={content.title}>
+                {content.path ? (
+                  <Link className="cardHeaderLink" to={content.path}>
+                    {content.header}
+                  </Link>
+                ) : (
+                  content.header
+                )}
+              </GalleryCard>
             </div>
           ))}
-          
         </div>
       </div>
     </>

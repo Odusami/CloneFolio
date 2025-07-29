@@ -5,7 +5,13 @@ import GalleryCard from "./galleryCard/GalleryCard";
 import { FaCalendarDays, FaLock } from "react-icons/fa6";
 import { FaStamp, FaTwitter, FaPhotoVideo } from "react-icons/fa";
 import { IoMdAnalytics } from "react-icons/io";
-import { MdOutlinePhoneAndroid, MdAddCircle, MdCrop, MdMailOutline, MdLightMode } from "react-icons/md";
+import {
+  MdOutlinePhoneAndroid,
+  MdAddCircle,
+  MdCrop,
+  MdMailOutline,
+  MdLightMode,
+} from "react-icons/md";
 import { BiSolidDollarCircle } from "react-icons/bi";
 import { TfiMenuAlt } from "react-icons/tfi";
 import { ImDownload } from "react-icons/im";
@@ -15,11 +21,11 @@ import { VscColorMode } from "react-icons/vsc";
 import { ImFontSize } from "react-icons/im";
 import { GrGallery } from "react-icons/gr";
 
-const Galleries = ({handleNavigation}) => {
+const Galleries = ({ handleNavigation }) => {
   const location = useLocation();
 
-   // Helper function to handle navigation clicks
-   const handleNavClick = (e, path) => {
+  // Helper function to handle navigation clicks
+  const handleNavClick = (e, path) => {
     // Prevent ripple if already on the target page
     if (location.pathname === path) {
       e.preventDefault();
@@ -35,16 +41,18 @@ const Galleries = ({handleNavigation}) => {
             <h2 className="fw-medium">Client Galleries - Feature List</h2>
             <h4 className="w-75 colorBlack-500">
               Lightfolio is a fully featured,{" "}
-              <Link to={"/"} 
-              onClick={(e) => handleNavClick(e, "/")}
-              className="colorBlack-100">
+              <Link
+                to={"/"}
+                onClick={(e) => handleNavClick(e, "/")}
+                className="colorBlack-100"
+              >
                 online photo gallery
               </Link>{" "}
               online photo gallery platform that provides multiple configuration
               options and allows for advanced customization.
             </h4>
             <img
-              src="/public/folio images/devices-models.png"
+              src="./folio images/devices-models.png"
               className="w-50 mt-4 mb-md-5"
               alt="Laptop Gallery"
             />
@@ -169,7 +177,6 @@ const Galleries = ({handleNavigation}) => {
                 header: "Pro Lab Partners",
                 title:
                   "Offer professional prints, canvas wraps and more with our lab partners: Bay Photo Lab and Loxley Colour.",
-               
               },
               {
                 icon: <MdLightMode />,
@@ -179,10 +186,19 @@ const Galleries = ({handleNavigation}) => {
                 path: "/lightroom",
               },
             ].map((content, index) => (
-              <div key={content.header + index} className="col px-md-5 py-5 mb-5 cardPadding">
+              <div
+                key={content.header + index}
+                className="col px-md-5 py-5 mb-5 cardPadding"
+              >
                 <GalleryCard icon={content.icon} title={content.title}>
                   {content.path ? (
-                    <Link className="cardHeaderLink" onClick={(e) => handleNavClick(e, content.path)} to={content.path}>{content.header}</Link>
+                    <Link
+                      className="cardHeaderLink"
+                      onClick={(e) => handleNavClick(e, content.path)}
+                      to={content.path}
+                    >
+                      {content.header}
+                    </Link>
                   ) : (
                     content.header
                   )}

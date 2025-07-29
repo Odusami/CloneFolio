@@ -5,11 +5,11 @@ import { CiCircleCheck, CiMail } from "react-icons/ci";
 
 import CarouselMovingImg from "../../animation/CarouselMovingImg";
 
-const Crm = ({handleNavigation}) => {
+const Crm = ({ handleNavigation }) => {
   const location = useLocation();
 
-   // Helper function to handle navigation clicks
-   const handleNavClick = (e, path) => {
+  // Helper function to handle navigation clicks
+  const handleNavClick = (e, path) => {
     // Prevent ripple if already on the target page
     if (location.pathname === path) {
       e.preventDefault();
@@ -19,27 +19,27 @@ const Crm = ({handleNavigation}) => {
   };
 
   const rightCarousel = [
-    "/public/folio images/docs-boudoir-contract.jpg",
-    "/public/folio images/docs-commercial-photo-contract.jpg",
-    "/public/folio images/docs-commercial-photography-contract.jpg",
-    "/public/folio images/docs-engagement-shoot-contract.jpg",
-    "/public/folio images/docs-photography-contract.jpg",
-    "/public/folio images/docs-portrait-contract.jpg",
-    "/public/folio images/docs-real-estate-photography-contract.jpg",
-    "/public/folio images/docs-wedding-photo-contract.jpg",
-    "/public/folio images/docs-wedding-photography-contract.jpg",
+    "./folio images/docs-boudoir-contract.jpg",
+    "./folio images/docs-commercial-photo-contract.jpg",
+    "./folio images/docs-commercial-photography-contract.jpg",
+    "./folio images/docs-engagement-shoot-contract.jpg",
+    "./folio images/docs-photography-contract.jpg",
+    "./folio images/docs-portrait-contract.jpg",
+    "./folio images/docs-real-estate-photography-contract.jpg",
+    "./folio images/docs-wedding-photo-contract.jpg",
+    "./folio images/docs-wedding-photography-contract.jpg",
   ];
   const leftCarousel = [
-    "/public/folio images/docs-family-portrait-questionnaire.jpg",
-    "/public/folio images/docs-minor-model-release.jpg",
-    "/public/folio images/docs-model-release.jpg",
-    "/public/folio images/docs-photo-invoice.jpg",
-    "/public/folio images/docs-photography-inv.jpg",
-    "/public/folio images/docs-photography-invoice.jpg",
-    "/public/folio images/docs-print-photo-release.jpg",
-    "/public/folio images/docs-print-release.jpg",
-    "/public/folio images/docs-wedding-invoice.jpg",
-    "/public/folio images/docs-wedding-questionnaire.jpg",
+    "./folio images/docs-family-portrait-questionnaire.jpg",
+    "./folio images/docs-minor-model-release.jpg",
+    "./folio images/docs-model-release.jpg",
+    "./folio images/docs-photo-invoice.jpg",
+    "./folio images/docs-photography-inv.jpg",
+    "./folio images/docs-photography-invoice.jpg",
+    "./folio images/docs-print-photo-release.jpg",
+    "./folio images/docs-print-release.jpg",
+    "./folio images/docs-wedding-invoice.jpg",
+    "./folio images/docs-wedding-questionnaire.jpg",
   ];
   return (
     <>
@@ -54,7 +54,7 @@ const Crm = ({handleNavigation}) => {
           />
           <div className="py-5">
             <img
-              src="/public/folio images/dashboard-5.jpg"
+              src="./folio images/dashboard-5.jpg"
               className="img-fluid"
               alt="Crm Dashboard"
             />
@@ -139,9 +139,11 @@ const Crm = ({handleNavigation}) => {
 
                   <h4 className="m-0 colorBlack-600 ms-1">
                     {" "}
-                    <Link to={"/crm/contract"}
-                     onClick={(e) => handleNavClick(e, "/crm/contract")}
-                    className="linkHover">
+                    <Link
+                      to={"/crm/contract"}
+                      onClick={(e) => handleNavClick(e, "/crm/contract")}
+                      className="linkHover"
+                    >
                       Contracts
                     </Link>
                   </h4>
@@ -151,9 +153,11 @@ const Crm = ({handleNavigation}) => {
 
                   <h4 className="m-0 colorBlack-600 ms-1">
                     {" "}
-                    <Link to={"/crm/invioce"} 
-                    onClick={(e) => handleNavClick(e, "/crm/invioce")}
-                    className="linkHover">
+                    <Link
+                      to={"/crm/invioce"}
+                      onClick={(e) => handleNavClick(e, "/crm/invioce")}
+                      className="linkHover"
+                    >
                       Invoices
                     </Link>
                   </h4>
@@ -163,9 +167,11 @@ const Crm = ({handleNavigation}) => {
 
                   <h4 className="m-0 colorBlack-600 ms-1">
                     {" "}
-                    <Link to={"/crm/form"} 
-                    onClick={(e) => handleNavClick(e, "/crm/form")}
-                    className="linkHover">
+                    <Link
+                      to={"/crm/form"}
+                      onClick={(e) => handleNavClick(e, "/crm/form")}
+                      className="linkHover"
+                    >
                       Questionnaires
                     </Link>
                   </h4>
@@ -175,9 +181,11 @@ const Crm = ({handleNavigation}) => {
 
                   <h4 className="m-0 colorBlack-600 ms-1">
                     {" "}
-                    <Link to={"/websites"} 
-                    onClick={(e) => handleNavClick(e, "/crm/websites")}
-                    className="linkHover">
+                    <Link
+                      to={"/websites"}
+                      onClick={(e) => handleNavClick(e, "/crm/websites")}
+                      className="linkHover"
+                    >
                       Booking Site
                     </Link>
                   </h4>
@@ -189,12 +197,12 @@ const Crm = ({handleNavigation}) => {
             <div className="col order-first	order-lg-last">
               <div className="photographyGroup p-5 p-sm-0">
                 <img
-                  src="/public/folio images/happy-photographer.jpg"
+                  src="./folio images/happy-photographer.jpg"
                   className="img-fluid rounded"
                   alt="Happy Photographer"
                 />
                 <img
-                  src="/public/folio images/happy-photographer-2.jpg"
+                  src="./folio images/happy-photographer-2.jpg"
                   className="img-fluid photo2 rounded imgShadow "
                   alt="Happy Photographer"
                 />
@@ -256,7 +264,7 @@ const Crm = ({handleNavigation}) => {
                 <div className="miniMutipleImgG">
                   <div className="mini1 text-center">
                     <img
-                      src="/public/folio images/examples-minis-families.jpg"
+                      src="./folio images/examples-minis-families.jpg"
                       className="img-fluid"
                       alt="Minis Families"
                     />
@@ -268,7 +276,7 @@ const Crm = ({handleNavigation}) => {
                   </div>
                   <div className="mini2 text-center">
                     <img
-                      src="/public/folio images/examples-minis-holidays.jpg"
+                      src="./folio images/examples-minis-holidays.jpg"
                       className="img-fluid"
                       alt="Minis Families"
                     />
@@ -280,7 +288,7 @@ const Crm = ({handleNavigation}) => {
                   </div>
                   <div className="mini3 text-center">
                     <img
-                      src="/public/folio images/examples-minis-boudoir.jpg"
+                      src="./folio images/examples-minis-boudoir.jpg"
                       className="img-fluid"
                       alt="Minis Families"
                     />
@@ -292,7 +300,7 @@ const Crm = ({handleNavigation}) => {
                   </div>
                   <div className="mini4 text-center">
                     <img
-                      src="/public/folio images/examples-minis-pets.jpg"
+                      src="./folio images/examples-minis-pets.jpg"
                       className="img-fluid"
                       alt="Minis Families"
                     />
@@ -304,7 +312,7 @@ const Crm = ({handleNavigation}) => {
                   </div>
                   <div className="mini5 text-center">
                     <img
-                      src="/public/folio images/examples-minis-fun.jpg"
+                      src="./folio images/examples-minis-fun.jpg"
                       className="img-fluid"
                       alt="Minis Families"
                     />
@@ -325,7 +333,7 @@ const Crm = ({handleNavigation}) => {
                     "Everyone is offering mini sessions and you should be too if you aren't already. Our photography CRM makes setting up and booking your next mini a breeze."
                   }
                   btnText={"Explore mini-sessions"}
-                  refLink={'/crm/session'}
+                  refLink={"/crm/session"}
                   navClick={handleNavigation}
                 />
               </div>
@@ -346,7 +354,7 @@ const Crm = ({handleNavigation}) => {
                   "Let's be honest, your time is better spent shooting or selling, not performing tedious, repetitive tasks. We can help you by sending out automated payment and booking reminders."
                 }
                 btnText={"Get Started"}
-                refLink={'/crm/invioce'}
+                refLink={"/crm/invioce"}
                 navClick={handleNavigation}
               />
             </div>
@@ -354,7 +362,7 @@ const Crm = ({handleNavigation}) => {
             <div className="col order-first order-md-last">
               <div className="emailGroup">
                 <img
-                  src="/public/folio images/email-airplane.png"
+                  src="./folio images/email-airplane.png"
                   className="img-fluid"
                   alt="Email"
                 />
@@ -382,12 +390,12 @@ const Crm = ({handleNavigation}) => {
             <div className="col">
               <div className="crmIGroup pe-5 pb-4 p-sm-0 ">
                 <img
-                  src="/public/folio images/proofing.jpg"
+                  src="./folio images/proofing.jpg"
                   className="img-fluid rounded imgShadow photo1"
                   alt="Proofing"
                 />
                 <img
-                  src="/public/folio images/booking-beach-session.jpg"
+                  src="./folio images/booking-beach-session.jpg"
                   className=" photo2 imgShadow "
                   alt="Beach Session"
                 />
@@ -395,16 +403,17 @@ const Crm = ({handleNavigation}) => {
             </div>
             {/*  */}
             <div className="col">
-
-            <GridTextGroup
-              subHeader={"Galleries & Website"}
-              headerColor={"grey"}
-              header={"CRM Integration"}
-              title={'Studio Manager is one of several products offered by Lightfolio. You can integrate with Lightfolio Websites (to collect new leads) and deliver your final product with Lightfolio Client Galleries. One platform for everything--it just makes life easier.'}
-              btnText={'Get Started'}
-              refLink={'/websites'}
-              navClick={handleNavigation}
-            />
+              <GridTextGroup
+                subHeader={"Galleries & Website"}
+                headerColor={"grey"}
+                header={"CRM Integration"}
+                title={
+                  "Studio Manager is one of several products offered by Lightfolio. You can integrate with Lightfolio Websites (to collect new leads) and deliver your final product with Lightfolio Client Galleries. One platform for everything--it just makes life easier."
+                }
+                btnText={"Get Started"}
+                refLink={"/websites"}
+                navClick={handleNavigation}
+              />
             </div>
           </div>
         </div>

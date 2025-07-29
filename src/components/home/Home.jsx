@@ -13,7 +13,7 @@ import Faq from "./faq/Faq.jsx";
 import GridTextGroup from "../gridTextGroup/GridTextGroup.jsx";
 
 const words = ["beautiful", "unique", "modern"];
-const Home = ({handleNavigation}) => {
+const Home = ({ handleNavigation }) => {
   const location = useLocation();
 
   // Helper function to handle navigation clicks
@@ -216,7 +216,7 @@ const Home = ({handleNavigation}) => {
               <div className="row  gap-sm-2 gap-4 justify-content-center text-center fst-italic colorBlack-500 photoGroup">
                 <div className="col-2 d-none d-lg-block">
                   <img
-                    src="/public/folio images/screen2.jpg"
+                    src="./folio images/screen2.jpg"
                     className="img-fluid imageHover"
                     alt="Mansory Wide"
                   />
@@ -224,7 +224,7 @@ const Home = ({handleNavigation}) => {
                 </div>
                 <div className="col-sm-3 col-lg-2">
                   <img
-                    src="/public/folio images/screen1.jpg"
+                    src="./folio images/screen1.jpg"
                     className="img-fluid imageHover"
                     alt="Pins"
                   />
@@ -232,7 +232,7 @@ const Home = ({handleNavigation}) => {
                 </div>
                 <div className="col-sm-3 col-lg-2">
                   <img
-                    src="/public/folio images/screen3.jpg"
+                    src="./folio images/screen3.jpg"
                     className="img-fluid imageHover"
                     alt="Mansory"
                   />
@@ -240,7 +240,7 @@ const Home = ({handleNavigation}) => {
                 </div>
                 <div className="col-sm-3 col-lg-2">
                   <img
-                    src="/public/folio images/screen5.jpg"
+                    src="./folio images/screen5.jpg"
                     className="img-fluid imageHover"
                     alt="Dark Theme"
                   />
@@ -248,7 +248,7 @@ const Home = ({handleNavigation}) => {
                 </div>
                 <div className="col-2 d-none d-lg-block">
                   <img
-                    src="/public/folio images/screen4.jpg"
+                    src="./folio images/screen4.jpg"
                     className="img-fluid imageHover"
                     alt="Santa Fe"
                   />
@@ -267,7 +267,7 @@ const Home = ({handleNavigation}) => {
                       "Fullscreen + single image, split screen + dual image, centered circle image and other options."
                     }
                   >
-                   <span className="mt-1"> 8</span>
+                    <span className="mt-1"> 8</span>
                   </TextCard>
                 </div>
                 <div className="col-md-4 col-lg-4 col-sm-12 px-lg-5">
@@ -287,7 +287,7 @@ const Home = ({handleNavigation}) => {
                       "Control thumbnail shape (rectangles, squares and circles) and size (thumbnails vs fullscreen photos)."
                     }
                   >
-                      <span className="mt-1"> 8</span>
+                    <span className="mt-1"> 8</span>
                   </TextCard>
                 </div>
               </div>
@@ -300,28 +300,28 @@ const Home = ({handleNavigation}) => {
                 <div className="row justify-content-center align-items-center text-center py-5">
                   <div className="col-2 ">
                     <img
-                      src="/public/folio images/logo_paypal.gif"
+                      src="./folio images/logo_paypal.gif"
                       className="w-50 img-fluid"
                       alt="Logo_paypal"
                     />
                   </div>
                   <div className="col-2">
                     <img
-                      src="/public/folio images/logo_bayphoto.gif"
+                      src="./folio images/logo_bayphoto.gif"
                       className="w-50 img-fluid"
                       alt="Logo_bayphoto"
                     />
                   </div>
                   <div className="col-2">
                     <img
-                      src="/public/folio images/logo_aws.gif"
+                      src="./folio images/logo_aws.gif"
                       className="w-50 img-fluid"
                       alt="Logo_aws"
                     />
                   </div>
                   <div className="col-2">
                     <img
-                      src="/public/folio images/logo_loxleycolour.gif"
+                      src="./folio images/logo_loxleycolour.gif"
                       className="w-50 img-fluid "
                       alt="Logo_loxleycolour"
                     />
@@ -330,7 +330,7 @@ const Home = ({handleNavigation}) => {
                   <div className="col-2">
                     {" "}
                     <img
-                      src="/public/folio images/logo_stripe.gif"
+                      src="./folio images/logo_stripe.gif"
                       className="w-50 img-fluid"
                       alt="Logo_stripe"
                     />
@@ -356,20 +356,20 @@ const Home = ({handleNavigation}) => {
                       View, select and communicate all online. Enable
                       watermarks, downloads, favorites and password protection.
                     </h6>
-                    <button              
-                    onClick={(e) => {
-                      navigate('/gallery/proofing');
-                      handleNavClick(e, '/gallery/proofing');
-                    }}
-                    className="mainBtn mb-5">
+                    <button
+                      onClick={(e) => {
+                        navigate("/gallery/proofing");
+                        handleNavClick(e, "/gallery/proofing");
+                      }}
+                      className="mainBtn mb-5"
+                    >
                       &rarr; PROOF PHOTOS
                     </button>
-                
                   </div>
                   <div className="d-flex stackedModel mb-5">
                     <div className="me-2 stackedImg model3">
                       <img
-                        src="/public/folio images/cover-model-3.jpg"
+                        src="./folio images/cover-model-3.jpg"
                         className="img-fluid rounded"
                         alt="Model 3"
                       />
@@ -381,7 +381,7 @@ const Home = ({handleNavigation}) => {
                     </div>
                     <div className="me-2 stackedImg model2">
                       <img
-                        src="/public/folio images/cover-model-2.jpg"
+                        src="./folio images/cover-model-2.jpg"
                         className="img-fluid rounded"
                         alt="Model 2"
                       />
@@ -393,7 +393,7 @@ const Home = ({handleNavigation}) => {
                     </div>
                     <div className=" stackedImg model1">
                       <img
-                        src="/public/folio images/cover-model-1.jpg"
+                        src="./folio images/cover-model-1.jpg"
                         className="img-fluid rounded"
                         alt="Model 1"
                       />
@@ -414,47 +414,46 @@ const Home = ({handleNavigation}) => {
             <div className="row mb-5 py-5">
               <div className="col-12 col-md-6">
                 <img
-                  src="/public/folio images/download-client-photos.jpg"
+                  src="./folio images/download-client-photos.jpg"
                   className="img-fluid"
                   alt="Client Picture"
                 />
               </div>
               <div className="col-12 col-md-6 pe-lg-3">
-    
-
                 <GridTextGroup
                   subHeader={"DELIVERY"}
-                  headerColor={'grey'}
+                  headerColor={"grey"}
                   header={"Digital Downloads"}
                   title={
                     "Conveniently deliver photos to your clients online. With everyphoto gallery, control file size and restrict access with apersonalized password--all at the click of a button."
                   }
                   btnText={"→ CLIENT DOWNLOADS"}
-                  refLink={'/gallery/digital-download'}
+                  refLink={"/gallery/digital-download"}
                   navClick={handleNavClick}
-                  btnColor={'grey'}
+                  btnColor={"grey"}
                 />
               </div>
             </div>
             {/* second */}
             <div className="row mb-5 py-5 reverseDirection">
               <div className="col-12 col-md-6 pe-lg-5 pt-4 pt-md-0">
-            
-                <GridTextGroup 
-                subHeader={'PORTAL'}
-                headerColor={'grey'}
-                header={'A mini website for your photo galleriess'}
-                title={' Organize your client photo galleries into a centralrepository. This gives your clients an easy way to find all ofyour published online galleries. Customize your directory by from several themes and use the SEO settings to improve your search engine rankings.'}
-                btnText={'→ GALLERY DIRECTORIES'}
-                refLink={'/gallery/directories'}
-                navClick={handleNavClick}
-                btnColor={'grey'}
+                <GridTextGroup
+                  subHeader={"PORTAL"}
+                  headerColor={"grey"}
+                  header={"A mini website for your photo galleriess"}
+                  title={
+                    " Organize your client photo galleries into a centralrepository. This gives your clients an easy way to find all ofyour published online galleries. Customize your directory by from several themes and use the SEO settings to improve your search engine rankings."
+                  }
+                  btnText={"→ GALLERY DIRECTORIES"}
+                  refLink={"/gallery/directories"}
+                  navClick={handleNavClick}
+                  btnColor={"grey"}
                 />
               </div>
               <div className="col-12 col-md-6">
                 <div className="px-2">
                   <img
-                    src="/public/folio images/gallery-directory.jpg"
+                    src="./folio images/gallery-directory.jpg"
                     className="img-fluid shadowImg"
                     alt="Gallery Picture"
                   />
@@ -468,21 +467,21 @@ const Home = ({handleNavigation}) => {
                   <div className="d-flex justify-content-center align-items-center">
                     <div className="scaleBeach scaleBeachPosition1">
                       <img
-                        src="/public/folio images/model-beach1.jpg"
+                        src="./folio images/model-beach1.jpg"
                         className="rounded img-fluid"
                         alt="Model"
                       />
                     </div>
                     <div className="scaleBeachPosition2">
                       <img
-                        src="/public/folio images/model-beach2.jpg"
+                        src="./folio images/model-beach2.jpg"
                         className="rounded img-fluid"
                         alt="Model"
                       />
                     </div>
                     <div className="scaleBeach scaleBeachPosition3">
                       <img
-                        src="/public/folio images/model-beach3.jpg"
+                        src="./folio images/model-beach3.jpg"
                         className="rounded img-fluid"
                         alt="Model"
                       />
@@ -491,40 +490,39 @@ const Home = ({handleNavigation}) => {
                 </div>
               </div>
               <div className="col-12 col-md-6 pe-lg-3 pt-4 pt-md-0">
-          
-
-                <GridTextGroup 
-                subHeader={'ANALYTICS'}
-                headerColor={'grey'}
-                header={'Photo gallery activity reports'}
-                title={' Quickly identify which images have been viewed, how many times, and which images have been downloaded and/or favorited. Lightfolio analytics gives you insight into all your online gallery traffic.'}
-                btnText={'→ VISITOR ANALYTICS'}
-                refLink={'/gallery/visitor-analytics'}
-                navClick={handleNavClick}
-                btnColor={'grey'}
+                <GridTextGroup
+                  subHeader={"ANALYTICS"}
+                  headerColor={"grey"}
+                  header={"Photo gallery activity reports"}
+                  title={
+                    " Quickly identify which images have been viewed, how many times, and which images have been downloaded and/or favorited. Lightfolio analytics gives you insight into all your online gallery traffic."
+                  }
+                  btnText={"→ VISITOR ANALYTICS"}
+                  refLink={"/gallery/visitor-analytics"}
+                  navClick={handleNavClick}
+                  btnColor={"grey"}
                 />
               </div>
             </div>
             {/* forth */}
             <div className="row mb-5 py-5 reverseDirection">
               <div className="col-12 col-md-6 pe-lg-5 pt-4 pt-md-0">
-         
-
-
-                <GridTextGroup 
-                subHeader={'SALES'}
-                headerColor={'grey'}
-                header={'Sell Online'}
-                title={'Allow your clients to purchase prints, digital downloads and more. Process your own orders or integrate with our photo lab partners. Set your own pricing, minimum orders, shipping rates and create coupons.'}
-                btnText={'→ ONLINE SALES'}
-                refLink={'/gallery/online-store'}
-                navClick={handleNavClick}
-                btnColor={'grey'}
+                <GridTextGroup
+                  subHeader={"SALES"}
+                  headerColor={"grey"}
+                  header={"Sell Online"}
+                  title={
+                    "Allow your clients to purchase prints, digital downloads and more. Process your own orders or integrate with our photo lab partners. Set your own pricing, minimum orders, shipping rates and create coupons."
+                  }
+                  btnText={"→ ONLINE SALES"}
+                  refLink={"/gallery/online-store"}
+                  navClick={handleNavClick}
+                  btnColor={"grey"}
                 />
               </div>
               <div className="col-12 col-md-6 px-2">
                 <img
-                  src="/public/folio images/online-sales.jpg"
+                  src="./folio images/online-sales.jpg"
                   className="img-fluid shadowImg"
                   alt="Online Sales"
                 />
@@ -540,7 +538,7 @@ const Home = ({handleNavigation}) => {
                 125+ countries around the globe. Join your peers today.
               </h4>
               <img
-                src="/public/folio images/world-photographers.jpg"
+                src="./folio images/world-photographers.jpg"
                 className="img-fluid w-50 mb-4 mb-md-5"
                 alt="World Photographers"
               />
@@ -626,14 +624,14 @@ const Home = ({handleNavigation}) => {
                   <h6 className="colorBlack-600 textLabel">FAQ</h6>
                   <h2>Questions about client galleries?</h2>
                   <img
-                    src="/public/folio images/faq.jpg"
+                    src="./folio images/faq.jpg"
                     className="img-fluid w-25 rounded"
                     alt="Faq"
                   />
                 </div>
               </div>
               <div className="col-12 col-md-6">
-                <Faq faqData={faqData}/>
+                <Faq faqData={faqData} />
               </div>
             </div>
           </div>

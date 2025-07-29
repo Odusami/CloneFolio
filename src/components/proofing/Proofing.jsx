@@ -16,8 +16,8 @@ import { FaFolderOpen } from "react-icons/fa6";
 const Proofing = () => {
   const [currentImage, setCurrentImage] = useState(0);
   const images = [
-    "/public/folio images/proofing-wedding.jpg",
-    "/public/folio images/proofing-editorial.jpg",
+    "../folio images/proofing-wedding.jpg",
+    "../folio images/proofing-editorial.jpg",
   ];
   useEffect(() => {
     const interval = setInterval(() => {
@@ -52,19 +52,16 @@ const Proofing = () => {
                   playsInline
                   loop
                 >
-                  <source
-                    src="/public/folio videos/proofing.mp4"
-                    type="video/mp4"
-                  />
+                  <source src="../folio videos/proofing.mp4" type="video/mp4" />
                 </video>
                 <img
-                  src="/public/folio images/proofing-controls.jpg"
+                  src="../folio images/proofing-controls.jpg"
                   className="videoControl w-50"
                   alt="Control"
                 />
 
                 <img
-                  src="/public/folio images/favorite-selected-mobile.jpg"
+                  src="../folio images/favorite-selected-mobile.jpg"
                   className="coupleImg"
                   alt="Couple"
                 />
@@ -93,7 +90,7 @@ const Proofing = () => {
               </div>
               <div className="col-12 col-sm-2 col-lg-1 d-none d-sm-flex">
                 <img
-                  src="/public/folio images/arrow-top.png"
+                  src="../folio images/arrow-top.png"
                   className="img-fluid"
                   alt="Arrow Up"
                 />
@@ -109,7 +106,7 @@ const Proofing = () => {
               </div>
               <div className="col-12 d-none d-lg-flex col-lg-1">
                 <img
-                  src="/public/folio images/arrow-bottom.png"
+                  src="../folio images/arrow-bottom.png"
                   className="img-fluid"
                   alt="Arrow Down"
                 />
@@ -125,7 +122,7 @@ const Proofing = () => {
               </div>
               <div className="col-12 col-sm-2 col-lg-1 d-none d-sm-flex">
                 <img
-                  src="/public/folio images/arrow-top.png"
+                  src="../folio images/arrow-top.png"
                   className="img-fluid"
                   alt="Arrow Up"
                 />
@@ -147,7 +144,7 @@ const Proofing = () => {
             <div className="">
               <video className="proofingVid1" autoPlay muted playsInline loop>
                 <source
-                  src="/public/folio videos/Photo-Proofing-for-Photographers - Lightfolio(1).mp4"
+                  src="../folio videos/Photo-Proofing-for-Photographers - Lightfolio(1).mp4"
                   type="video/mp4"
                 />
               </video>
@@ -155,7 +152,7 @@ const Proofing = () => {
             <div className="text-center text-sm-start">
               <video className="proofingVid2" autoPlay muted playsInline loop>
                 <source
-                  src="/public/folio videos/Photo-Proofing-For-Photographers-Lightfolio.mp4"
+                  src="../folio videos/Photo-Proofing-For-Photographers-Lightfolio.mp4"
                   type="video/mp4"
                 />
               </video>
@@ -203,21 +200,21 @@ const Proofing = () => {
                 <div className="d-flex justify-content-center align-items-center">
                   <div className="poofingPosition1">
                     <img
-                      src="/public/folio images/proofing-example-2.jpg"
+                      src="../folio images/proofing-example-2.jpg"
                       className="img-fluid proofingImg1"
                       alt="Model"
                     />
                   </div>
                   <div className="poofingPosition2">
                     <img
-                      src="/public/folio images/proofing-example-4.jpg"
+                      src="../folio images/proofing-example-4.jpg"
                       className="img-fluid proofingImg2"
                       alt="Model"
                     />
                   </div>
                   <div className="proofingPosition3">
                     <img
-                      src="/public/folio images/proofing-example-3.jpg"
+                      src="../folio images/proofing-example-3.jpg"
                       className="img-fluid proofingImg3"
                       alt="Model"
                     />
@@ -234,7 +231,6 @@ const Proofing = () => {
                   " Quickly identify which images have been viewed, how many times, and which images have been downloaded and/or favorited. Lightfolio analytics gives you insight into all your online gallery traffic."
                 }
                 btnText={"→ VISITOR ANALYTICS"}
-                
               />
             </div>
           </div>
@@ -260,14 +256,14 @@ const Proofing = () => {
               <div className="px-2 d-flex justify-content-center">
                 <div className="w-50">
                   <img
-                    src="/public/folio images/communication-favorite.jpg"
+                    src="../folio images/communication-favorite.jpg"
                     className="img-fluid weddingCard"
                     alt="Wedding"
                   />
                   {/* Chole Card */}
                   <div className="d-flex gap-2 mt-4">
                     <img
-                      src="/public/folio images/mug-chloe.jpg"
+                      src="../folio images/mug-chloe.jpg"
                       className="weddingCardChole"
                       alt="Chloe"
                     />
@@ -286,7 +282,7 @@ const Proofing = () => {
                   {/*  Jessica Card*/}
                   <div className="d-flex flex-row-reverse gap-2 mt-4">
                     <img
-                      src="/public/folio images/mug-jessica.jpg"
+                      src="../folio images/mug-jessica.jpg"
                       className="weddingCardChole"
                       alt="Jessica"
                     />
@@ -324,63 +320,78 @@ const Proofing = () => {
               {
                 icon: <AiOutlineWechat />,
                 header: "Commenting",
-                title:"By enabling the commenting feature, clients can apply notes to individual images.", 
+                title:
+                  "By enabling the commenting feature, clients can apply notes to individual images.",
               },
               {
                 icon: <FaLock />,
                 header: "Passwords",
-                title:"Give access to the public or protect your galleries by enabling a password requirement.", 
+                title:
+                  "Give access to the public or protect your galleries by enabling a password requirement.",
               },
               {
                 icon: <TbCircleLetterCFilled />,
                 header: "Watermarks",
-                title:"Protect your work by applying an optional watermark to some or all of your images.", 
+                title:
+                  "Protect your work by applying an optional watermark to some or all of your images.",
               },
               {
                 icon: <FaCloudDownloadAlt />,
                 header: "Downloads",
-                title:"Turn on self service downloads for specific folders or the entire gallery.", 
+                title:
+                  "Turn on self service downloads for specific folders or the entire gallery.",
               },
               {
                 icon: <MdOutlinePhoneIphone />,
                 header: "Mobile Friendly",
-                title:"Our proofing platform works just as well on your clients mobile device.", 
+                title:
+                  "Our proofing platform works just as well on your clients mobile device.",
               },
               {
                 icon: <HiCurrencyDollar />,
                 header: "Sales",
-                title:"Besides the ability to proof images, you can enable galleries with online sales (prints or downloads).", 
+                title:
+                  "Besides the ability to proof images, you can enable galleries with online sales (prints or downloads).",
               },
               {
                 icon: <TbWorldCog />,
                 header: "Custom Domain",
-                title:"If branding is important to you, upgrade to a paid plan and start using your own domain to present your images.", 
+                title:
+                  "If branding is important to you, upgrade to a paid plan and start using your own domain to present your images.",
               },
               {
                 icon: <GiWorld />,
                 header: "Multilingual",
-                title:"Lightfolio supports a dozen different languages. Present your galleries in the native language of your client base.", 
+                title:
+                  "Lightfolio supports a dozen different languages. Present your galleries in the native language of your client base.",
               },
               {
                 icon: <GiRobotGrab />,
                 header: "Analytics",
-                title:"Quickly identify which images have been viewed, how many times, and which images have comments and have been favorited.", 
+                title:
+                  "Quickly identify which images have been viewed, how many times, and which images have comments and have been favorited.",
               },
               {
                 icon: <FaFolderOpen />,
                 header: "Folders",
-                title:"Organize the images from your shoot and group related images into separate folders.", 
+                title:
+                  "Organize the images from your shoot and group related images into separate folders.",
               },
               {
                 icon: <FaSearchPlus />,
                 header: "Search",
-                title:"Give your clients the ability to search for images based on image descriptions and keywords.", 
+                title:
+                  "Give your clients the ability to search for images based on image descriptions and keywords.",
               },
-              
-            
-            ].map((content, index)=>(
-              <div key={content.header + index} className="col px-md-5 py-5 mb-5 cardPadding">
-                <GalleryCard icon={content.icon} title={content.title} > {content.header}</GalleryCard>
+            ].map((content, index) => (
+              <div
+                key={content.header + index}
+                className="col px-md-5 py-5 mb-5 cardPadding"
+              >
+                <GalleryCard icon={content.icon} title={content.title}>
+                  {" "}
+                  {content.header}
+                </GalleryCard>
               </div>
             ))}
           </div>

@@ -25,7 +25,7 @@ const GalleryVisitors = () => {
             {/* Picture col */}
             <div className="col-12 col-sm-6 col-md-6 col-lg-7  text-center">
               <img
-                src="/public/folio images/gallery-visitor-list.jpg"
+                src="./folio images/gallery-visitor-list.jpg"
                 className="galleryVisitorImg"
                 alt="Client Download"
               />
