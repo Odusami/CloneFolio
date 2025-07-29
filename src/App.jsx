@@ -42,54 +42,91 @@ function App() {
   return (
     <>
       <ScrollToTop />
-      <PageTransition >
-      {(handleNavigation) => (
-        <>
-      {location.pathname !== "/" && <Nav handleNavigation={handleNavigation} />}
-      <AnimatePresence mode="wait">
-      {/* <Home/> */}
-      <Routes location={location} key={location.pathname}>
-        <Route path="/" element={<Home handleNavigation={handleNavigation}/>} />
-        <Route path="/pricing" element={<Pricing />}>
-          <Route index element={<Navigate to="client-gallery" replace />} />
-          <Route path="client-gallery" element={<ClientGallery />} />
-          <Route path="studio-manager" element={<StudioManager />} />
-          <Route path="website" element={<Websites />} />
-          <Route path="bundle" element={<Bundles />} />
-        </Route>
+      <PageTransition>
+        {(handleNavigation) => (
+          <>
+            {location.pathname !== "/" && (
+              <Nav handleNavigation={handleNavigation} />
+            )}
+            <AnimatePresence mode="wait">
+              <Routes location={location} key={location.pathname}>
+                {/* <Home/> */}
+                <Route
+                  path="/"
+                  element={<Home handleNavigation={handleNavigation} />}
+                />
 
-        <Route path="/gallery" element={<GalleryRoute />}>
-          <Route index element={<Galleries handleNavigation={handleNavigation}/>} />
-          <Route path="proofing" element={<Proofing />} />
-          <Route path="digital-download" element={<DigitalDownloads />} />
-          <Route path="visitor-analytics" element={<GalleryVisitors />} />
-          <Route path="online-store" element={<GalleryStore />} />
-          <Route path="directories" element={<GalleryDirectories />} />
-          <Route path="themes" element={<Themes />} />
-        </Route>
-        <Route path="/fonts" element={<Fonts />} />
-        <Route path="/lightroom" element={<Lightroom />} />
-        <Route path="/supported-file-types" element={<FileTypes />} />
+                {/* Pricing routes */}
+                <Route path="/pricing" element={<Pricing />}>
+                  <Route
+                    index
+                    element={<Navigate to="client-gallery" replace />}
+                  />
+                  <Route path="client-gallery" element={<ClientGallery />} />
+                  <Route path="studio-manager" element={<StudioManager />} />
+                  <Route path="website" element={<Websites />} />
+                  <Route path="bundle" element={<Bundles />} />
+                </Route>
 
-        <Route path="/crm" element={<CrmRoute />}>
-          <Route index element={<Crm handleNavigation = {handleNavigation}/>} />
-          <Route path="contract" element={<Contracts />} />
-          <Route path="invioce" element={<Invoice />} />
-          <Route path="booking" element={<BookingSite />} />
-          <Route path="session" element={<MiniSession handleNavigation={handleNavigation}/>} />
-          <Route path="form" element={<Forms />} />
-        </Route>
+                {/* Gallery routes */}
+                <Route path="/gallery" element={<GalleryRoute />}>
+                  <Route
+                    index
+                    element={<Galleries handleNavigation={handleNavigation} />}
+                  />
+                  <Route path="proofing" element={<Proofing />} />
+                  <Route
+                    path="digital-download"
+                    element={<DigitalDownloads />}
+                  />
+                  <Route
+                    path="visitor-analytics"
+                    element={<GalleryVisitors />}
+                  />
+                  <Route path="online-store" element={<GalleryStore />} />
+                  <Route path="directories" element={<GalleryDirectories />} />
+                  <Route path="themes" element={<Themes />} />
+                </Route>
 
-        <Route path="websites" element={<WebsitePage handleNavigation={handleNavigation}/>} />
-      </Routes>
-      </AnimatePresence>
+                {/* Crm routes */}
+                <Route path="/crm" element={<CrmRoute />}>
+                  <Route
+                    index
+                    element={<Crm handleNavigation={handleNavigation} />}
+                  />
+                  <Route path="contract" element={<Contracts />} />
+                  <Route path="invioce" element={<Invoice />} />
+                  <Route path="booking" element={<BookingSite />} />
+                  <Route
+                    path="session"
+                    element={
+                      <MiniSession handleNavigation={handleNavigation} />
+                    }
+                  />
+                  <Route path="form" element={<Forms />} />
+                </Route>
 
-      {location.pathname !== "/" && <Footer handleNavigation={handleNavigation}/>}
-      </>
-      )}
+                {/* Other routes */}
+                <Route path="/fonts" element={<Fonts />} />
+                <Route path="/lightroom" element={<Lightroom />} />
+                <Route path="/supported-file-types" element={<FileTypes />} />
+                <Route
+                  path="websites"
+                  element={<WebsitePage handleNavigation={handleNavigation} />}
+                />
+
+                {/* Catch-all route for 404s - redirects to home */}
+                <Route path="*" element={<Navigate to="/" replace />} />
+              </Routes>
+            </AnimatePresence>
+
+            {location.pathname !== "/" && (
+              <Footer handleNavigation={handleNavigation} />
+            )}
+          </>
+        )}
       </PageTransition>
     </>
-
   );
 }
 
