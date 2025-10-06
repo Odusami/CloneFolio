@@ -95,7 +95,7 @@ const MiniSession = ({ handleNavigation }) => {
             {/* Img Col */}
             <div className="col-md-7 ps-md-5 order-first order-md-last">
               <img
-                src="folio images/mini Session.jpg"
+                src="folioImages/mini Session.jpg"
                 className="img-fluid rounded imgShadow"
                 alt="Mini Section"
               />
@@ -130,71 +130,71 @@ const MiniSession = ({ handleNavigation }) => {
           <div className="row row-cols-2 row-cols-sm-3 row-cols-lg-4 justify-content-center">
             {[
               {
-                image: "folio images/mini1.jpg",
+                image: "folioImages/mini1.jpg",
                 title: "Christmas Mini Sessions",
               },
               {
-                image: "folio images/mini2.jpg",
+                image: "folioImages/mini2.jpg",
                 title: "Fall Mini Sessions",
               },
               {
-                image: "folio images/mini3.jpg",
+                image: "folioImages/mini3.jpg",
                 title: "Boudoir Mini Sessions",
               },
               {
-                image: "folio images/mini4.jpg",
+                image: "folioImages/mini4.jpg",
                 title: "4th Of July Mini Sessions",
               },
               {
-                image: "folio images/mini5.jpg",
+                image: "folioImages/mini5.jpg",
                 title: "Easter Mini Sessions",
               },
               {
-                image: "folio images/mini6.jpg",
+                image: "folioImages/mini6.jpg",
                 title: "Family Mini Sessions",
               },
               {
-                image: "folio images/mini7.jpg",
+                image: "folioImages/mini7.jpg",
                 title: "Father's Day Mini Sessions",
               },
               {
-                image: "folio images/mini8.jpg",
+                image: "folioImages/mini8.jpg",
                 title: "Glitter Mini-Session",
               },
               {
-                image: "folio images/mini9.jpg",
+                image: "folioImages/mini9.jpg",
                 title: "Halloween Mini Sessions",
               },
               {
-                image: "folio images/mini10.jpg",
+                image: "folioImages/mini10.jpg",
                 title: "Hot Cocoa Mini Sessions",
               },
               {
-                image: "folio images/mini11.jpg",
+                image: "folioImages/mini11.jpg",
                 title: "Lemonade Stand Mini Sessions",
               },
               {
-                image: "folio images/mini12.jpg",
+                image: "folioImages/mini12.jpg",
                 title: "Mommy & Me Mini Sessions",
               },
               {
-                image: "folio images/mini13.jpg",
+                image: "folioImages/mini13.jpg",
                 title: "Pet Mini Sessions",
               },
               {
-                image: "folio images/mini14.jpg",
+                image: "folioImages/mini14.jpg",
                 title: "Spring Mini Sessions",
               },
               {
-                image: "folio images/mini15.jpg",
+                image: "folioImages/mini15.jpg",
                 title: "Summer Mini Sessions",
               },
               {
-                image: "folio images/mini16.jpg",
+                image: "folioImages/mini16.jpg",
                 title: "Tree Farm Mini Sessions",
               },
               {
-                image: "folio images/mini17.jpg",
+                image: "folioImages/mini17.jpg",
                 title: "Valentine's Day Mini Session",
               },
             ].map((content, index) => (
@@ -234,7 +234,7 @@ const MiniSession = ({ handleNavigation }) => {
             <div className="col-12 col-sm">
               <div>
                 <img
-                  src="folio images/booking-minis-biolink.jpg"
+                  src="folioImages/booking-minis-biolink.jpg"
                   className="img-fluid miniImgs"
                   alt="Biolink"
                 />
@@ -246,7 +246,7 @@ const MiniSession = ({ handleNavigation }) => {
 
             <div className="col-1 d-none d-lg-block p-0">
               <img
-                src="folio images/arrow-top.png"
+                src="folioImages/arrow-top.png"
                 className="img-fluid"
                 alt="Arrow top"
               />
@@ -255,7 +255,7 @@ const MiniSession = ({ handleNavigation }) => {
             <div className="col-12 col-sm">
               <div>
                 <img
-                  src="folio images/booking-minis-calendar.jpg"
+                  src="folioImages/booking-minis-calendar.jpg"
                   className="img-fluid miniImgs"
                   alt="Calender"
                 />
@@ -267,7 +267,7 @@ const MiniSession = ({ handleNavigation }) => {
 
             <div className="col-1 d-none d-lg-block p-0">
               <img
-                src="folio images/arrow-bottom.png"
+                src="folioImages/arrow-bottom.png"
                 className="img-fluid"
                 alt="Arror bottom"
               />
@@ -276,7 +276,7 @@ const MiniSession = ({ handleNavigation }) => {
             <div className="col-12 col-sm">
               <div>
                 <img
-                  src="folio images/booking-minis-confirmation.jpg"
+                  src="folioImages/booking-minis-confirmation.jpg"
                   className="img-fluid miniImgs"
                   alt="Booking Confirmed"
                 />
@@ -311,17 +311,17 @@ const MiniSession = ({ handleNavigation }) => {
             <div className="col order-first order-md-last">
               <div className="hstack bioLinkImgGroup ">
                 <img
-                  src="folio images/biolink-minis-1.jpg"
+                  src="folioImages/biolink-minis-1.jpg"
                   className="img-fluid"
                   alt="Biolink 1"
                 />
                 <img
-                  src="folio images/biolink-minis-2.jpg"
+                  src="folioImages/biolink-minis-2.jpg"
                   className="img-fluid"
                   alt="Biolink 2"
                 />
                 <img
-                  src="folio images/biolink-minis-3.jpg"
+                  src="folioImages/biolink-minis-3.jpg"
                   className="img-fluid"
                   alt="Biolink 3"
                 />
@@ -342,63 +342,63 @@ const MiniSession = ({ handleNavigation }) => {
           <div className="row row-cols-1 row-cols-md-2 mt-3">
             {[
               {
-                image: "folio images/mini-sessions-contracts.jpg",
+                image: "folioImages/mini-sessions-contracts.jpg",
                 header: "Attach a Contract",
                 title:
                   "Need to make your booking legally binding? Easily add a contract as a requirement for booking. Add contract terms that spell out the details of the shoot, deliverables, contingencies and more.",
                 path: "/crm/contract",
               },
               {
-                image: "folio images/mini-sessions-gallery-integration.jpg",
+                image: "folioImages/mini-sessions-gallery-integration.jpg",
                 header: "Gallery Integration",
                 title:
                   "You've used our photography CRM to book your session. After the shoot, use Lightfolio online galleries to deliver your photos. Everything in one platform--it's easier for you and for your clients.",
                 path: "/crm",
               },
               {
-                image: "folio images/mini-sessions-payments.jpg",
+                image: "folioImages/mini-sessions-payments.jpg",
                 header: "Collect Payment On/Off-line",
                 title:
                   "How you choose to collect payments for your booking is up to you. Require clients to make a payment online as part of the booking process or let your clients pay you outside of Lightfolio.",
                 path: "/crm/invioce",
               },
               {
-                image: "folio images/mini-sessions-confirmation.jpg",
+                image: "folioImages/mini-sessions-confirmation.jpg",
                 header: "Require Payment for Booking",
                 title:
                   "Booking a session is more than just picking a time slot. You can require clients to either pay in full or make a partial payment to officially reserve their spot. Accept online payments via credit card or PayPal.",
                 path: "/crm/booking",
               },
               {
-                image: "folio images/mini-sessions-reminders.jpg",
+                image: "folioImages/mini-sessions-reminders.jpg",
                 header: "Automated Client Reminders",
                 title:
                   "Let Lightfolio be your virtual assistant. We can remind your clients of an upcoming shoot, upcoming payment or a past due payment. You set up the message and the schedule. We automate the delivery.",
                 path: "/crm",
               },
               {
-                image: "folio images/mini-sessions-notifications.jpg",
+                image: "folioImages/mini-sessions-notifications.jpg",
                 header: "Real-time notifications",
                 title:
                   "Every important activity in our booking system results in a notification email sent out to you. Be notified in real-time when book another session or receive an online payment.",
                 path: "/crm",
               },
               {
-                image: "folio images/mini-sessions-questionnaires.jpg",
+                image: "folioImages/mini-sessions-questionnaires.jpg",
                 header: "Add a Questionnaire",
                 title:
                   "Need a little information from each of your clients? Create a customized questionnaire to collect contact information, learn about their preferences, expectations and more. They'll be able to complete the form as part of the booking process.",
                 path: "/crm",
               },
               {
-                image: "folio images/mini-sessions-bookings.jpg",
+                image: "folioImages/mini-sessions-bookings.jpg",
                 header: "Prevent double bookings",
                 title:
                   "Once a client picks a time slot, that session is reserved for them. They'll have 15 minutes to complete the session booking process. After that, the session is open back up to the public.",
                 path: "/crm/booking",
               },
               {
-                image: "folio images/mini-sessions-bookings.jpg",
+                image: "folioImages/mini-sessions-bookings.jpg",
                 header: "Works on any device",
                 title:
                   "Booking mini sessions couldn't be easier. Clients can learn about your services, pick a time slot from your available schedule and secure their preferred spot. Clients can book on their phone, tablet or computer.",

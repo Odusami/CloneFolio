@@ -176,13 +176,13 @@ const Footer = ({ handleNavigation }) => {
                 <div className="vstack colorBlack-600 gap-2">
                   <Link to={"/"} onClick={(e) => handleNavClick(e, "/")}>
                     <img
-                      src="folio images/logo (1).png"
+                      src="folioImages/logo (1).png"
                       className="img-fluid w-50"
                       alt="Logo"
                     />
                   </Link>
                   {/* <img
-                    src="folio images/logo (1).png"
+                    src="folioImages/logo (1).png"
                     className="img-fluid w-50"
                     alt="Logo"
                   /> */}

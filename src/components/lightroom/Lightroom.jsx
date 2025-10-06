@@ -19,7 +19,7 @@ const Lightroom = () => {
             {/* Picture col */}
             <div className="col-12 col-sm-7 ps-md-3 ps-lg-5">
               <img
-                src="folio images/lr-computer.jpg"
+                src="folioImages/lr-computer.jpg"
                 className="clientDownloadImg"
                 alt="Lightroom"
               />

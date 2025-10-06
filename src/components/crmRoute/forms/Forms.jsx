@@ -29,12 +29,12 @@ const Forms = () => {
               <div className="imgPosition">
                 <div className="hstack imgGroup">
                   <img
-                    src="folio images/form-1.jpg"
+                    src="folioImages/form-1.jpg"
                     className="img-fluid"
                     alt="Invoice"
                   />
                   <img
-                    src="folio images/form-2.jpg"
+                    src="folioImages/form-2.jpg"
                     className="img-fluid"
                     alt="Bride"
                   />
@@ -102,139 +102,139 @@ const Forms = () => {
           <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 gap-3 justify-content-center">
             {[
               {
-                image: "folio images/form1.jpg",
+                image: "folioImages/form1.jpg",
                 header: "Basic Contact Form Template",
                 title:
                   "For a general purpose contact form, use this template to capture leads for your business. Solicit the bare minimum of information to increase form conversion rates.",
               },
               {
-                image: "folio images/form2.jpg",
+                image: "folioImages/form2.jpg",
                 header: "Model Release Form Template",
                 title:
                   "Free model release form for use with your photo clients. Remove any clauses you don't need, update the cover page and send out for signing online.",
               },
               {
-                image: "folio images/form3.jpg",
+                image: "folioImages/form3.jpg",
                 header: "Wedding Day Questionnaire Template",
                 title:
                   "Have the bride or groom share a timeline and other details of their wedding day by completing this thorough questionnaire. Confirm venue information, contact numbers, important names and more...",
               },
               {
-                image: "folio images/form4.jpg",
+                image: "folioImages/form4.jpg",
                 header: "Boudoir Pre-shoot Questionnaire",
                 title:
                   "Every boudoir session is a very personal experience. Sending your client an online questionnaire in advance of the shoot will help you understand the clients expectations, preferences and boundaries..",
               },
               {
-                image: "folio images/form5.jpg",
+                image: "folioImages/form5.jpg",
                 header: "Engagement Session Questionnaire",
                 title:
                   "Engagement sessions are meant to be fun. By using this form to ask questions of your client, you'll be able to get a better idea of just how adventurous they are. How any outfit changes, how many loca",
               },
               {
-                image: "folio images/form6.jpg",
+                image: "folioImages/form6.jpg",
                 header: "Photo Order Form Template",
                 title:
                   "Need a bare bones method to complete a client order? Use this order form to get client contact and order details. Turn on checkout option to collect payment online.",
               },
               {
-                image: "folio images/form7.jpg",
+                image: "folioImages/form7.jpg",
                 header: "Senior Portraits Questionnaire Tem..",
                 title:
                   "This form template for your senior portrait session is a great start to a fun shoot. Asking questions and planting ideas about wardrobe, locations and themes will help you execute the perfect photo sh",
               },
               {
-                image: "folio images/form8.jpg",
+                image: "folioImages/form8.jpg",
                 header: "Video Release Form Template",
                 title:
                   "This video release can be used to obtain consent from clients that are the subject of any video shoot.",
               },
               {
-                image: "folio images/form9.jpg",
+                image: "folioImages/form9.jpg",
                 header: "Newborn Session Questionnaire Template",
                 title:
                   "This video release can be used to obtain consent from clients that are the subject of any video shoot.",
               },
               {
-                image: "folio images/form10.jpg",
+                image: "folioImages/form10.jpg",
                 header: "Copyright Release Form Template",
                 title:
                   "This form can be used to secure copyright permission from the subject/model of any photo shoot.",
               },
               {
-                image: "folio images/form11.jpg",
+                image: "folioImages/form11.jpg",
                 header: "Family Portrait Session Questionnaire",
                 title:
                   "You'll want to go into any family portrait session knowing as much about your client and their family as possible. Use this online form to ask questions about family size, preferred locations and more",
               },
               {
-                image: "folio images/form12.jpg",
+                image: "folioImages/form12.jpg",
                 header: "Boudoir Model Release Form Template",
                 title:
                   "Be sure to obtain a photo release from your boudoir sessions and ensure you secure rights to use your work for marketing, etc.",
               },
               {
-                image: "folio images/form13.jpg",
+                image: "folioImages/form13.jpg",
                 header: "Church Photo Release Form Template",
                 title:
                   "Be sure to obtain a photo release from your boudoir sessions and ensure you secure rights to use your work for marketing, etc.",
               },
               {
-                image: "folio images/form14.jpg",
+                image: "folioImages/form14.jpg",
                 header: "Daycare Photo Release Form Template",
                 title:
                   "Use this form to obtain a photo release when from children and parents when photographing at a daycare.",
               },
               {
-                image: "folio images/form15.jpg",
+                image: "folioImages/form15.jpg",
                 header: "Employee Photo Release Form Template",
                 title:
                   "Use this form to obtain a photo release from employees when photographing at a place of business.",
               },
               {
-                image: "folio images/form16.jpg",
+                image: "folioImages/form16.jpg",
                 header: "Maternity Session Questionnaire Template",
                 title:
                   "Any maternity photo shoot can run the gamut in terms of what's expected. Use this questionnaire to learn whether your client wants to incorporate their partner/spouse, what locations they have in mind",
               },
               {
-                image: "folio images/form17.jpg",
+                image: "folioImages/form17.jpg",
                 header: "Minor Model Release Form Template",
                 title:
                   "Use this photo release to obtain consent from the parent or guardian of a minor model.",
               },
               {
-                image: "folio images/form18.jpg",
+                image: "folioImages/form18.jpg",
                 header: "Patient Photo Release Form Template",
                 title:
                   "Use this form to obtain a photo release from patients when photographing at a medical facility.",
               },
               {
-                image: "folio images/form19.jpg",
+                image: "folioImages/form19.jpg",
                 header: "Pet Photo Release Form Template",
                 title:
                   "Use this form to obtain a photo release from the owner of a pet(s) during a pet photo shoot.",
               },
               {
-                image: "folio images/form20.jpg",
+                image: "folioImages/form20.jpg",
                 header: "Photo Booth Rental Form Template",
                 title:
                   "Make it easy for clients to rent your photo booth. Give them options to pick the perfect package as well as add-on options. Online payment is also available.",
               },
               {
-                image: "folio images/form21.jpg",
+                image: "folioImages/form21.jpg",
                 header: "Photography Booking Form Template",
                 title:
                   "This more lengthy contact form has an extended set of questions that you can use to learn more about your (potential) clients. This form requests the clients preference for shoot dates and times.",
               },
               {
-                image: "folio images/form22.jpg",
+                image: "folioImages/form22.jpg",
                 header: "Photography Client Questionnaire Template",
                 title:
                   "Reach out to your client in advance of a shoot by using this form to collect information that will help you better understand their needs and expectations...",
               },
               {
-                image: "folio images/form23.jpg",
+                image: "folioImages/form23.jpg",
                 header: "Social Media Photo Release Form",
                 title:
                   "This photo release can be used to obtain consent from clients to publish images of their likeness on any social media platform.",
@@ -263,7 +263,7 @@ const Forms = () => {
             {/* col image */}
             <div className="col order-first order-md-last">
               <img
-                src="folio images/woman-with-tablet-3.jpg"
+                src="folioImages/woman-with-tablet-3.jpg"
                 className="img-fluid rounded w-75"
                 alt="Tablet"
               />
@@ -278,7 +278,7 @@ const Forms = () => {
             {/* col image */}
             <div className="col">
               <img
-                src="folio images/coffee-couple.jpg"
+                src="folioImages/coffee-couple.jpg"
                 className="img-fluid rounded w-75"
                 alt="Drinking Couple"
               />
@@ -317,7 +317,7 @@ const Forms = () => {
             {/* col image */}
             <div className="col order-first order-md-last">
               <img
-                src="folio images/form-online-payment.jpg"
+                src="folioImages/form-online-payment.jpg"
                 className="img-fluid rounded w-75"
                 alt="Card"
               />
@@ -332,7 +332,7 @@ const Forms = () => {
             {/* col image */}
             <div className="col">
               <img
-                src="folio images/forms-save-for-later.jpg"
+                src="folioImages/forms-save-for-later.jpg"
                 className="img-fluid rounded w-75"
                 alt="Professional"
               />

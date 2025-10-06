@@ -20,43 +20,43 @@ const Themes = () => {
           <div className="row row-cols-lg-3 row-cols-md-2 row-cols-sm-2 row-cols-1 mt-5">
             {[
               {
-                laptop: "folio images/themes-london.png",
-                mobile: "folio images/themes-london-mobile.png",
+                laptop: "folioImages/themes-london.png",
+                mobile: "folioImages/themes-london-mobile.png",
                 text: "London",
               },
               {
-                laptop: "folio images/themes-auckland.png",
-                mobile: "folio images/themes-auckland-mobile.png",
+                laptop: "folioImages/themes-auckland.png",
+                mobile: "folioImages/themes-auckland-mobile.png",
                 text: "Auckland",
               },
               {
-                laptop: "folio images/themes-berlin.png",
-                mobile: "folio images/themes-berlin-mobile.png",
+                laptop: "folioImages/themes-berlin.png",
+                mobile: "folioImages/themes-berlin-mobile.png",
                 text: "Berlin",
               },
               {
-                laptop: "folio images/themes-monaco.png",
-                mobile: "folio images/themes-monaco-mobile.png",
+                laptop: "folioImages/themes-monaco.png",
+                mobile: "folioImages/themes-monaco-mobile.png",
                 text: "Monaco",
               },
               {
-                laptop: "folio images/themes-milan.png",
-                mobile: "folio images/themes-milan-mobile.png",
+                laptop: "folioImages/themes-milan.png",
+                mobile: "folioImages/themes-milan-mobile.png",
                 text: "Milan",
               },
               {
-                laptop: "folio images/themes-geneva.png",
-                mobile: "folio images/themes-geneva-mobile.png",
+                laptop: "folioImages/themes-geneva.png",
+                mobile: "folioImages/themes-geneva-mobile.png",
                 text: "Geneva",
               },
               {
-                laptop: "folio images/themes-halifax.png",
-                mobile: "folio images/themes-halifax-mobile.png",
+                laptop: "folioImages/themes-halifax.png",
+                mobile: "folioImages/themes-halifax-mobile.png",
                 text: "Halifax",
               },
               {
-                laptop: "folio images/themes-santafe.png",
-                mobile: "folio images/themes-santafe-mobile.png",
+                laptop: "folioImages/themes-santafe.png",
+                mobile: "folioImages/themes-santafe-mobile.png",
                 text: "Santa Fe",
               },
             ].map((content, index) => (
@@ -89,48 +89,48 @@ const Themes = () => {
           <div className="row row-cols-lg-3 row-cols-md-2 row-cols-sm-2 row-cols-1 mt-5">
             {[
               {
-                laptop: "folio images/styles-masonry.png",
-                mobile: "folio images/styles-masonry-mobile.png",
+                laptop: "folioImages/styles-masonry.png",
+                mobile: "folioImages/styles-masonry-mobile.png",
                 text: "Mansory",
               },
               {
-                laptop: "folio images/styles-masonry-wide.png",
-                mobile: "folio images/styles-masonry-wide-mobile.png",
+                laptop: "folioImages/styles-masonry-wide.png",
+                mobile: "folioImages/styles-masonry-wide-mobile.png",
                 text: "Mansory Wide",
               },
               {
-                laptop: "folio images/styles-justified.png",
-                mobile: "folio images/styles-justified-mobile.png",
+                laptop: "folioImages/styles-justified.png",
+                mobile: "folioImages/styles-justified-mobile.png",
                 text: "Justified",
               },
               {
-                laptop: "folio images/styles-squares.png",
-                mobile: "folio images/styles-squares-mobile.png",
+                laptop: "folioImages/styles-squares.png",
+                mobile: "folioImages/styles-squares-mobile.png",
                 text: "Squares",
               },
               {
-                laptop: "folio images/styles-fullblocks.png",
-                mobile: "folio images/styles-fullblocks-mobile.png",
+                laptop: "folioImages/styles-fullblocks.png",
+                mobile: "folioImages/styles-fullblocks-mobile.png",
                 text: "Block",
               },
               {
-                laptop: "folio images/styles-slideshow.png",
-                mobile: "folio images/styles-slideshow-mobile.png",
+                laptop: "folioImages/styles-slideshow.png",
+                mobile: "folioImages/styles-slideshow-mobile.png",
                 text: "Slideshow",
               },
               {
-                laptop: "folio images/styles-circles.png",
-                mobile: "folio images/styles-circles-mobile.png",
+                laptop: "folioImages/styles-circles.png",
+                mobile: "folioImages/styles-circles-mobile.png",
                 text: "Circles",
               },
               {
-                laptop: "folio images/styles-pins.png",
-                mobile: "folio images/styles-pins-mobile.png",
+                laptop: "folioImages/styles-pins.png",
+                mobile: "folioImages/styles-pins-mobile.png",
                 text: "Pins",
               },
               {
-                laptop: "folio images/styles-tiles.png",
-                mobile: "folio images/styles-tiles-mobile.png",
+                laptop: "folioImages/styles-tiles.png",
+                mobile: "folioImages/styles-tiles-mobile.png",
                 text: "Tiles",
               },
             ].map((content, index) => (

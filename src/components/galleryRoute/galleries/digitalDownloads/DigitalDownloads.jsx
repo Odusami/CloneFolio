@@ -27,7 +27,7 @@ const DigitalDownloads = () => {
             {/* Picture col */}
             <div className="col-12 col-sm-7 ps-md-3 ps-lg-5">
               <img
-                src="folio images/client-downloads.jpg"
+                src="folioImages/client-downloads.jpg"
                 className="clientDownloadImg"
                 alt="Client Download"
               />

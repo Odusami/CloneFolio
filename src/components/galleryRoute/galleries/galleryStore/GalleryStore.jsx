@@ -30,7 +30,7 @@ const GalleryStore = () => {
             {/* Picture col */}
             <div className="col-12 col-sm-7 ps-md-3 ps-lg-5">
               <img
-                src="folio images/order-page.jpg"
+                src="folioImages/order-page.jpg"
                 className="clientDownloadImg"
                 alt="Store Download"
               />

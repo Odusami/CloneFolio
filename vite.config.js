@@ -8,7 +8,9 @@ export default defineConfig({
   build: {
     chunkSizeWarningLimit: 1000,
     outDir: 'dist',
-    assetsDir: 'assets',
+    assetsDir: 'folio image',
+    // assetsDir: 'assets',
     sourcemap: false,
-  }
+  },
+  publicDir: 'public', 
 })

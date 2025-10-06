@@ -52,7 +52,7 @@ const Galleries = ({ handleNavigation }) => {
               options and allows for advanced customization.
             </h4>
             <img
-              src="folio images/devices-models.png"
+              src="folioImages/devices-models.png"
               className="w-50 mt-4 mb-md-5"
               alt="Laptop Gallery"
             />

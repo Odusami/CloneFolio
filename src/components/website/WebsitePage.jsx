@@ -77,14 +77,14 @@ const WebsitePage = ({ handleNavigation }) => {
     ],
   };
   const images = [
-    "folio images/web-template-1.jpg",
-    "folio images/web-template-2.jpg",
-    "folio images/web-template-3.jpg",
-    "folio images/web-template-4.jpg",
-    "folio images/web-template-5.jpg",
-    "folio images/web-template-6.jpg",
-    "folio images/web-template-7.jpg",
-    "folio images/web-template-8.jpg",
+    "folioImages/web-template-1.jpg",
+    "folioImages/web-template-2.jpg",
+    "folioImages/web-template-3.jpg",
+    "folioImages/web-template-4.jpg",
+    "folioImages/web-template-5.jpg",
+    "folioImages/web-template-6.jpg",
+    "folioImages/web-template-7.jpg",
+    "folioImages/web-template-8.jpg",
   ];
 
   return (
@@ -146,7 +146,7 @@ const WebsitePage = ({ handleNavigation }) => {
                   loop
                   muted
                 >
-                  <source src="folio videos/builder.mp4" type="video/mp4" />
+                  <source src="folioVideos/builder.mp4" type="video/mp4" />
                 </video>
               </div>
             </div>
@@ -204,7 +204,7 @@ const WebsitePage = ({ handleNavigation }) => {
             {/* PICTURE COL */}
             <div className="col text-center text-md-end order-first order-md-last">
               <img
-                src="folio images/palette.jpg"
+                src="folioImages/palette.jpg"
                 className="img-fluid rounded imgShadow"
                 alt="Palette"
               />
@@ -215,7 +215,7 @@ const WebsitePage = ({ handleNavigation }) => {
             {/* Picture col */}
             <div className="col">
               <img
-                src="folio images/proofing.jpg"
+                src="folioImages/proofing.jpg"
                 className="img-fluid rounded responsiveWidth"
                 alt="Proofing"
               />
@@ -272,7 +272,7 @@ const WebsitePage = ({ handleNavigation }) => {
             {/* PICTURE COL */}
             <div className="col text-center text-md-end order-first order-md-last">
               <img
-                src="folio images/blog.jpg"
+                src="folioImages/blog.jpg"
                 className="img-fluid rounded "
                 alt="Blog"
               />
@@ -283,7 +283,7 @@ const WebsitePage = ({ handleNavigation }) => {
             {/* Picture col */}
             <div className="col">
               <img
-                src="folio images/seo.jpg"
+                src="folioImages/seo.jpg"
                 className="img-fluid rounded responsiveWidth"
                 alt="Seo"
               />
@@ -317,7 +317,7 @@ const WebsitePage = ({ handleNavigation }) => {
             {/* PICTURE COL */}
             <div className="col text-center text-md-end order-first order-md-last">
               <img
-                src="folio images/ecommerce.jpg"
+                src="folioImages/ecommerce.jpg"
                 className="img-fluid rounded "
                 alt="Ecommerce"
               />
@@ -456,7 +456,7 @@ const WebsitePage = ({ handleNavigation }) => {
                 <h6 className="colorBlack-600 textLabel">FAQ</h6>
                 <h2>Questions about our website builder?</h2>
                 <img
-                  src="folio images/faq.jpg"
+                  src="folioImages/faq.jpg"
                   className="img-fluid w-25 rounded"
                   alt="Faq"
                 />
