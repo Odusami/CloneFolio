@@ -76,7 +76,7 @@ const Nav = ({ handleNavigation }) => {
             onClick={(e) => handleNavClick(e, "/")}
           >
             <img
-              src="./folio images/logo-dark.png"
+              src="folio images/logo-dark.png"
               className="logoSize pb-1 me-2"
               alt="logo"
             />

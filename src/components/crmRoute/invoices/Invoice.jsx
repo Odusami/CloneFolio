@@ -18,8 +18,8 @@ import {
 const Invoice = () => {
   const [currentImage, setCurrentImage] = useState(0);
   const images = [
-    "./folio images/invoice-cover-wedding.jpg",
-    "./folio images/invoice-white.gif",
+    "folio images/invoice-cover-wedding.jpg",
+    "folio images/invoice-white.gif",
   ];
   useEffect(() => {
     const interval = setInterval(() => {
@@ -53,12 +53,12 @@ const Invoice = () => {
               <div className="imgPosition">
                 <div className="hstack imgGroup">
                   <img
-                    src="./folio images/invoice-items.gif"
+                    src="folio images/invoice-items.gif"
                     className="img-fluid"
                     alt="Invoice"
                   />
                   <img
-                    src="./folio images/16addb3a-8549-4fdb-ab10-3dbadcb7bc13.jpg"
+                    src="folio images/16addb3a-8549-4fdb-ab10-3dbadcb7bc13.jpg"
                     className="img-fluid"
                     alt="Bride"
                   />
@@ -82,58 +82,58 @@ const Invoice = () => {
           <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 gap-3 justify-content-center">
             {[
               {
-                image: "./folio images/Invoice1.jpg",
+                image: "folio images/Invoice1.jpg",
                 header: "Wedding Photography Invoice",
                 title:
                   "Summarize all costs for your bride and groom and get paid online",
               },
               {
-                image: "./folio images/Invoice2.jpg",
+                image: "folio images/Invoice2.jpg",
                 header: "Event Photography Invoice",
                 title:
                   "Itemize each service, product and fee for your event photography",
               },
               {
-                image: "./folio images/Invoice3.jpg",
+                image: "folio images/Invoice3.jpg",
                 header: "Portrait Photography Invoice",
                 title:
                   "Create a uniquely designed invoice for each of your portrait clients",
               },
               {
-                image: "./folio images/Invoice4.jpg",
+                image: "folio images/Invoice4.jpg",
                 header: "Commercial Photography Invoice",
                 title: "Bill commercial clients and collect payment online",
               },
               {
-                image: "./folio images/Invoice5.jpg",
+                image: "folio images/Invoice5.jpg",
                 header: "Food Photography Invoice",
                 title:
                   "Pair your food photography with a matching bespoke invoice",
               },
               {
-                image: "./folio images/Invoice6.jpg",
+                image: "folio images/Invoice6.jpg",
                 header: "Freelance Photography Invoice",
                 title: "Keep track of every bill for your freelance clients",
               },
               {
-                image: "./folio images/Invoice7.jpg",
+                image: "folio images/Invoice7.jpg",
                 header: "Photo Shoot Invoice",
                 title: "Design an invoice for any type of photo shoot",
               },
               {
-                image: "./folio images/Invoice8.jpg",
+                image: "folio images/Invoice8.jpg",
                 header: "Real Estate Photography Invoice",
                 title:
                   "Bill your customers with an invoice made for real estate photography",
               },
               {
-                image: "./folio images/Invoice9.jpg",
+                image: "folio images/Invoice9.jpg",
                 header: "Sample Photography Invoice",
                 title:
                   "From basic to completely customized, the choice is yours",
               },
               {
-                image: "./folio images/Invoice9.jpg",
+                image: "folio images/Invoice9.jpg",
                 header: "Simple Photography Invoice",
                 title:
                   "Create the perfect invoice that gets straight to the point",
@@ -273,7 +273,7 @@ const Invoice = () => {
                 <div className="cardPaymentGroup">
                   <div className="cardImage">
                     <img
-                      src="./folio images/cc-mastercard.jpg"
+                      src="folio images/cc-mastercard.jpg"
                       className="img-fluid"
                       alt="Mastercard"
                     />
@@ -296,12 +296,12 @@ const Invoice = () => {
                 <div className="cInvoiceGroup ">
                   <div className="hstack imgGroup ">
                     <img
-                      src="./folio images/contract-wedding.gif"
+                      src="folio images/contract-wedding.gif"
                       className=""
                       alt="Wedding Contract"
                     />
                     <img
-                      src="./folio images/invoice-wedding.gif"
+                      src="folio images/invoice-wedding.gif"
                       className=""
                       alt="Wedding invoice"
                     />

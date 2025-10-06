@@ -24,27 +24,27 @@ const Fonts = () => {
           <div className="row row-cols-lg-3 row-cols-md-2 row-cols-sm-2 row-cols-1 mt-5">
             {[
               {
-                image: "./folio images/fonts-merriweather.jpg",
+                image: "folio images/fonts-merriweather.jpg",
                 text: "Marriweather",
               },
               {
-                image: "./folio images/fonts-raleway.jpg",
+                image: "folio images/fonts-raleway.jpg",
                 text: "Raleway",
               },
               {
-                image: "./folio images/fonts-so-lovely.jpg",
+                image: "folio images/fonts-so-lovely.jpg",
                 text: "So Lovely",
               },
               {
-                image: "./folio images/fonts-fashionista-black.jpg",
+                image: "folio images/fonts-fashionista-black.jpg",
                 text: "Fashionista Black",
               },
               {
-                image: "./folio images/fonts-amatic-sc.jpg",
+                image: "folio images/fonts-amatic-sc.jpg",
                 text: "Amatic Sc",
               },
               {
-                image: "./folio images/fonts-droid-serif.jpg",
+                image: "folio images/fonts-droid-serif.jpg",
                 text: "Droid Serif",
               },
             ].map((content, index) => (

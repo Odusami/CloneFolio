@@ -16,8 +16,8 @@ import { FaFolderOpen } from "react-icons/fa6";
 const Proofing = () => {
   const [currentImage, setCurrentImage] = useState(0);
   const images = [
-    "../folio images/proofing-wedding.jpg",
-    "../folio images/proofing-editorial.jpg",
+    "folio images/proofing-wedding.jpg",
+    "folio images/proofing-editorial.jpg",
   ];
   useEffect(() => {
     const interval = setInterval(() => {
@@ -52,16 +52,16 @@ const Proofing = () => {
                   playsInline
                   loop
                 >
-                  <source src="../folio videos/proofing.mp4" type="video/mp4" />
+                  <source src="folio videos/proofing.mp4" type="video/mp4" />
                 </video>
                 <img
-                  src="../folio images/proofing-controls.jpg"
+                  src="folio images/proofing-controls.jpg"
                   className="videoControl w-50"
                   alt="Control"
                 />
 
                 <img
-                  src="../folio images/favorite-selected-mobile.jpg"
+                  src="folio images/favorite-selected-mobile.jpg"
                   className="coupleImg"
                   alt="Couple"
                 />
@@ -90,7 +90,7 @@ const Proofing = () => {
               </div>
               <div className="col-12 col-sm-2 col-lg-1 d-none d-sm-flex">
                 <img
-                  src="../folio images/arrow-top.png"
+                  src="folio images/arrow-top.png"
                   className="img-fluid"
                   alt="Arrow Up"
                 />
@@ -106,7 +106,7 @@ const Proofing = () => {
               </div>
               <div className="col-12 d-none d-lg-flex col-lg-1">
                 <img
-                  src="../folio images/arrow-bottom.png"
+                  src="folio images/arrow-bottom.png"
                   className="img-fluid"
                   alt="Arrow Down"
                 />
@@ -122,7 +122,7 @@ const Proofing = () => {
               </div>
               <div className="col-12 col-sm-2 col-lg-1 d-none d-sm-flex">
                 <img
-                  src="../folio images/arrow-top.png"
+                  src="folio images/arrow-top.png"
                   className="img-fluid"
                   alt="Arrow Up"
                 />
@@ -144,7 +144,7 @@ const Proofing = () => {
             <div className="">
               <video className="proofingVid1" autoPlay muted playsInline loop>
                 <source
-                  src="../folio videos/Photo-Proofing-for-Photographers - Lightfolio(1).mp4"
+                  src="folio videos/Photo-Proofing-for-Photographers - Lightfolio(1).mp4"
                   type="video/mp4"
                 />
               </video>
@@ -152,7 +152,7 @@ const Proofing = () => {
             <div className="text-center text-sm-start">
               <video className="proofingVid2" autoPlay muted playsInline loop>
                 <source
-                  src="../folio videos/Photo-Proofing-For-Photographers-Lightfolio.mp4"
+                  src="folio videos/Photo-Proofing-For-Photographers-Lightfolio.mp4"
                   type="video/mp4"
                 />
               </video>
@@ -200,21 +200,21 @@ const Proofing = () => {
                 <div className="d-flex justify-content-center align-items-center">
                   <div className="poofingPosition1">
                     <img
-                      src="../folio images/proofing-example-2.jpg"
+                      src="folio images/proofing-example-2.jpg"
                       className="img-fluid proofingImg1"
                       alt="Model"
                     />
                   </div>
                   <div className="poofingPosition2">
                     <img
-                      src="../folio images/proofing-example-4.jpg"
+                      src="folio images/proofing-example-4.jpg"
                       className="img-fluid proofingImg2"
                       alt="Model"
                     />
                   </div>
                   <div className="proofingPosition3">
                     <img
-                      src="../folio images/proofing-example-3.jpg"
+                      src="folio images/proofing-example-3.jpg"
                       className="img-fluid proofingImg3"
                       alt="Model"
                     />
@@ -256,14 +256,14 @@ const Proofing = () => {
               <div className="px-2 d-flex justify-content-center">
                 <div className="w-50">
                   <img
-                    src="../folio images/communication-favorite.jpg"
+                    src="folio images/communication-favorite.jpg"
                     className="img-fluid weddingCard"
                     alt="Wedding"
                   />
                   {/* Chole Card */}
                   <div className="d-flex gap-2 mt-4">
                     <img
-                      src="../folio images/mug-chloe.jpg"
+                      src="folio images/mug-chloe.jpg"
                       className="weddingCardChole"
                       alt="Chloe"
                     />
@@ -282,7 +282,7 @@ const Proofing = () => {
                   {/*  Jessica Card*/}
                   <div className="d-flex flex-row-reverse gap-2 mt-4">
                     <img
-                      src="../folio images/mug-jessica.jpg"
+                      src="folio images/mug-jessica.jpg"
                       className="weddingCardChole"
                       alt="Jessica"
                     />

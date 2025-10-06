@@ -27,7 +27,7 @@ const GalleryDirectories = () => {
             {/* Picture col */}
             <div className="col-12 col-sm-7 ps-md-3 ps-lg-5">
               <img
-                src="./folio images/gallery-directory2.jpg"
+                src="folio images/gallery-directory2.jpg"
                 className="clientDownloadImg"
                 alt="Gallery Directory"
               />

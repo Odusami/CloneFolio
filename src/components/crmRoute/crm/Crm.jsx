@@ -19,27 +19,27 @@ const Crm = ({ handleNavigation }) => {
   };
 
   const rightCarousel = [
-    "./folio images/docs-boudoir-contract.jpg",
-    "./folio images/docs-commercial-photo-contract.jpg",
-    "./folio images/docs-commercial-photography-contract.jpg",
-    "./folio images/docs-engagement-shoot-contract.jpg",
-    "./folio images/docs-photography-contract.jpg",
-    "./folio images/docs-portrait-contract.jpg",
-    "./folio images/docs-real-estate-photography-contract.jpg",
-    "./folio images/docs-wedding-photo-contract.jpg",
-    "./folio images/docs-wedding-photography-contract.jpg",
+    "folio images/docs-boudoir-contract.jpg",
+    "folio images/docs-commercial-photo-contract.jpg",
+    "folio images/docs-commercial-photography-contract.jpg",
+    "folio images/docs-engagement-shoot-contract.jpg",
+    "folio images/docs-photography-contract.jpg",
+    "folio images/docs-portrait-contract.jpg",
+    "folio images/docs-real-estate-photography-contract.jpg",
+    "folio images/docs-wedding-photo-contract.jpg",
+    "folio images/docs-wedding-photography-contract.jpg",
   ];
   const leftCarousel = [
-    "./folio images/docs-family-portrait-questionnaire.jpg",
-    "./folio images/docs-minor-model-release.jpg",
-    "./folio images/docs-model-release.jpg",
-    "./folio images/docs-photo-invoice.jpg",
-    "./folio images/docs-photography-inv.jpg",
-    "./folio images/docs-photography-invoice.jpg",
-    "./folio images/docs-print-photo-release.jpg",
-    "./folio images/docs-print-release.jpg",
-    "./folio images/docs-wedding-invoice.jpg",
-    "./folio images/docs-wedding-questionnaire.jpg",
+    "folio images/docs-family-portrait-questionnaire.jpg",
+    "folio images/docs-minor-model-release.jpg",
+    "folio images/docs-model-release.jpg",
+    "folio images/docs-photo-invoice.jpg",
+    "folio images/docs-photography-inv.jpg",
+    "folio images/docs-photography-invoice.jpg",
+    "folio images/docs-print-photo-release.jpg",
+    "folio images/docs-print-release.jpg",
+    "folio images/docs-wedding-invoice.jpg",
+    "folio images/docs-wedding-questionnaire.jpg",
   ];
   return (
     <>
@@ -54,7 +54,7 @@ const Crm = ({ handleNavigation }) => {
           />
           <div className="py-5">
             <img
-              src="./folio images/dashboard-5.jpg"
+              src="folio images/dashboard-5.jpg"
               className="img-fluid"
               alt="Crm Dashboard"
             />
@@ -197,12 +197,12 @@ const Crm = ({ handleNavigation }) => {
             <div className="col order-first	order-lg-last">
               <div className="photographyGroup p-5 p-sm-0">
                 <img
-                  src="./folio images/happy-photographer.jpg"
+                  src="folio images/happy-photographer.jpg"
                   className="img-fluid rounded"
                   alt="Happy Photographer"
                 />
                 <img
-                  src="./folio images/happy-photographer-2.jpg"
+                  src="folio images/happy-photographer-2.jpg"
                   className="img-fluid photo2 rounded imgShadow "
                   alt="Happy Photographer"
                 />
@@ -264,7 +264,7 @@ const Crm = ({ handleNavigation }) => {
                 <div className="miniMutipleImgG">
                   <div className="mini1 text-center">
                     <img
-                      src="./folio images/examples-minis-families.jpg"
+                      src="folio images/examples-minis-families.jpg"
                       className="img-fluid"
                       alt="Minis Families"
                     />
@@ -276,7 +276,7 @@ const Crm = ({ handleNavigation }) => {
                   </div>
                   <div className="mini2 text-center">
                     <img
-                      src="./folio images/examples-minis-holidays.jpg"
+                      src="folio images/examples-minis-holidays.jpg"
                       className="img-fluid"
                       alt="Minis Families"
                     />
@@ -288,7 +288,7 @@ const Crm = ({ handleNavigation }) => {
                   </div>
                   <div className="mini3 text-center">
                     <img
-                      src="./folio images/examples-minis-boudoir.jpg"
+                      src="folio images/examples-minis-boudoir.jpg"
                       className="img-fluid"
                       alt="Minis Families"
                     />
@@ -300,7 +300,7 @@ const Crm = ({ handleNavigation }) => {
                   </div>
                   <div className="mini4 text-center">
                     <img
-                      src="./folio images/examples-minis-pets.jpg"
+                      src="folio images/examples-minis-pets.jpg"
                       className="img-fluid"
                       alt="Minis Families"
                     />
@@ -312,7 +312,7 @@ const Crm = ({ handleNavigation }) => {
                   </div>
                   <div className="mini5 text-center">
                     <img
-                      src="./folio images/examples-minis-fun.jpg"
+                      src="folio images/examples-minis-fun.jpg"
                       className="img-fluid"
                       alt="Minis Families"
                     />
@@ -362,7 +362,7 @@ const Crm = ({ handleNavigation }) => {
             <div className="col order-first order-md-last">
               <div className="emailGroup">
                 <img
-                  src="./folio images/email-airplane.png"
+                  src="folio images/email-airplane.png"
                   className="img-fluid"
                   alt="Email"
                 />
@@ -390,12 +390,12 @@ const Crm = ({ handleNavigation }) => {
             <div className="col">
               <div className="crmIGroup pe-5 pb-4 p-sm-0 ">
                 <img
-                  src="./folio images/proofing.jpg"
+                  src="folio images/proofing.jpg"
                   className="img-fluid rounded imgShadow photo1"
                   alt="Proofing"
                 />
                 <img
-                  src="./folio images/booking-beach-session.jpg"
+                  src="folio images/booking-beach-session.jpg"
                   className=" photo2 imgShadow "
                   alt="Beach Session"
                 />

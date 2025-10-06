@@ -106,22 +106,22 @@ const Contracts = () => {
 
           <div className="text-center coverGroup">
             <img
-              src="../folio images/documents-cover.jpg"
+              src="folio images/documents-cover.jpg"
               className="img-fluid"
               alt="Document Cover"
             />
             <img
-              src="../folio images/documents-cover-build.png"
+              src="folio images/documents-cover-build.png"
               className="img1"
               alt="Cover Build"
             />
             <img
-              src="../folio images/documents-cover-cover.png"
+              src="folio images/documents-cover-cover.png"
               className="img2"
               alt="Cover Add"
             />
             <img
-              src="../folio images/documents-cover-invoice.png"
+              src="folio images/documents-cover-invoice.png"
               className="img3"
               alt="Cover Invoice"
             />
@@ -143,55 +143,54 @@ const Contracts = () => {
           <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 gap-3 justify-content-center">
             {[
               {
-                image: "../folio images/cover-preview-portrait-contract.jpg",
+                image: "folio images/cover-preview-portrait-contract.jpg",
                 header: "Portrait photography contract",
                 title: "Family portraits, headshots, corporate clients",
               },
               {
-                image: "../folio images/cover-preview-engagement-contract.jpg",
+                image: "folio images/cover-preview-engagement-contract.jpg",
                 header: "Engagement shoot contract",
                 title: "Session agreements for couples",
               },
               {
-                image: "../folio images/cover-preview-photo-release.jpg",
+                image: "folio images/cover-preview-photo-release.jpg",
                 header: "Print photo release",
                 title: "Give clients limited usage and reproduction rights",
               },
               {
-                image: "../folio images/cover-preview-wedding-contract.jpg",
+                image: "folio images/cover-preview-wedding-contract.jpg",
                 header: "Wedding photography contract",
                 title:
                   "Contract terms for you and your bride and groom clients",
               },
               {
-                image: "../folio images/cover-preview-boudoir-contract.jpg",
+                image: "folio images/cover-preview-boudoir-contract.jpg",
                 header: "Boudoir photography contract",
                 title: "An agreement for intimate shoots",
               },
               {
                 image:
-                  "../folio images/cover-preview-event-photography-contract.jpg",
+                  "folio images/cover-preview-event-photography-contract.jpg",
                 header: "Event photography contract",
                 title: "A contract for your next booked event",
               },
               {
-                image: "../folio images/cover-preview-commercial-contract.jpg",
+                image: "folio images/cover-preview-commercial-contract.jpg",
                 header: "Commercial photography contract",
                 title: "An agreement for commercial clients",
               },
               {
-                image: "../folio images/cover-preview-real-estate-contract.jpg",
+                image: "folio images/cover-preview-real-estate-contract.jpg",
                 header: "Real estate photography contract",
                 title: "Use a contract for property photography",
               },
               {
-                image:
-                  "../folio images/cover-preview-second-shooter-contract.jpg",
+                image: "folio images/cover-preview-second-shooter-contract.jpg",
                 header: "Second shooter contract",
                 title: "Contract language for second shooters and assistants",
               },
               {
-                image: "../folio images/cover-preview-photo-booth-contract.jpg",
+                image: "folio images/cover-preview-photo-booth-contract.jpg",
                 header: "Photo booth contract",
                 title: "Sample contract for photo booth services",
               },
@@ -256,7 +255,7 @@ const Contracts = () => {
         <div className="row row-cols-1 row-cols-md-2 gap-3 gap-md-0 paddingS">
           <div className="col text-center">
             <img
-              src="../folio images/cover-page-3.jpg"
+              src="folio images/cover-page-3.jpg"
               className="img-fluid w-75"
               alt="Cover Page"
             />
@@ -289,7 +288,7 @@ const Contracts = () => {
           </div>
           <div className="col text-center order-first order-md-last">
             <img
-              src="../folio images/invoice-2.gif"
+              src="folio images/invoice-2.gif"
               className="img-fluid w-75"
               alt="Invoice"
             />
@@ -300,7 +299,7 @@ const Contracts = () => {
         <div className="row row-cols-1 row-cols-md-2 gap-4 gap-md-0 paddingS">
           <div className="col text-center">
             <img
-              src="../folio images/signature.gif"
+              src="folio images/signature.gif"
               className="img-fluid w-75 imgShadow rounded"
               alt="Cover Page"
             />
@@ -323,7 +322,7 @@ const Contracts = () => {
               <h6 className="colorBlack-600 textLabel">FAQ</h6>
               <h2>Questions about photography contracts?</h2>
               <img
-                src="../folio images/faq.jpg"
+                src="folio images/faq.jpg"
                 className="img-fluid w-25 rounded"
                 alt="Faq"
               />
