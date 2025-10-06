@@ -12,7 +12,7 @@
   }
 }
 .coupleBg {
-  background-image: url("folioImages/cover-banner-10.jpg");
+  background-image: url("/folioImages/cover-banner-10.jpg");
   // height: 100vh;
   background-size: cover;
   background-attachment: fixed;
@@ -98,7 +98,7 @@
         background-repeat: no-repeat;
       }
       @media (max-width: 576px) {
-        background-image: url("folioImages/cover-banner-9.jpg");
+        background-image: url("/folioImages/cover-banner-9.jpg");
         height: 40vh;
         background-size: cover;
         background-repeat: no-repeat;
@@ -191,7 +191,7 @@
 }
 .homeThirdSection {
   height: 80vh;
-  background-image: url("folioImages/photo-proofing-model.jpg");
+  background-image: url("/folioImages/photo-proofing-model.jpg");
 
   background-size: cover;
   background-repeat: no-repeat;
