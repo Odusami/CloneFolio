@@ -125,7 +125,7 @@ const WebsitePage = ({ handleNavigation }) => {
 
       <section className="websiteSectionTwo paddingS">
         <div className="container">
-          <div className="row gap-4 gap-md-0">
+          <div className="row gap-4 gap-md-0 ">
             <div className="col-md-5 order-last order-md-first">
               <GridTextGroup
                 subHeader={"Create"}
@@ -146,7 +146,7 @@ const WebsitePage = ({ handleNavigation }) => {
                   loop
                   muted
                 >
-                  <source src="/folio videos/builder.mp4" type="video/mp4" />
+                  <source src="./folio videos/builder.mp4" type="video/mp4" />
                 </video>
               </div>
             </div>

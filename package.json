@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://odusami.github.io/CloneFolio",
+  "homepage": "https://odusami.github.io/cloneFolio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
